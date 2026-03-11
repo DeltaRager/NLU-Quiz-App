@@ -1,0 +1,581 @@
+{
+  "session_id": "session-1773233890-5129746",
+  "started_at_iso": "2026-03-11T12:58:10.690819+00:00",
+  "completed_at_iso": "2026-03-11T12:58:17.317396+00:00",
+  "time_limit_seconds": 1080,
+  "duration_seconds": 6,
+  "score": 0,
+  "total_questions": 30,
+  "answers": [
+    {
+      "id": "orig-draft-018",
+      "question": "What is POS tagging about?",
+      "selected_option": "C",
+      "correct_option": "D",
+      "correct_option_text": "Labeling words in a sentence as noun, verb, adjective, and more",
+      "options": [
+        "Translating text into another language",
+        "Identifying the sentiment of a sentence",
+        "Parsing the grammatical structure of sentences",
+        "Labeling words in a sentence as noun, verb, adjective, and more"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "explanation": null,
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-064",
+      "question": "Which of the following NLU techniques is often used to understand metaphors?",
+      "selected_option": null,
+      "correct_option": "D",
+      "correct_option_text": "SRL",
+      "options": [
+        "SVM",
+        "OCR",
+        "CNN",
+        "SRL"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "explanation": null,
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-048",
+      "question": "Which of the following functionalities is provided by the Sentic Parser?",
+      "selected_option": null,
+      "correct_option": "A",
+      "correct_option_text": "Concept extraction",
+      "options": [
+        "Concept extraction",
+        "Shallow parsing",
+        "Text summarization",
+        "NER"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "explanation": null,
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-037",
+      "question": "Which machine learning model can be used for WSD?",
+      "selected_option": null,
+      "correct_option": "B",
+      "correct_option_text": "RNN",
+      "options": [
+        "Decision trees",
+        "RNN",
+        "CNN",
+        "K-Means clustering"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "explanation": null,
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-093",
+      "question": "In knowledge representation, what is a frame?",
+      "selected_option": null,
+      "correct_option": "B",
+      "correct_option_text": "A collection of attributes and values describing an entity",
+      "options": [
+        "A technique for visualizing data",
+        "A collection of attributes and values describing an entity",
+        "A network of connected nodes representing knowledge",
+        "A data structure for dividing a program into separate parts"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "explanation": null,
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-058",
+      "question": "What is the difference between ambivalence and neutrality in sentiment analysis?",
+      "selected_option": null,
+      "correct_option": "C",
+      "correct_option_text": "Ambivalence means mixed feelings, while neutrality means no sentiment",
+      "options": [
+        "Ambivalence means strong feelings, while neutrality means extreme emotions",
+        "Ambivalence means no sentiment, while neutrality means mixed feelings",
+        "Ambivalence means mixed feelings, while neutrality means no sentiment",
+        "Ambivalence and neutrality are the same"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "explanation": null,
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-083",
+      "question": "What is polarity detection in the context of NLU?",
+      "selected_option": null,
+      "correct_option": "A",
+      "correct_option_text": "Determining whether the sentiment expressed in text is positive or negative",
+      "options": [
+        "Determining whether the sentiment expressed in text is positive or negative",
+        "Translating text into another language",
+        "Identifying the grammatical structure of a sentence",
+        "Splitting text into sentences"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "explanation": null,
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-075",
+      "question": "Which approach can assess user personality based on social media activity?",
+      "selected_option": null,
+      "correct_option": "B",
+      "correct_option_text": "Personality prediction models",
+      "options": [
+        "Sentiment analysis",
+        "Personality prediction models",
+        "NER",
+        "Text classification"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "explanation": null,
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-030",
+      "question": "Which library provides the WordNetLemmatizer in Python?",
+      "selected_option": null,
+      "correct_option": "C",
+      "correct_option_text": "NLTK",
+      "options": [
+        "Scikit-learn",
+        "SpaCy",
+        "NLTK",
+        "Gensim"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "explanation": null,
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-054",
+      "question": "What is the primary challenge in anaphora resolution?",
+      "selected_option": null,
+      "correct_option": "A",
+      "correct_option_text": "Correctly identifying the antecedent of an anaphoric expression",
+      "options": [
+        "Correctly identifying the antecedent of an anaphoric expression",
+        "Translating text into different dialects",
+        "Extracting key ideas or topics from a text",
+        "Identifying sentence boundaries"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "explanation": null,
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-049",
+      "question": "Which NLU task is closely related to concept extraction?",
+      "selected_option": null,
+      "correct_option": "B",
+      "correct_option_text": "NER",
+      "options": [
+        "Machine translation",
+        "NER",
+        "Text summarization",
+        "POS tagging"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "explanation": null,
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-026",
+      "question": "What challenge does text chunking address in NLU?",
+      "selected_option": null,
+      "correct_option": "B",
+      "correct_option_text": "Grouping words into meaningful phrases for further analysis",
+      "options": [
+        "Assigning correct POS tags to each word",
+        "Grouping words into meaningful phrases for further analysis",
+        "Translating text into different dialects",
+        "Detecting the boundaries between sentences"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "explanation": null,
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-036",
+      "question": "What is the definition of \u2018cool' language?",
+      "selected_option": null,
+      "correct_option": "C",
+      "correct_option_text": "A language where understanding a sentence relies more on context",
+      "options": [
+        "A language that uses a lot of stopwords and redundancies",
+        "A language where a lot of microtext is used",
+        "A language where understanding a sentence relies more on context",
+        "A language with very difficult sentence structure"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "explanation": null,
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-039",
+      "question": "In WSD, what role does context play?",
+      "selected_option": null,
+      "correct_option": "D",
+      "correct_option_text": "It determines the correct meaning of a word",
+      "options": [
+        "It is used to identify named entities",
+        "It helps in translating text",
+        "It helps in text summarization",
+        "It determines the correct meaning of a word"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "explanation": null,
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-062",
+      "question": "In metaphor understanding, what is the \"source domain\"?",
+      "selected_option": null,
+      "correct_option": "D",
+      "correct_option_text": "The figurative context that gives meaning to the metaphor",
+      "options": [
+        "The grammatical structure of the metaphor",
+        "The literal meaning of the metaphorical phrase",
+        "The direct comparison using \"like\" or \"as\"",
+        "The figurative context that gives meaning to the metaphor"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "explanation": null,
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-001",
+      "question": "What is the difference between NLP and NLU?",
+      "selected_option": null,
+      "correct_option": "A",
+      "correct_option_text": "NLP handles language interaction, NLU focuses on understanding meaning",
+      "options": [
+        "NLP handles language interaction, NLU focuses on understanding meaning",
+        "NLU includes more theoretical tasks, NLP is more focused on applications",
+        "NLP focuses on text meaning, NLU on processing and generating text",
+        "NLP and NLU are synonymous and can be used interchangeably"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "explanation": null,
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-020",
+      "question": "Which resource is commonly used for training and evaluating POS taggers?",
+      "selected_option": null,
+      "correct_option": "C",
+      "correct_option_text": "Penn Treebank",
+      "options": [
+        "LIWC",
+        "OntoNote",
+        "Penn Treebank",
+        "LexNorm"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "explanation": null,
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-034",
+      "question": "Which of the following is a common approach to WSD?",
+      "selected_option": null,
+      "correct_option": "B",
+      "correct_option_text": "Supervised machine learning",
+      "options": [
+        "Text summarization",
+        "Supervised machine learning",
+        "NER",
+        "Bag of words"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "explanation": null,
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-061",
+      "question": "Which of the following techniques can be used for metaphor detection in NLU?",
+      "selected_option": null,
+      "correct_option": "D",
+      "correct_option_text": "WSD",
+      "options": [
+        "NER",
+        "Topic modeling",
+        "POS tagging",
+        "WSD"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "explanation": null,
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-063",
+      "question": "Which of the following is a common challenge in metaphor understanding?",
+      "selected_option": null,
+      "correct_option": "A",
+      "correct_option_text": "Detecting metaphors that are culturally specific",
+      "options": [
+        "Detecting metaphors that are culturally specific",
+        "Identifying sentence boundaries",
+        "Translating text into different languages",
+        "Summarizing long texts"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "explanation": null,
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-012",
+      "question": "Which one of these is a popular dataset for microtext normalization?",
+      "selected_option": null,
+      "correct_option": "B",
+      "correct_option_text": "LexNorm",
+      "options": [
+        "SenticNet",
+        "LexNorm",
+        "WordNet",
+        "LIWC"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "explanation": null,
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-027",
+      "question": "Which of the following is the lemma of the word \"running\"?",
+      "selected_option": null,
+      "correct_option": "B",
+      "correct_option_text": "run",
+      "options": [
+        "ran",
+        "run",
+        "runs",
+        "runner"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "explanation": null,
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-053",
+      "question": "Which NLU task is most closely related to anaphora resolution?",
+      "selected_option": null,
+      "correct_option": "A",
+      "correct_option_text": "NER",
+      "options": [
+        "NER",
+        "Text summarization",
+        "POS tagging",
+        "Sentiment analysis"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "explanation": null,
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-015",
+      "question": "Which of the following is a common dataset used for evaluating SBD systems?",
+      "selected_option": null,
+      "correct_option": "B",
+      "correct_option_text": "Penn Treebank",
+      "options": [
+        "SIGMORPHON",
+        "Penn Treebank",
+        "OntoNote",
+        "MIMIC"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "explanation": null,
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-082",
+      "question": "What is the role of Sentic GCN in sentiment analysis?",
+      "selected_option": null,
+      "correct_option": "B",
+      "correct_option_text": "It uses graph-based models to extract aspects from text",
+      "options": [
+        "It classifies sentiment using word sequences",
+        "It uses graph-based models to extract aspects from text",
+        "It analyzes images to extract sentiment",
+        "It applies rule-based approaches to sentiment lexicons"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "explanation": null,
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-033",
+      "question": "Which of the following words has the same lemma and root form in English?",
+      "selected_option": null,
+      "correct_option": "B",
+      "correct_option_text": "Quick",
+      "options": [
+        "Cats",
+        "Quick",
+        "Running",
+        "Happier"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "explanation": null,
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-045",
+      "question": "Which resource is commonly used for training and evaluating NER systems?",
+      "selected_option": null,
+      "correct_option": "C",
+      "correct_option_text": "CoNLL-2003 dataset",
+      "options": [
+        "OntoNote",
+        "Penn Treebank",
+        "CoNLL-2003 dataset",
+        "SenticNet"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "explanation": null,
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-005",
+      "question": "What is a topology-aware similarity measure?",
+      "selected_option": null,
+      "correct_option": "C",
+      "correct_option_text": "A method that considers the geometric arrangement of data points",
+      "options": [
+        "A technique for comparing the colors in images",
+        "A measure that assesses the similarity of time series based on frequency",
+        "A method that considers the geometric arrangement of data points",
+        "An approach for evaluating the textual similarity between documents"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "explanation": null,
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-038",
+      "question": "Which of the following is a challenge in WSD?",
+      "selected_option": null,
+      "correct_option": "C",
+      "correct_option_text": "Handling the ambiguity of words with multiple meanings",
+      "options": [
+        "Summarizing long texts",
+        "Translating text to multiple languages",
+        "Handling the ambiguity of words with multiple meanings",
+        "Identifying the boundaries between sentences"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "explanation": null,
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-080",
+      "question": "Which of the following algorithms can be used for aspect extraction?",
+      "selected_option": null,
+      "correct_option": "A",
+      "correct_option_text": "LDA",
+      "options": [
+        "LDA",
+        "K-means clustering",
+        "PCA",
+        "Decision trees"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "explanation": null,
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    }
+  ]
+}

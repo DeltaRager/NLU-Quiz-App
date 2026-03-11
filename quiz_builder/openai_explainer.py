@@ -18,6 +18,7 @@ def explain_mcq(mcq: MCQ, user_choice: str | None = None, model: str | None = No
     )
     source_hint = mcq.source_pdf or mcq.topic or "unknown source"
     user_line = f"Student selected: {user_choice}" if user_choice else "Student selected: none"
+    original_explanation = mcq.explanation or "No built-in explanation was provided."
 
     response = client.responses.create(
         model=model or os.getenv("OPENAI_EXPLAIN_MODEL", "gpt-4o-mini"),
@@ -26,8 +27,10 @@ def explain_mcq(mcq: MCQ, user_choice: str | None = None, model: str | None = No
                 "role": "system",
                 "content": (
                     "You explain quiz answers clearly and briefly. "
-                    "Explain why the correct answer is right, then briefly contrast the distractors. "
-                    "Keep the explanation concise and focused on the concept being tested."
+                    "Summarize the built-in explanation into a short study note. "
+                    "Use the student's selected option to point out the misunderstanding if they were wrong. "
+                    "Keep it under 150 words, ideally around 100 words. "
+                    "Do not restate every option unless needed."
                 ),
             },
             {
@@ -38,10 +41,10 @@ def explain_mcq(mcq: MCQ, user_choice: str | None = None, model: str | None = No
                     f"Correct answer: {mcq.correct_option}. {correct_text}\n"
                     f"{user_line}\n"
                     f"Topic/source: {source_hint}\n"
+                    f"Given explanation: {original_explanation}\n"
                     f"Grounding snippet: {mcq.source_snippet or 'Not available'}"
                 ),
             },
         ],
     )
     return response.output_text.strip()
-

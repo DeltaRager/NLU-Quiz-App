@@ -11,6 +11,7 @@ class MCQ:
     options: list[str]
     correct_option: str
     source: str
+    explanation: str | None = None
     topic: str | None = None
     needs_review: bool = False
     notes: str = ""
@@ -39,4 +40,3 @@ class TextChunk:
     @classmethod
     def from_dict(cls, data: dict[str, Any]) -> "TextChunk":
         return cls(**data)
-

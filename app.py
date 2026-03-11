@@ -157,6 +157,16 @@ def inject_styles() -> None:
           font-size: 0.9rem;
           margin: 0.2rem 0;
         }
+        .review-explanation {
+          border: 1px solid rgba(148, 163, 184, 0.18);
+          border-radius: 12px;
+          background: rgba(15, 23, 42, 0.6);
+          padding: 0.6rem 0.75rem;
+          margin: 0.55rem 0 0.4rem 0;
+          color: var(--text);
+          line-height: 1.4;
+          font-size: 0.9rem;
+        }
         .hidden-submit {
           display: none;
         }
@@ -247,6 +257,11 @@ def load_saved_session_results() -> list[dict]:
         loaded.append(data)
     loaded.sort(key=lambda item: item.get("completed_at_iso") or item.get("started_at_iso") or "", reverse=True)
     return loaded
+
+
+@st.cache_data(show_spinner=False)
+def load_dataset_by_id() -> dict[str, MCQ]:
+    return {question.id: question for question in load_dataset()}
 
 
 def sanitize_option_text(text: str) -> str:
@@ -414,6 +429,7 @@ def finish_session(session: dict) -> None:
                 "options": question.options,
                 "is_correct": is_correct,
                 "source": question.source,
+                "explanation": question.explanation,
                 "topic": question.topic,
                 "source_pdf": question.source_pdf,
                 "source_snippet": question.source_snippet,
@@ -543,7 +559,7 @@ def render_quiz_timer(remaining_seconds: int, current_index: int, question_count
 
         function clickAutoSubmit() {{
           const buttons = [...parentWindow.document.querySelectorAll("button")];
-          const button = buttons.find((item) => item.innerText.trim() === "Auto Submit Session" && !item.disabled);
+          const button = buttons.find((item) => item.innerText.trim() === "Timer Submit" && !item.disabled);
           if (button) {{
             button.click();
           }}
@@ -626,7 +642,7 @@ def render_quiz(session: dict) -> None:
         finish_session(session)
         st.rerun()
     st.markdown("<div class='hidden-submit'>", unsafe_allow_html=True)
-    if st.button("Auto Submit Session", key="auto_submit_session"):
+    if st.button("Timer Submit", key="auto_submit_session"):
         finish_session(session)
         st.rerun()
     st.markdown("</div>", unsafe_allow_html=True)
@@ -636,7 +652,7 @@ def render_quiz(session: dict) -> None:
 def load_review_result(session: dict) -> dict:
     cached = session.get("review_result")
     if cached:
-        return cached
+        return enrich_review_result(cached)
 
     result_path = Path(session["result_path"]) if session.get("result_path") else None
     if not result_path or not result_path.exists():
@@ -644,8 +660,20 @@ def load_review_result(session: dict) -> dict:
         st.stop()
 
     loaded = json.loads(result_path.read_text(encoding="utf-8"))
-    session["review_result"] = loaded
-    return loaded
+    enriched = enrich_review_result(loaded)
+    session["review_result"] = enriched
+    return enriched
+
+
+def enrich_review_result(result_data: dict) -> dict:
+    dataset_by_id = load_dataset_by_id()
+    for answer in result_data.get("answers", []):
+        if answer.get("explanation"):
+            continue
+        question = dataset_by_id.get(answer.get("id", ""))
+        if question:
+            answer["explanation"] = question.explanation
+    return result_data
 
 
 def render_review_shortcuts() -> None:
@@ -653,31 +681,34 @@ def render_review_shortcuts() -> None:
         """
         <script>
         const parentWindow = window.parent;
-        if (!parentWindow.__nluReviewKeysBound) {
-          parentWindow.__nluReviewKeysBound = true;
-          parentWindow.addEventListener("keydown", (event) => {
-            const target = event.target;
-            const tagName = target && target.tagName ? target.tagName.toUpperCase() : "";
-            const isEditable = tagName === "INPUT" || tagName === "TEXTAREA" || target?.isContentEditable;
-            if (isEditable) return;
-
-            const buttons = [...parentWindow.document.querySelectorAll("button")];
-            if (event.key === "ArrowLeft") {
-              const button = buttons.find((item) => item.innerText.trim() === "Previous Review" && !item.disabled);
-              if (button) {
-                event.preventDefault();
-                button.click();
-              }
-            }
-            if (event.key === "ArrowRight") {
-              const button = buttons.find((item) => item.innerText.trim() === "Next Review" && !item.disabled);
-              if (button) {
-                event.preventDefault();
-                button.click();
-              }
-            }
-          });
+        if (parentWindow.__nluReviewKeyHandler) {
+          parentWindow.removeEventListener("keydown", parentWindow.__nluReviewKeyHandler, true);
         }
+        parentWindow.__nluReviewKeyHandler = (event) => {
+          const target = event.target;
+          const tagName = target && target.tagName ? target.tagName.toUpperCase() : "";
+          const isEditable = tagName === "INPUT" || tagName === "TEXTAREA" || tagName === "SELECT" || target?.isContentEditable;
+          if (isEditable) return;
+
+          const buttons = [...parentWindow.document.querySelectorAll("button")];
+          if (event.key === "ArrowLeft") {
+            const button = buttons.find((item) => item.innerText.trim() === "Previous Review" && !item.disabled);
+            if (button) {
+              event.preventDefault();
+              event.stopPropagation();
+              button.click();
+            }
+          }
+          if (event.key === "ArrowRight") {
+            const button = buttons.find((item) => item.innerText.trim() === "Next Review" && !item.disabled);
+            if (button) {
+              event.preventDefault();
+              event.stopPropagation();
+              button.click();
+            }
+          }
+        };
+        parentWindow.addEventListener("keydown", parentWindow.__nluReviewKeyHandler, true);
         </script>
         """,
         height=0,
@@ -711,6 +742,7 @@ def render_review(session: dict) -> None:
         options=row["options"],
         correct_option=row["correct_option"],
         source=row["source"],
+        explanation=row.get("explanation"),
         topic=row["topic"],
         source_pdf=row["source_pdf"],
         source_snippet=row["source_snippet"],
@@ -736,6 +768,12 @@ def render_review(session: dict) -> None:
         f"<div class='review-answer-line'>Correct answer: {row['correct_option']}</div>",
         unsafe_allow_html=True,
     )
+    if not row["is_correct"] and row.get("explanation"):
+        st.markdown("#### Why This Is Correct")
+        st.markdown(
+            f"<div class='review-explanation'>{row['explanation']}</div>",
+            unsafe_allow_html=True,
+        )
 
     nav_col1, nav_col2, nav_col3 = st.columns(3)
     if nav_col1.button("Previous Review", disabled=current_index == 0):
@@ -749,7 +787,7 @@ def render_review(session: dict) -> None:
         st.rerun()
 
     explanation_key = row["id"]
-    if st.button("Explain This Question", key=f"review_explain_{row['id']}"):
+    if st.button("Explain with AI ✦", key=f"review_explain_{row['id']}"):
         with st.spinner("Generating explanation..."):
             try:
                 session["review_explanations"][explanation_key] = explain_mcq(

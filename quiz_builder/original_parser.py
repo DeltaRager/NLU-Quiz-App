@@ -57,32 +57,50 @@ def _parse_question_page(number: int, page: str) -> ParsedQuestion:
     )
 
 
-def _extract_correct_option_from_answer_page(number: int, answer_page: str, parsed: ParsedQuestion) -> tuple[str, list[str]]:
+def _extract_correct_option_from_answer_page(number: int, answer_page: str, parsed: ParsedQuestion) -> tuple[str, str | None, list[str]]:
     lines = _clean_page_lines(answer_page)
     notes: list[str] = []
     body = lines[1:] if lines and ANSWER_PAGE_RE.match(lines[0]) else lines
     answer_text = ""
-    for line in body:
+    correct_option = ""
+    explanation_lines: list[str] = []
+    explanation_started = False
+    idx = 0
+    while idx < len(body):
+        line = body[idx]
+        if line.lower().startswith("explanation"):
+            explanation_started = True
+            idx += 1
+            continue
+        if explanation_started:
+            explanation_lines.append(line.lstrip("! ").strip())
+            idx += 1
+            continue
         opt_match = OPTION_RE.match(line)
         if opt_match:
-            answer_text = normalize_inline(opt_match.group(2))
+            answer_text, idx = _join_answer_option_lines(body, idx)
             if parsed.options.get(opt_match.group(1).upper()) == answer_text:
-                return opt_match.group(1).upper(), notes
+                correct_option = opt_match.group(1).upper()
+                continue
             break
+        idx += 1
     if answer_text:
+        if correct_option:
+            return correct_option, _normalize_explanation(explanation_lines), notes
         for label, option_text in parsed.options.items():
             if normalize_inline(option_text) == answer_text:
-                return label, notes
+                return label, _normalize_explanation(explanation_lines), notes
         notes.append(f"answer text did not match options for Q{number}")
     else:
         notes.append(f"missing answer option on A{number}")
-    return "", notes
+    return "", _normalize_explanation(explanation_lines), notes
 
 
 def parse_quiz_pages(pages: list[str]) -> tuple[list[MCQ], dict[str, int]]:
     page_map = {idx + 1: page for idx, page in enumerate(pages)}
     parsed_pages: dict[int, ParsedQuestion] = {}
     answers: dict[int, str] = {}
+    explanations: dict[int, str | None] = {}
     review_count = 0
 
     for page in pages:
@@ -104,9 +122,10 @@ def parse_quiz_pages(pages: list[str]) -> tuple[list[MCQ], dict[str, int]]:
             parsed = parsed_pages.get(number)
             if not parsed:
                 continue
-            correct_option, notes = _extract_correct_option_from_answer_page(number, page, parsed)
+            correct_option, explanation, notes = _extract_correct_option_from_answer_page(number, page, parsed)
             parsed.notes.extend(notes)
             answers[number] = correct_option
+            explanations[number] = explanation
 
     mcqs: list[MCQ] = []
     for number in sorted(parsed_pages):
@@ -124,6 +143,7 @@ def parse_quiz_pages(pages: list[str]) -> tuple[list[MCQ], dict[str, int]]:
                 options=[parsed.options.get(label, "") for label in ["A", "B", "C", "D"]],
                 correct_option=correct_option,
                 source="original",
+                explanation=explanations.get(number),
                 topic=None,
                 needs_review=needs_review,
                 notes="; ".join(dict.fromkeys(parsed.notes)),
@@ -150,6 +170,32 @@ def _join_option_lines(lines: list[str], start_idx: int) -> tuple[str, int]:
         collected.append(line)
         idx += 1
     return normalize_inline(" ".join(collected)), idx
+
+
+def _join_answer_option_lines(lines: list[str], start_idx: int) -> tuple[str, int]:
+    _label, text = OPTION_RE.match(lines[start_idx]).groups()  # type: ignore[union-attr]
+    collected = [text.strip()]
+    idx = start_idx + 1
+    while idx < len(lines):
+        line = lines[idx].strip()
+        if not line:
+            idx += 1
+            continue
+        if (
+            OPTION_RE.match(line)
+            or QUESTION_SENTINEL_RE.match(line)
+            or ANSWER_LINE_RE.match(line)
+            or line.lower().startswith("explanation")
+        ):
+            break
+        collected.append(line)
+        idx += 1
+    return normalize_inline(" ".join(collected)), idx
+
+
+def _normalize_explanation(lines: list[str]) -> str | None:
+    text = normalize_inline(" ".join(line for line in lines if line.strip()))
+    return text or None
 
 
 def parse_answer_key(text: str) -> dict[int, str]:
@@ -238,6 +284,7 @@ def parse_quiz_text(pages: list[str]) -> tuple[list[MCQ], dict[str, int]]:
                 options=[parsed.options.get(label, "") for label in ["A", "B", "C", "D"]],
                 correct_option=answers.get(parsed.number, ""),
                 source="original",
+                explanation=None,
                 topic=None,
                 needs_review=needs_review,
                 notes="; ".join(parsed.notes),

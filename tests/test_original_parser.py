@@ -64,6 +64,7 @@ def test_parse_quiz_text_handles_q_page_a_page_format():
     assert stats["answers_found"] == 1
     assert mcqs[0].question == "What is the difference between NLP and NLU?"
     assert mcqs[0].correct_option == "D"
+    assert mcqs[0].explanation == "NLP is broad."
     assert mcqs[0].needs_review is False
 
 
