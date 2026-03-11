@@ -1,0 +1,7 @@
+{
+  "requested_count": 400,
+  "generated_count": 400,
+  "seed": 42,
+  "provider": "openai",
+  "model": "gpt-5-nano-2025-08-07"
+}

@@ -1,112 +1,94 @@
-# Offline NLU Quiz Builder
+# NLU Quiz App
 
-This project extracts lesson content from the provided NLU PDFs, generates an offline MCQ bank from that material, and serves the final bank through a local Streamlit quiz app.
+This repository contains a local Streamlit quiz app for NLU exam practice, plus the supporting Python modules and helper scripts used to prepare the quiz data.
 
-## Prerequisites
+The live app currently uses only the original questions extracted from `documents/nlu-quiz.pdf`.
+
+## What is in this repo
+
+- `app.py`: Streamlit app
+- `quiz_builder/`: shared app and data utilities
+- `scripts/`: extraction, generation, and dataset build helpers
+- `quiz_data/`: local JSON datasets and saved session results
+- `tests/`: parser and data-pipeline tests
+
+The raw PDF folder `documents/` is intentionally not tracked by git.
+
+## App features
+
+- 30-question timed sessions
+- 18-minute countdown
+- Random sampling from the original quiz bank
+- Local JSON result saving
+- Post-quiz review mode
+- Optional OpenAI-powered explanations in review
+
+## Requirements
 
 - Python 3.10+
-- `tesseract-ocr` installed and available on `PATH`
+- Dependencies in `requirements.txt`
 
-## Install
+Install:
 
 ```bash
 python3 -m pip install -r requirements.txt
 ```
 
-## Pipeline
+## Optional OpenAI setup
 
-1. Extract lecture/tutorial content:
+Question explanations in review mode use the OpenAI API.
 
-```bash
-python3 scripts/extract_course_text.py
-```
-
-This writes:
-
-- `quiz_data/source_chunks.json`
-- `quiz_data/source_chunks_stats.json`
-
-2. Generate questions from the lesson PDFs.
-
-OpenAI-backed generation:
-
-```bash
-python3 scripts/generate_mcqs_offline.py
-```
-
-This uses the OpenAI Responses API by default. You can either export the API key:
-
-```bash
-export OPENAI_API_KEY=your_key_here
-```
-
-or place it in a project-root `.env` file:
+Create a project-root `.env` file:
 
 ```bash
 OPENAI_API_KEY=your_key_here
 ```
 
-You can also force the older heuristic generator:
+Without an API key, the quiz app still works, but explanation requests will fail.
 
-```bash
-python3 scripts/generate_mcqs_offline.py --provider offline
-```
-
-This writes:
-
-- `quiz_data/generated_draft.json`
-- `quiz_data/generated_stats.json`
-
-By default this targets 400 generated questions using `gpt-4o-mini`.
-
-3. Review and correct `quiz_data/generated_draft.json`, then save the cleaned file as `quiz_data/generated_reviewed.json`.
-
-4. Build the final dataset:
-
-```bash
-python3 scripts/build_quiz_dataset.py
-```
-
-This writes:
-
-- `quiz_data/questions_combined.json`
-- `quiz_data/questions_shuffled.json`
-
-## Run the quiz app
+## Run the app
 
 ```bash
 streamlit run app.py
 ```
 
-## Data format
+## Expected local data
 
-The canonical question format is JSON with one object per MCQ:
+The app loads the first available originals dataset from:
+
+- `quiz_data/originals_reviewed.json`
+- `quiz_data/originals_extracted.json`
+
+Session results are written to:
+
+- `quiz_data/session_results/`
+
+## Question format
+
+Each question record uses this JSON shape:
 
 ```json
 {
-  "id": "gen-001",
-  "question": "Which statement best describes symbol grounding?",
+  "id": "orig-001",
+  "question": "How does lemmatization differ from stemming?",
   "options": [
-    "It links symbols to perceptual or experiential meaning.",
-    "It replaces tokenization with stemming.",
-    "It is a synonym for topic modeling.",
-    "It only applies to dependency parsing."
+    "It only applies to named entities.",
+    "It uses a dictionary to find the base form, while stemming strips affixes with rules.",
+    "It always produces longer tokens than stemming.",
+    "It is the same process as chunking."
   ],
-  "correct_option": "A",
-  "source": "generated",
-  "topic": "Symbol grounding",
+  "correct_option": "B",
+  "source": "original",
+  "topic": null,
   "needs_review": false,
   "notes": "",
-  "source_pdf": "nlu-tutorials.pdf",
-  "source_snippet": "..."
+  "source_pdf": "nlu-quiz.pdf",
+  "source_snippet": null
 }
 ```
 
-`source_pdf` and `source_snippet` trace each generated question back to the lesson material.
+## Notes
 
-## Tests
-
-```bash
-python3 -m pytest
-```
-# NLU-Quiz-App
+- Timed quiz sessions use only original quiz questions.
+- Explanations are disabled during the live quiz and available only in review mode.
+- Helper scripts are included in the repo, but they are not required to run the Streamlit app once the JSON dataset already exists.

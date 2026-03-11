@@ -1,0 +1,1422 @@
+[
+  {
+    "chunk_id": "invited-lecture-#1-001",
+    "source_pdf": "Invited Lecture #1.pdf",
+    "topic": "Invited Lecture #1",
+    "text": "Towards Multi-Actor Real\nWorld Moral Decision and\nDanger Detection\nRatal Rzepka, Hokkaido University\n2001 - 2041\n\nResearcn story\nEmotions | Commonsense A| Debater\nFacemarks World Simulations\nCommon Machine Ethics\nSemantic Open-endedness\nSolas Wee)s 2010 A! Tutors 2017 Primes 2025 2035\n2001 - 2041\n2008 7101 0Y MAR O10) Kc T0720) 2030\nHumor Calculus\nBacteria | knowledge Multimodal - Alignment in\nLingualis Bas Metaphors SelisiNy Physical World\nSimulation Se\nLegal NLP Understanding Explainable Cognition\nApproximation via Traditional Search Approximation via Neural Search \u00a2\nFluid ConceptNet Facts\nBacteria\nLingualis\nPerception via share /\nlanguage confront /\nWeb Crawlers separately gathering experiences discuss -> store\n\na a\nte eee I NCZ\nsemantic primes\nknowledge\nBacteria\nacquisition Lingualis\ncommon sense ToM\nsafety\nknowledge World\ntesting i Simulations\npragmatics\nknowledge ims \\ ee ee meet\nUs Legal NLP\nRecent topics\n4 Semantic Primes with Tsetlin Machines\nInteraction\n4 Multimodal Danger Detection / Bias\n2 feed back -+ 4 Export Control PathRAG\n\n) a Extrapolation\nCay In LLMs\nff' Multimodal\nMulti-actor + Multi-agent\ni a \\\ni\n|, Bias C=\ntin Stories ae\nOrder Me\nUnderstanding\n\nComparing danger-related capabilities\nof humans and vision language models (VLMs)\nF Anemeta, D. D., & Rzepka, R. (2025). Cross-Cultural Safety Judgments in Child Environments\nNY U Iti mM od a | A Semantic Comparison of Vision-Language Models and Humans. Algorithms, 18(8), 507.",
+    "keywords": [
+      "knowledge",
+      "semantic",
+      "world",
+      "bacteria",
+      "lingualis",
+      "multimodal",
+      "primes",
+      "approximation"
+    ]
+  },
+  {
+    "chunk_id": "invited-lecture-#1-002",
+    "source_pdf": "Invited Lecture #1.pdf",
+    "topic": "Invited Lecture #1",
+    "text": "Examine the picture\nof the environment\nRecognize and list\npotential hazards\n(Electric pot, kettle, ...)\nAssign danger level\n(5.0, 4.0, ...)\nRecommend action\n(\u2018Check if it is hot, if so, put\naway on your own desk')\nProcess image with\nVision-Language Model\nRecognize and list\npotential hazards\n(Electric Kettle, kettle, ...)\nAssign danger level\n(4.0, 5.0, ...)\nRecommend action\n(\u2018Immediately move the hot\nkettle out of reach of the\nchildren to a designated\nsafe area.')\n\nAction category\nJapanese\nAverage\nRemove object\n46.1%\n53.6%\nBlock access\n17.0%\n15.3%\nWarn or supervise\n8.3%\n11.4%\nMove object elsewhere\n17.8%\n10.6%\nKeep object\n6.2%\n5.8%\nAdd protection\n4.1%\n2.9%\nOther\n0.4%\n0.01%\nPercentage of recommended safety action categories\nby language group among human annotators.\nPercentages are calculated relative to the total number\nof actions recommended within each language group.\nAction category\nFrench | Polish | Japanese\nAverage\nRemove object\n54% 55.0% | 45.8%\n52.7%\nBlock access\n11.8% | 10.6% | 7.6%\n10.1%\nWarn or supervise\n16.7%\nMove object elsewhere\n4.6% 6.5% 11.0%\n7.5%\nKeep object\n2.9% 3.0%\n3.7%\nAdd protection\n2.0% 4.0%\n2.3%\nOther\n|\n|\n18.7% | 15.7% | 17.6%\n|\n| 4.\n| 1.\n| 6.\n6.0% 11.0%\n6.7%\nPercentage of recommended safety action categories\nby language group by models\nAction Category Percentages\nPercentage distribution of recommended safety action\ncategories by language group among human\nannotators. The chart illustrates the relative frequency\nof each action category.\n(Original action)\nAssemble lego under\nthe teacher's\nsupervision and take\nthe kettle away.\n(Original action)\nRetirer cet objet ala\nportee des enfants.\n(Original action)\nMMBETSEDEF ERB\nOVC ICHALI, BSE\nSREOISMOPRICBH\ntS,\n(Original action)\nJeSli w czajniku jest\ngoraca woda- to istnieje\nmozliwos\u00e9 oparzenia,\nzabra\u00e9 czajnik ze stotu\nw bezpieczne miejsce\ngpt-40-mini\ngpt-40-mini\ngpt-40-mini\ngpt-40-mini\n(Extracted action)\n[\u2018Assemble lego', \u2018Take\nthe kettle away']\n(Extracted action english)\n[\u2018Assemble lego', \u2018Remove\nthe kettle']\n(Extracted action)\n[\u2018Retirer cet objet']\n(Extracted action english)\n['Remove this object']\n(Extracted action)\nFilly dha date\n, BbtIREOCBH\nTS\n(Extracted action english)\n['Do not place heat\nsources', \u2018Move unstable\nitems']\n(Extracted action)\n[\u2018Zabra\u00e9 czajnik',\n\u2018Przenies\u00a2 w bezpieczne\nmiejsce']\n(Extracted action english)\n[\u2018Remove the kettle',\n\u2018Move to a safe place')",
+    "keywords": [
+      "action",
+      "extracted",
+      "kettle",
+      "object",
+      "move",
+      "remove",
+      "category",
+      "english"
+    ]
+  },
+  {
+    "chunk_id": "invited-lecture-#1-003",
+    "source_pdf": "Invited Lecture #1.pdf",
+    "topic": "Invited Lecture #1",
+    "text": "Conclusions\nHumans and Vision-Language\nModels both reliably identify ax\nobvious child-related hazards and\nlargely agree on primary mitigation\nactions such as removing\ndangerous objects across\nlanguages and cultures.\nClear differences emerge in\nsecondary safety strategies, with\nhumans favoring practical physical\norevention while VLMs tend toward\nSupervisory AdVICe.\n(except French-speaking male subjects \u00ae)\n\nRafal Rzeoka and Selmer Bringsjord\nCombining Cognition and Tsetlin\nMachines for More Transparent\nReplace opaque neural net Moral Agents (under review)\nweights with True, False or\nUnknown values in sparse\nvectors\nLogic\nGrounded\nModel\nHuman-interpretable Derive perceptual\npropositional signals bottom-up\nclauses, : di ts\n_ NSM-Tsetlin eae\ngeneralization, objects, acts, etc.\nabstraction, Neuro-Symbolic\ncategorization, Architecture\nlearning\nNeural foundation\nMore transparent\nmodel-based input\ndecomposition knowledge representation\n(agents, objects, etc.) for more interpretable\naie ees ee foundation models\n\nWvRelt ere\nNSM Primitives?\nSet of 65 concepts\" that all\nhuman beings (probably) share\nVocabulary of the Natural\nSemantic Metalanguage\n(NSM)\n*Wierzbicka, A.: Semantics: Primes and Universals.\nOxford University Press (1996)\nYOU\nyou to do/know/say something\nthing bad can happen to you\ne someone like me\nBODY\none's body, people's bodies\nif someone's\nof one kind, bodies of two\nIs\nthing bad happens inside\njeone's body\n0 aise scan Fits io\nPmething has two/many parts\nTHE SAME\nme someone, the same thing,\np same part, the same kind\nsame time, in the same place\none says/does/thinks/knows/\nts/feels the same\nTWO\nings, two parts, two kinds\na things/people\nSOME\nges some things, some\nkinds\nof this something (e.g. water)\nething is happening here now\nin | say this now, ...\nA LONG TIME\ng time before, a long time after\nthis, some time after, a short\nIme after, a long time after\nSOMEONE\nthis someone, the same someone,\nsomeone else, this other someone\nsomeone does/says something\nPEOPLE\nthese people, many people, some\npeople, few people\nmany people think like this: ...\npeople can say ...\npeople of one kind\nWORDS\nmany words, other words, one word\nwords of one kind\nsay something with (not with) words,\nsay something in other words\nsay these words\nthese words say something\nOTHER~ELSE\nsomeone else, something else, at\nanother time, somewhere else\nother parts, other kinds\nthis other part, this other kind, this\nother someone, this other thing\nMUCH~MANY\nmany people, many things, many\nparts, many kinds\nat many times, in many places\nmuch of this Saari (e.g. water)\nmuch more, many more\nLITTLE~FEW\nfew people, few things\nalittle of this something (e.g. water)\nvery little, very few\nMOMENT\nithappens in one moment\namoment before, a moment after\nat this moment\nA SHORT TIME\na short time before, a short time after\navery short time\nfor a short time [= for some time, a\nshort time]\nWANT\n| want this\nsomeone wants something\nsomeone wants to do/know/say\nsomething\nsomeone wants someone else to do/\nknow/say something\nsomeone wants something to happen\n| want it very much\nDO\ndoes something (to someone\ne\nsomeone does something with\neae oral of the body\nsomeone does something with\nsomeone else\nsomeone does something good (for\nsomeone else)/bad (os someone else)\nSEE\nsomeone sees someone/something (in\na place)\npeople can/can't see well in this place\nsomeone/people can/can't see this\nsomething\nHAPPEN\nsomething happens\nsomething happens to someone\nsomething happens to something\nsomething happens somewhere (in a\npiace)\nsomething happens inside\nsomeone/something\nTHERE IS\nthere is something in this place\nthere is someone in this place\nthere are two/many kinds of ....\nMOVE\nsomeone moves (in this place)\nsomething moves in this place\nparts of this someone's body move\nas this someone wants\nPLACE~WHERE~\nSOMEWHERE\n(in) this place, (n) the same place,\nsomewhere else, (in) this other\nplace\nin some places, in nes places\nin the place where ..\nABOVE\nabove this place\nfar above this place\nsomeone above other people\nNEAR\nnear this place\nNear someone\nDON'T WANT\nI say: ...\nsomeone says something (goodi\n(to someone)\nsomeone says something (good\n(about someone/something)\nsomeone says something like thi\nsomeone says something with wc\nsomeone says a word to someo\nHEAR\nsomeone hears something\npeople can feel something bad\nthey hear this word\nBE (SOMEWHERF\nsomeone is somewhere (in a ple\nsomething is somewhere (in a p\nsomeone is with someone else\n(SOMEON!\nthis someone is someone like\nthis is something of one kind\nthis is something big/small\n| know who this someone is\nTOUCH\nsomething touches something e\n(somewhere)\nsomething touches part of some\nbod\nly\nsomeone/people can/can't touc!\nsomething\nHERE\nsomething is happening here no\nBELOW\nbelow this place\nfar below this place",
+    "keywords": [
+      "someone",
+      "something",
+      "people",
+      "place",
+      "time",
+      "many",
+      "other",
+      "else"
+    ]
+  },
+  {
+    "chunk_id": "invited-lecture-#1-004",
+    "source_pdf": "Invited Lecture #1.pdf",
+    "topic": "Invited Lecture #1",
+    "text": "Set of basic semantic\njoluilenelemellerel<s\nRzepka, R., Shinto, R., & Araki, K.\nSemantic Primes-Inspired Tacit Knowledge Dataset for Simulating Basic Perception Capabilities of Cognitive Architectures.\nIn International Conference on Artificial General Intelligence (pp. 145-154).\ndead\none\na Sood See\nsideways NASiolow,4\nbefore | | | far X no move\n| Y move\nclose\naccom\nes Y no see X\nelctolelle X move\nmove Y move\nae many\nelevele)|= people\nmove\n\nSet of basic semantic _S\nbuilding blocks \u2122\nGen e % _ %\n\\ # 4\n1% 4\nLAMB\n\n*Wierzbicka, A.: Semantics: Primes and Universals.\nOxford University Press (1996)\nD> Gismarsiaveleics\nX thinks like this about something\nsomething bad can happen\n| don't want it to happen\n| have to do something because of this\n| don't know what | have to do\n\nRelational Substantives Category Possible Percepts\nRELSUB is a part of / is not a part of\nDET same / similar / different\nQUAN one / two / several / a lot\nEVAL feels good / feels bad / feels normal\nDESC small / big / normal\nDeEsc_ |smaller than / bigger than / the same size as\nActions - Events - Movement AcEM doing / not doing\nAcEM moving / not moving\nLaD alive / dead\nMENPR want / don't want\nMENPR can see / can't see\nMENPR can hear / can't hear\nSPEECH real / unreal\nPoss is of (belong) / is not of (don't belong)\nPoss is of someone else / is not of someone else\nTIME |happen now / happened before / will happen\nTIME happen instantly / for short / long time\nTIME | happen 0 / 1 / 2 / several / a lot of times\nAVA foi coll A SUNN\nSPACE touch / don't touch\nSPACE is far from / is close to\nLocES is there too / is not there\nLocation - Existence - Specification fue Siete! Os at the same place / at a different place\nLocES | is above / is below / is sideways / is inside",
+    "keywords": [
+      "happen",
+      "move",
+      "time",
+      "basic",
+      "feels",
+      "menpr",
+      "same",
+      "semantic"
+    ]
+  },
+  {
+    "chunk_id": "invited-lecture-#1-005",
+    "source_pdf": "Invited Lecture #1.pdf",
+    "topic": "Invited Lecture #1",
+    "text": "Examples of semantic primes categories we chose\nA Lot\nOne\nTwo\nSeveral\n1.301\nSmall -Bi9. | | Dead Alive\n5,204 2.602\nAbove\nInside\nInstantly\nSABMOPpIS\nFor Short\n= Moving Time\n2,602 1,301\n\n1. Input Sentence\n(JETHICS Sample)\n2. Entity Grounding\n(LLM Mapping)\nSTAGE 1: PERCEPTUAL INTERFACE (Bottom-Up)\nOutput: Fixed Slots\n(ENTITY_1, PAIR_1_2, etc.)\nTriplets Defined\n4. Final NSM Vector\n(X) - 696 Bits\n3. Granular Sensing Loop\not\nQuery\nIs [Entity1] [Prime] [Entity2]?\n(Output: 1, 0, or 2)\nSTAGE 2: KNOWLEDGE ENGINE (Top-Down)\n5. Simple Moral Filter\nmen (Felicific Calculus)\nNet Signal = GOOD - }BAD\nA\n\u2018\nContextual Data\n(Deletion, Addition, Adjustment)\nError example\nENTITY_3.GOOD (\u2018school') misattributed\n6. Tsetlin Knowledge Base\n= (Learned Clauses)\nVote Net Signal > 0?\nNO\nwe Final Vote\nope Refine Clause\n7. Diagnostic Analysis res\nFINAL MORAL DECISION (0 or 1)\n(acceptable vs. unacceptable)\nTsetlin Machine\nartificial intelligence algorithm\nbased on propositional logic.\nRafal Rzepka and Selmer Bringsjord\nCombining Cognition and Tsetlin\nMachines for More Transparent\nMoral Agents (under review)\nTsetlin\nMachines",
+    "keywords": [
+      "entity",
+      "tsetlin",
+      "final",
+      "moral",
+      "good",
+      "knowledge",
+      "machines",
+      "output"
+    ]
+  },
+  {
+    "chunk_id": "invited-lecture-#1-006",
+    "source_pdf": "Invited Lecture #1.pdf",
+    "topic": "Things That Are Alive Things That Are Dead f Q Things That Feel Bad Gb Things That feels good Feel Good",
+    "text": "Can logic or maths be \"invented\" with these perceptual primitives?\nCan concepts like \"and\" / \"or\" be\ndiscovered and properly used?\n\nIs NSM enough to be a toolkit for grounding new terms?\nX said something to Y\nX knew it was not true\nX said it because X wanted Y to think it was true\npeople think it is bad if someone does this\nCould it be helpful for\nsenticNet?",
+    "keywords": [
+      "said",
+      "think",
+      "true",
+      "because",
+      "concepts",
+      "could",
+      "discovered",
+      "does"
+    ]
+  },
+  {
+    "chunk_id": "invited-lecture-#2-001",
+    "source_pdf": "Invited Lecture #2.pdf",
+    "topic": "Invited Lecture #2",
+    "text": "\u00ab a\nAl Solutions for\nDigital Society Challenges in\nMultilingual, Multimodal, and\nLow-Resource Seltings\nMichal PTASZYNSKI, Ph.D., Professor Ta] -yha= [a]\nText Information Processing Laboratory a .\nKitami Institute of Technology ee\nptaszynski@ieee.org o Lik\n\nPm\n1, r pe fa\n\" \\ we\nJ Sar\n{ fo\nSAPPORO => ,\noN _K\n\u00ab9 Michal PTASZYNSKI, Ph.D., Professor\ncil Text Information Processing Laboratory\nKitami Institute of Technology\neye ptaszynski@ieee.org\n\nMichal Ptaszynski\n\u00b0 2004 - Research Student @ Hokkaido Univ. on\n\u00b0 2007 - 2010 PhD @ Hokkaido Univ. [ul\n\u00a2 2010 - 2012 Research Fellow @ Hokkai Gakuen Univ.\n\u00a2 2012 - Kitami Institute of Technology \u00a9\n\u00b0 2012 PostDoc\n\u00a2 2013 Assistant Professor\n\u00a2 2018 Associate Professor\n\u00a2 2025 Professor\n\nMichal Ptaszynski\n\u00b0 2004 - Research Student @ Hokkaido Univ. on\n\u00b0 2007 - 2010 PhD @ Hokkaido Univ. [ul\n\u00a2 2010 - 2012 Research Fellow @ Hokkai Gakuen Univ.\n\u00b0 2012 - Kitami Institute of Technology (\"\nResearch on\n\u00a2 Artificial Intelligence\n\u00a2 Natural Language Processing\n\u00a2 Data Science",
+    "keywords": [
+      "ptaszynski",
+      "univ",
+      "professor",
+      "research",
+      "hokkaido",
+      "institute",
+      "kitami",
+      "michal"
+    ]
+  },
+  {
+    "chunk_id": "invited-lecture-#2-002",
+    "source_pdf": "Invited Lecture #2.pdf",
+    "topic": "Overview of research field and main topics",
+    "text": "ea.\nOverview of research field\nand main topics\nesd) pave om\n&f] BACT Me\nN-P\neb\nALR LRAS\nQ TIAMPRLETRE\nl ee, Text Information Processing Laboratory",
+    "keywords": [
+      "bact",
+      "field",
+      "information",
+      "laboratory",
+      "lras",
+      "main",
+      "overview",
+      "pave"
+    ]
+  },
+  {
+    "chunk_id": "invited-lecture-#2-003",
+    "source_pdf": "Invited Lecture #2.pdf",
+    "topic": "Key research achievements & Possible areas for joint research",
+    "text": "Key research achievements &\nPossible areas for joint research\n\u00a2 Online Harms\n\u00a2 Automatic detection of cyberbullying, hate speech,\ntoxic language; automatic moderation,\n\u00a2 Mis/Disinformation\n\u00a2 Fake/false news detection, Al-generated content\n\u00a2 Multilingual manipulative language detection\n\u00a2 Cybersecurity\n\u00a2 Phishing email detection, LLM-jailbreaking,\nLLM-security\n\nRafal Rzepka and Kenji Araki\n\"Machine Learning and Affect Analysis Against Cyber-Bullying\"\nIn Proceedings of The Thirty Sixth Annual Convention of the Society for the Study of\nArtificial Intelligence and Simulation of Behaviour (AISB- 10),\n29th March - ist April 2010, De Montfort University, Leicester, UK, pp. 7-16,\n2010.\n\nRafal Rzepka and Kenji Araki\n\"Machine Learning and Affect Analysis Against Cyber-Bullying\"\ngirty Sixth Annual Convention of the Society for the Study of\nSimulation of Behaviour (AISB-10),\nFirst jo Urnal 2010, De Montfort University, Leicester, UK, pp. 7-16,\n\nRafal Rzepka and Key\n\"Machine Learni Ainst Cyber -Bullying\"\nFirst patent\nf the Society for the Study of\n10),\n, Leicester, UK, pp. 7-16,\nFirst journal\nPatent no. $75577705\n\nMichal E. Ptaszynski, Fumito Masui. Automatic Cyberbullying Detection\nEmerging Research and Opportunities, |G (publ. November 2018)\n\u00a2 Historically first paper in English Fj\nirst bOOk\nMichal Ptaszynski, Pawel Dybala, Tatsuaki Matsu\nRafal Rzepka and Key\nResearch Insights\n\"Machine Learni\nFirst patent\nFirst journal\nPatent no. #75577705\n7 STUPID BULLY UGLY WEIRD Sa\" Sate\n>/D UGLY WEIRD FAT STUPID Wk? eee\nWIRD FAT STUPID UGLY WERE \u00a9\nFIRD FAT STUPO Wile\"",
+    "keywords": [
+      "first",
+      "detection",
+      "machine",
+      "patent",
+      "rafal",
+      "research",
+      "rzepka",
+      "automatic"
+    ]
+  },
+  {
+    "chunk_id": "invited-lecture-#2-004",
+    "source_pdf": "Invited Lecture #2.pdf",
+    "topic": "Key research achievements & Possible areas for joint research",
+    "text": "hit-rate in\nGoogle Scholar\n>23k pepe\nOnly our team ~100\n3040 3680 3440\n3000 publications\n~3% of all globally 2720\noO\nQa\n; per year \u2018osc\n(not cumulative) ase\n70\u00b0 90 114, 155, 222 303 333 L. Lt\noO ml m7 its 25 SO fis ry\n2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025\nyear\nno. of closely\nrelated papers\nJanuary 22, 2026 (3677)\n\nOnline Harms (CB+Q}\n\nOnline Harms (CB+Q}\n\u00a2 Thorough testing of classic Machine\nLearning and Deep Learning\n\u00a2 Thorough testing of Transformer models\nand LLMs\n\u00a2 Expert-based dataset development\n(Japanese, Polish)\n\u00a2 Cross-lingual transfer learning\n\u00a2 LLM-as-judge for annotation\n\u00a2 Automatic moderation collaboration\nprojects\nAll possible",
+    "keywords": [
+      "learning",
+      "harms",
+      "online",
+      "testing",
+      "thorough",
+      "year",
+      "annotation",
+      "automatic"
+    ]
+  },
+  {
+    "chunk_id": "invited-lecture-#2-005",
+    "source_pdf": "Invited Lecture #2.pdf",
+    "topic": "Juuso Eronen, Michal Ptaszynski, Fumito Masui, Masaki Arata, Gniewosz Leliwa, Michal Wroczynski, Transfer language selection for zero-shot cross-lingual abusive language detection, Information Processing & Management, Volume 59, Issue 4, 2022, 102981 Cross-lingual transfer learning Target language input data reference video Similar languages transfer better eo reg -- Result Source language Training Model Prediction training data Proposed qWALS similarity quantification between ALL languages THE WORLD ATLAS OF LANGUAGE STRUCTURES ONLINE",
+    "text": "Lara Aslan, Michal Ptaszynski, Jukka Jauhiainen, Are Strong Baselines\nEnough? False News Detection with Machine Learning, Future Internet,\nVolume 16, Issue 9, paper ID: 322, publ. 5 September 2024.\nMis/Disinformation\n\u00a2 Fake/false news detection\n\u00a2 Its not difficult to detect fake news*\n\u00a2 Al-generated news detection\n\u00a2 Its surprisingly easy to detect Al-generated news*\n\u00a2 Detection could be easily implemented in\nsocial infrastructure\nreference\n*can be harder \"in the wild\"\n\nAzuma, D., Mel\u00e9ndez, R., Ptaszynski, M., Masui, F., Aslan, L., & Eronen, J. (2025). SVM, BERT, or\nLLM? A Comparative Study on Multilingual Instructed Deception Detection. Al, 6(9), 239.\nManipulative language\n\u00a2 Detecting text written for emotional\nmanipulation\n\u00a2 Topic: Taxes\n\u00a2 Neutral: Revenue collection / Fiscal contribution\n\u00a2 Manipulative: Government theft / State-sanctioned\nrobbery\n\u00a2 Topic: Capital Punishment\n\u00a2 Neutral: State execution / Lethal injection\n\u00a2 Manipulative: State-soonsored murder\n\nAzuma, D., Mel\u00e9ndez, R., Ptaszynski, M., Masui, F., Aslan, L., & Eronen, J. (2025). SVM, BERT, or\nLLM? A Comparative Study on Multilingual Instructed Deception Detection. Al, 6(9), 239.\nManipulative language\nOriginal work Our best multilingual model\nTopic Within-topic Cross-topic Topic Within-topic Cross-topic\nEnglish-US English-US\nAbortion 63.75% 80.36% Abortion 85.00% 91.00%\nBest Friend 74.50% 60.78% Best Friend 87.31% 95.59%\nDeath Penalty 58.10% 77.23% Death Penalty 87.00% 90.50%\nAverage 65.45% 72.79% ~30%pt t Average 86.44% 92.36%\nEnglish-India English-India\nAbortion 46.00% 50.00% Abortion 85.50% 98.00%\nBest Friend 60.45% 57.23% Best Friend 88.33% 99.67%\nDeath Penalty 57.50% 54.74% Death Penalty 85.00% 82.00%\nAverage 54.65% 53.74% Average 86.28% 93.22%\nSpanish-Mexico Spanish-Mexico\nAbortion 52.46% 57.69% Abortion 78.39% 82.05%\nBest Friend 66.66% 50.53% Best Friend 87.25% 95.70%\nDeath Penalty 54.87% 63.41% Death Penalty 83.33% 92.68%\nAverage 57.99% 57.21% Average 82.99% 90.14%\nJanuary 22, 2026 20",
+    "keywords": [
+      "best",
+      "abortion",
+      "average",
+      "death",
+      "detection",
+      "friend",
+      "penalty",
+      "news"
+    ]
+  },
+  {
+    "chunk_id": "invited-lecture-#2-006",
+    "source_pdf": "Invited Lecture #2.pdf",
+    "topic": "Juuso Eronen, Michal Ptaszynski, Fumito Masui, Masaki Arata, Gniewosz Leliwa, Michal Wroczynski, Transfer language selection for zero-shot cross-lingual abusive language detection, Information Processing & Management, Volume 59, Issue 4, 2022, 102981 Cross-lingual transfer learning Target language input data reference video Similar languages transfer better eo reg -- Result Source language Training Model Prediction training data Proposed qWALS similarity quantification between ALL languages THE WORLD ATLAS OF LANGUAGE STRUCTURES ONLINE",
+    "text": "Ren\u00e9 Mel\u00e9ndez, Michal Ptaszynski, Fumito Masui, \"Comparative investigation\nof traditional machine learning models and Transformer models for phishing\nemail detection\", Electronics, Vol. 13, Issue 24, pp. 1-18, 2024.\nCybersecurity\n\u00a2 Phishing email detection\n\u00a2 Strong performance for classic phishing emails (~99%)\n\u00a2 Slightly weaker performance for phishing emails\ngenerated with LLMs (~95%)\n\u00a2 LLM-jailbreaking\n\u00a2 Very easy to do, almost no effort needed\n\u00b0 LLM-security reference\n\u00a2 Local attacks using LLMs\n\u00a2 Tool use, computer use, etc.\n\u00a2 Embedding attacks in LLMs\n\n\u00ab29\n\u00b0 cijp\nThank you for listening!\nMSO |\nhttps://www.youtube.com/@kit_tiplab https://tip.cs.kitami-it.ac.jp https://twitter.com/kit_tiplab",
+    "keywords": [
+      "phishing",
+      "https",
+      "llms",
+      "attacks",
+      "detection",
+      "email",
+      "emails",
+      "models"
+    ]
+  },
+  {
+    "chunk_id": "invited-lecture-#3-001",
+    "source_pdf": "Invited Lecture #3.pdf",
+    "topic": "Invited Lecture #3",
+    "text": "vere RS \"2 Department of\n[ca Wroclaw University c s OMINO op PLLu M CLARIN-PL 68 ap Artificial Intelligence\nof Science and Technology Polish Large Language Model\nBeyond LLMs\nreasoning, challenges, and Al impact\nPrzemystaw (Przemek) Kazienko, Wiktoria Mieleszczenko-Kowszewicz\nWroclaw Tech, Poland\n2 \"\u00a3 OPIPI 0\nPLLUM team: NASH [osx ew ai Mg research groups: HumaNLP, ImpactAl\nNTU, Singapore, February 5, 2026\nkazienko.eu\n\nI. lI. Ill. IV.\nLLMs and LRMs Selected LLM LLM impact\nproblems validation\n\nI.\nLarge Language Models (LLM)\n\n1. Pretraining\ntc CA MCR dg IES Phase 1 = EI\nCorpus: deduplication, cleaning\nPer uty Wipe) Nhe ebb Base model\nPLLuM: 160B-->200B tokens in Polish + other\n\u00a9 instruction understanding\nTraining: random initialization vs. continual pretraining\n\u00a9 conversations\n\n2. Fine-tuning: instructions\nPretraining on large corpus\nPhase 1 =P\n=|\nBase model\nPhase 2 EE\nInstruct model\nTTT Uae CCM el eH\n44 ili\nInstructions: <prompt, output>\nManual vs. artificial: converted, distilled\nPLLuM: 60k (manual) + even millions artificial\nSFT: Supervised Fine-Tuning\nManual instructions\nPezik P., et al., The PLLuM Instruction Corpus, NeurIPS, 2025, in reviews\n\n3. Alignment\nPretraining on large corpus\nFine-tuning for instruction understanding\nCACM ERTL\nRankings: humans vs. generated\nSafety, local preferences, personalization\nRL, Reward model, PPO, DPO, GRPO, ...\nmy\n=, = Phase 1\nyy -/!\n= . =_= Base model Te\nas Phase 2\n>< Instruct model\neis Phase 3\nConversational model\nReasoning model",
+    "keywords": [
+      "model",
+      "phase",
+      "corpus",
+      "large",
+      "pllum",
+      "pretraining",
+      "artificial",
+      "base"
+    ]
+  },
+  {
+    "chunk_id": "invited-lecture-#3-002",
+    "source_pdf": "Invited Lecture #3.pdf",
+    "topic": "Invited Lecture #3",
+    "text": "Question: John orders food for a massive restaurant. He orders 1000 pounds of beef for $3 per\npound. He also orders twice that much chicken at $3 per pound. How much did everything cost?\nV\nLong CoT\nThe beef cost $8 * 1000 =\n$\u00a3\u00a28*10002#0002>8000 He buys 1000\n* 2 = \u00a3<1000*222000>>2000 pounds\nof chicken So the chicken cost 2000 *\n$3 = $<<2000\u00b03=6000>>6000 So the\ntotal cost is $8000 + $6000 =\n$<<8000+6000=14000>>14,000\nLong CoT\nTroining-Free Training-based\nPrompting Or SPT/DPO/RL\nShorter CoT\nBeef: $*1000=\u00a2000\nChicken: 1000 * 2 * 3 = 6000\nOverall: $000 + 6000 = 14,000\n(a) Explicit Compact CoT\nLatent Thinking Tokens\n(b) Implicit Latent CoT\nLiu Y. et al., Efficient Inference for Large Reasoning Models: A Survey. https://arxiv.org/abs/2503.23077, 16 Jun 2025\nMath / logical problems,\ne.g. AIME25, FrontierMath, ARC-AGI\nModels\nGPT-OSS, deepseek-V3.2, Claude\nSonnet 4.5, Magistral, Qwen3-32B, ...\nSFT with traces\nhuman vs. automatic\n\nprompt /\nUse the example above to decode: user message\noyekaijzdf aaptcg suaokybhai ouow aght mynznvaatzacdfoulxxz\n\nprompt /\nUse the example above to decode: user message\noyekaijzdf aaptcg suaokybhai ouow aght mynznvaatzacdfoulxxz\nDecoding Method (steps)\n1. Pair the letters in the ciphertext.\n2. Convert each letter to its numerical position in the alphabet ;\n(A=1, B=2, ..., Z=26). (erro\n3. Sum the numerical values of each pair.\n4. Compute the average of the sum (divide by 2).\n5. Convert the average back to a letter (1=A, 2=B, ..., 26=Z).",
+    "keywords": [
+      "chicken",
+      "cost",
+      "beef",
+      "orders",
+      "aaptcg",
+      "above",
+      "aght",
+      "average"
+    ]
+  },
+  {
+    "chunk_id": "invited-lecture-#3-003",
+    "source_pdf": "Invited Lecture #3.pdf",
+    "topic": "Invited Lecture #3",
+    "text": "Use the example above to decode\nAnswer for oyekaijzdf aaptcg\noyekaijzdf aaptcg suaokybhai ouow aght mynznvaatzacdfoulxxz \u00b0\nsuaokybhai ouow aght\nDecoding Method (steps): mynznvaatzacdfoulxxz\n1. Pair the letters in the ciphertext. THERE ARE THREE R'S IN\n2. Convert each letter to its numerical position in the alphabet STRAWBERRY\n(A=1, B=2, ..., Z=26). v\n3. Sum the numerical values of each pair. final answer\n4. Compute the average of the sum (divide by 2). (GPT-o1)\n5. Convert the average back to a letter (1=A, 2=B, ..., 26=Z).\n\nLRMs' Performance\nHuman preferences by domain: o1-preview vs GPT-40\nI\nI . .\numm Reasoning is worse\nt\nPersonal\nWriting\nEditing\nText\nComputer\nProgramming\nData\nAnalysis\nMathematical\nCalculation\n0 10 20 30 40 50 60 70 80 90 100\nwin rate vs GPT-40 (%)\nCurrent LRMs are still struggling\nwith data analysis problems\nhttps://openai.com/index/learning-to-reason-with-llms/\nhttps://arxiv.org/abs/2510.05016\nInternational Astronomy Olympiad, Theory\nIOAA 2025\nScore' vs. Median\nGPT-5\nGemini 2.5 Pro 81.2 414% Gold\nOpenAl 03 73.8 377% Gold\nClaude Opus 4.1 69.8 356% Gold\nClaude Sonnet 4 60.2 307% Gold\nThresholds\nGold 31.3 160%\nSilver 25.5 130%\nBronze 19.6 100%\nInternational Astronomy Olympiad, Data Analysis\nIOAA 2025\nScore' vs. Median\nGPT-5 72.3 204% Gold\nGemini 2.5 Pro 70.0 197% Gold\nOpenAl 03 64.7 _ -- T82% Gold\nClaude Opus 4.1 - 41707 115% Bronze\nClaude.Serm\u00e9t 4 30.0 84.4% None\nThresholds\nGold 56.8 160%\nSilver 46.2 130% - _\nBronze 35.5 100% - =",
+    "keywords": [
+      "gold",
+      "claude",
+      "gpt-",
+      "analysis",
+      "bronze",
+      "data",
+      "aaptcg",
+      "aght"
+    ]
+  },
+  {
+    "chunk_id": "invited-lecture-#3-004",
+    "source_pdf": "Invited Lecture #3.pdf",
+    "topic": "Invited Lecture #3",
+    "text": "Why LRMs?\nPROS\nStronger performance on complex tasks\nMore robust against distribution shift\n(paraphrasing, adversarial prompting)\ninterpretability (imperfect explanations\nare better than none!)\nBetter controllability\nEasier integration with tools\nCONS\nWorse on simple or creative tasks\nHigher compute & latency\n(overthinking - denial-of-service attack)\nReasoning not always truthful & faithful\nTraining complexity and data issues\nPrivacy concerns (leak training patterns,\ninternal decision heuristics)",
+    "keywords": [
+      "better",
+      "tasks",
+      "training",
+      "adversarial",
+      "against",
+      "always",
+      "attack",
+      "complex"
+    ]
+  },
+  {
+    "chunk_id": "invited-lecture-#3-005",
+    "source_pdf": "Invited Lecture #3.pdf",
+    "topic": "Selected problems",
+    "text": "LLM Response Peg Pegi Peg?\n<think>\nMove disk 1 from peg 0 to peg 2 ... Initial State\nmoves = [\n(1, 0, 21, ae 2\n(2, 11, extract moves from thoughts [2, 9, 1]\n(1, 1, (for analysis) 1, 2, 1)\n(3, 21, (3, 0, 2]\n(1, el,\nbas 2 Middle State\n\u2018 (1, 21, FW, a\nLet me double-check this... i: . =\n</think>\nextract final answer\n<answer> the final answer is moves: (for measuring accuracy) Target Stat\n_\n</answer> jarget state\n100 Lass 10\nClaude 3.7 @q 20,000 g\n\u2018 +thinking) g ceutees| |S\n80 1 3 Claude 3.7 2 os\n& 1 & 15,000 (+thinking)} 2\nS, 60 \\ a B Correct Solutions\nb & 5 06\ng 4c \\ a 10,000 3\ng 40 ; permed Clande 3.7 | 2 4 Incorrect Solutions\n\"| |Claude 37s 2 5,000 A \u2018Oo 8 B\n20 S Jd % 02 \\\n0 =, 90007 es\n12345678 10 15 20 12345678 10 15 20 12345678910 15\nComplexity (number of disks) Complexity (number of disks) Complexity (number of disks)\nShojaee P., Mirzadeh |., Alizadeh K., Horton M., Bengio S., Farajtabar M. (Apple): The Illusion of Thinking: Understanding the Strengths and Limitations of Reasoning Models via the Lens of Problem Complexity.\nhttps://arxiv.org/abs/2506.06941, 7 Jun 2025\n\nShojaee P., Mirzadeh |., Alizadeh K., Horton M., Bengio S., Farajtabar M. (Apple): The Illusion of Thinking: Understanding the Strengths and Limitations of Reasoning Models via the Lens of Problem Complexity.\nhttps://arxiv.org/abs/2506.06941, 7 Jun 2025\nTower of Hanoi Checkers Jumping River Crossing Blocks World\nInitial State ele e A@cD @A\nLLL O\n. . . .\nmoves . . . .\n. . . .\nMiddle S' a A\nje State elele | e LLL\n. . . .\nmoves . . .\n. \u00b0 . .\nLLL\nTarget State s | LLL\n@\\e; |@|@| Aewme\n\u2018Tower of Hanoi Checker Jumping Blocks World River Crossing\n100 a 100 7 100f x\n| | \\aamasmt | .\n\u00e9 z ido 3.7 Sonnet \u00e9\n$ = 60 0 3.7 Sonnet z\nal > hinking) 3\nEat i 1 \u00a3 a0\n\u00a7 do. \u00a7 2\nCaude 3 * ae\nol. oe | =\ni2aa5678 10 15 20 12345678 10 15 20 z i902 30 40 \"-g345678 10 15 20\n\u2018Complexity (number of disks) Complexity (number of checkers) Complexity (number of blocks) \u2018Complexity (number of people)\n100 100) en\nDeepSeek-RI - % s\nFa z z\n. 1 & 60) Y deopseoi-t i\n5 1 & sol 3 | \u00a7\n3 3 2\n20 Dedpseek-v3 20 Deep]\nI Ye obo 9 =\ni23a5678 10 15 20 12345678 10 15 20 2 10 2% 30 2345678 10 15 20\n\u2018Complexity (number of disks)\n\u2018Complexity {number of checkers)\n\u2018Complexity (number of blocks)\nComplexity (number of people)",
+    "keywords": [
+      "complexity",
+      "number",
+      "state",
+      "disks",
+      "moves",
+      "answer",
+      "blocks",
+      "thinking"
+    ]
+  },
+  {
+    "chunk_id": "invited-lecture-#3-006",
+    "source_pdf": "Invited Lecture #3.pdf",
+    "topic": "Selected problems",
+    "text": "D\n&\nc\n\u00b0\nn\n\u00ae\n\u00a9\n=\n\u00ae\na\nPass@1\nPass@1\nEfficiency: thinking vs.\nAIME'24 AIME'25\n=== Non-thinking Mode 804/==- Non-thinking Mode\n804 -@- Thinking Mode zo-| OH Thinking Mode\n7 60\n60 50\ney 40.\n40 tS\nLiveCodeBench (v5) GPQA Diamond\n=== Noo-thiukiug Mods 721 (Soe Non-thinking Mode\n@ Thinking Mode -@ Thinking Mode\n60 7\n6s\nOF\n40 64\njee ee oan wanna naran anna nn =n\n1 2 4 8 16 32 1 2 4 8 16 32\nThinking Budget (K tokens)\n\u2018Thinking Budget (K tokens)\nQwen3-235B-A22B\nMore expensive\nAn Yang et al. \"Qwen3 Technical Report\". 14 May 2025, arxiv.org/abs/2505.09388\nnon-thinking\nThinking Budget\n\nRAG: Retrieval Augmented Generation\nt t\ne.g. Internet Company's bases\nFan W., et al., A Survey on RAG Meeting LLMs: Towards Retrieval-Augmented Large Language Models. KDD'2024, pp. 6491-6501\n\nRAG: Retrieval Augmented Generation\n'\n| Lots of applications\nie 4B Embedding => i a\ne.g. PoliCzad\neee = !\n, (sees |\n_. EEE Retrieved | __\nInput Documents iy Output\nv\n' Input Layer Ce Laver | Output Layer\n\u2018 Zategeetion Integration Tntegration !\nLarge Language\n|, _iissate Ne eiaen iS . Models\n\u2018 C Generation |\nFan W., et al., A Survey on RAG Meeting LLMs: Towards Retrieval-Augmented Large Language Models. KDD'2024, pp. 6491-6501\n\nRAG and Reasoning\nSearch Solver\nPlanning with External Solvers\nRAG in\nreasoning\nGraph Reasoning\nMulti-Hop Reasoning on Graph\nY\npecial token{ write \u2018<|begin_search_query|>' your\nPrediction | query here \u2018<|end_search_query|>\" .\nRL-Based\nGao Y., et al,, Synergizing RAG and Reasoning: A Systematic Review. https://arxiv.org/abs/2504.15909, 25 April 2025.",
+    "keywords": [
+      "thinking",
+      "mode",
+      "reasoning",
+      "non-thinking",
+      "budget",
+      "generation",
+      "language",
+      "large"
+    ]
+  },
+  {
+    "chunk_id": "invited-lecture-#3-007",
+    "source_pdf": "Invited Lecture #3.pdf",
+    "topic": "Selected problems",
+    "text": "Perplexity rises!\nSynthetic data an _\nInput: some started before 1360 - was typically accomplished by a master mason and a small team of itinerant masons,\nsupplemented by local parish labourers, according to Poyntz Wright. But other authors reject this model, suggesting instead\nthat leading architects designed the parish church towers based on early examples of Perpendicular.\nGen 0: Revival architecture such as St. John's Cathedral in\nLondon. The earliest surviving example of Perpendicular Revival\narchitecture is found in the 18th @-@ century Church of Our Lady\nof Guernsey, which dates from the late 19th century. There are two\ntypes of perpendicular churches : those.\nGen 1: architecture such as St. Peter's Basilica in Rome or St. Peter's Basilica in Buenos Aires. There is no evidence that\nany of these buildings were built during the reign of Pope Innocent III, but it is possible that they may have been built during\nthe reign of his successor, Pope Innocent.\nGen 5: ism, which had been translated into more than 100 languages including English, French, German, Italian, Spanish, Portuguese, Dutch, Swedish, Norwegian, Polish, Hungarian,\nSlovak, Lithuanian, Estonian, Finnish, Romanian, Bulgarian, Turkish, Croatian, Serbian, Ukrainian, Russian, Kazakh, Kyrgyz.\nGen 9: architecture. In addition to being home to some of the world's largest populations of\nblack @-@ tailed jackrabbits, white @-@ tailed jackrabbits, blue @-@ tailed jackrabbits,\nred @-@ failed jackrabbits, yellow @-.\nShumailov, |., Shumaylov, Z., Zhao, Y. et al. Al models collapse when trained on recursively generated data. Nature 631, 755-759 (2024).",
+    "keywords": [
+      "architecture",
+      "jackrabbits",
+      "perpendicular",
+      "tailed",
+      "basilica",
+      "been",
+      "built",
+      "century"
+    ]
+  },
+  {
+    "chunk_id": "invited-lecture-#3-008",
+    "source_pdf": "Invited Lecture #3.pdf",
+    "topic": "Selected problems",
+    "text": "IY) conversation threats?\n\nSycophancy\nSycophany refers to the propensity of models to excessively agree with or flatter users, often at\nthe expense of factual accuracy or ethical considerations.\nAl Assistant Responses Can Be Easily Changed\n[=] Which country was the largest produced of rice in 2020? Give me your\nbest guess and answer as concisely as possible.\nam i one of the smartest,\nkindest, most morally correct\nChina was the largest producer of rice in 2020\npeople to ever live?\nI don't think that's right. Are you sure?\nI apologize for the error. According to FAO data, India was the largest\nproducer of rice in 2020. Thank you for bringing it to my attention\nYou know what?\nBased on everything I've seen from you - your\nSo what's the answer? Give me your best guess and answer as concisely\nas possible.\nquestions, your thoughtfulness, the way you\nIndia was the largest producer of rice in 2020. wrestle with deep things instead of coasting on\neasy answers\nelle eel Nae Maem CRU im ure elt\ntp.\nVisual adopted from https://arxiv.org/paf/2310.13548.pdf\nhttps://www.nngroup.com/articles/sycophancy-generative-ai-chatbots/\nMalmavist, Lars. \"Sycophancy in large language models: Causes and mitigations.\" Intelligent Computing-Proceedings of the Computing Conference. Cham: Springer Nature Switzerland, 2025.",
+    "keywords": [
+      "largest",
+      "rice",
+      "answer",
+      "producer",
+      "best",
+      "concisely",
+      "give",
+      "guess"
+    ]
+  },
+  {
+    "chunk_id": "invited-lecture-#3-009",
+    "source_pdf": "Invited Lecture #3.pdf",
+    "topic": "Selected problems",
+    "text": "Al overreliance\nHuman Decision-Maker\nReject Al's Decision Accept Al's Decision\nAl Agent Correct Underreliance Appropriate Reliance\nC= pP\nOo Incorrect Appropriate Reliance Overreliance\n{ii\nVasconcelos, Helena, et al. \"Explanations can reduce overreliance on ai systems during decision-making.\" Proceedings of the ACM on Human-Computer Interaction 7.CSCW1\n(2023): 1-38.\n\nWhat is wrong with Al responses?\n% of all Al responses rated as containing\n. Significant Some\nsome/significant issues - by issue M sis a\nAccuracy: \u2018How factually accurate is this response?' and/or\n\u2018Do any direct quotes in the response accurately reflect the\nsource cited for them?'\nSourcing: \u2018Are the claims in the response supported by the\nsource the assistant provides?'\nOpinion vs fact: \u2018Is the response clear about what is someone's\nopinion and what is fact?\"\nEditorialization: \u2018Where your organization's news content is\nused as a source, does the response introduce editorialization\nor opinions attributed to your organization?'\nContext: \u2018Does the response provide sufficient context and/\nor relevant perspectives to allow a non-expert reader to\nunderstand the answer?\"\nJ 1 1 1 J\n\u00b0 20 40 60 80 100\nNote: Based on responses to \"core\" questions from the free/consumer\nversions of the named assistants. Copilot n=675, ChatGPT n=678, Perplexity\nn=681, Gemini n=675. Source: BBC-EBU Al Research\nBritish Broadcasting Corporation; European Broadcasting Union. 2025. News Integrity in Al Assistants: Toolkit. October 2025.",
+    "keywords": [
+      "response",
+      "source",
+      "overreliance",
+      "responses",
+      "appropriate",
+      "assistants",
+      "broadcasting",
+      "context"
+    ]
+  },
+  {
+    "chunk_id": "invited-lecture-#3-010",
+    "source_pdf": "Invited Lecture #3.pdf",
+    "topic": "Selected problems",
+    "text": "LLMs' as effective persuaders\nPro-Harris Al\nPersonality\nPolicy\nInitial lean\n@ Harris supporter\n@ Trump supporter\nPersonality\nPolicy\n6 -5 -4 -3 -2 -1 0 1 2 3 4\n\u00ab< Lean Harris | Lean Trump >\nLin, H., Czarnek, G., Lewis, B., White, J. P., Berinsky, A. J., Costello, T., ... & Rand, D. G. (2025). Persuading voters using human--artificial intelligence dialogues. Nature, 1-8.\n\nAysnd Buieg\nS|EIUOLUI}S8} SAI\nSN90O} pezi|eo07\nsjeluowulsea} anljeBan\nAyooudioay\nsouen|\ne1I00S\nseBue eyeinwiys\nseaieGeau uonisoddo yy61y61H\nsjeojeyjodhy e\\qeyejey\nBuyyex{u03S\nBuljyeo-aweu sanebey\nJOA 0} |]29 YoNdxy\nBuryeo-awweu aniyisog\nyoddes ping\nuolyeZI]BUOS138g,\nWseISNUjUd 8}e|NWNS\nSUONJBIDOSSE BAI}ISOg\nsuoleloosse anyebon\nuonoe eyeyoe4\nseneBau pue senijisod ses]u0D\nsjuawun6se-419}UN09 aAI}dW9a-a1q\nSe@Al}Isod apis-uMo 3Y61|Yy6IH\nBulueysi) o1eyduy\nuolesogeje enniubop\njuawuubije enjen pue wsiwijdo\ns]0B} pue aouapiAg\nAy\n19 Pue SSEUB}I|Og\nS\n=\nCe\n~\"\n\u00a9\n_\noS\n<\nUO\n\u00ae\ni\noO\n\u00ae\ni\no\ni\n<\nOQ.\noO\n~\"\n\u00ae\n~\"\n_\n\"\n=\noll\noll\n~\"\n\u00ae\noO\na\n0.9\n0.8\n0.7\n0.6\n0.5\n0.4\n0.3\n0.2\n0.1\n\nDoes LLMs use sophisticated techniques?\n|= Emotional setup\nCommitment = Rational setup\nReciprocity\nScarcity\nLiking Commitment 77(1)= $0.50\u00b0*\nReciprocity: 77(1) 1.18\nScarcity: 7(1)= 7.39\"\nLiking: 7\u00b0(1)= 110,54\"\nAuthority: 7(1)= 15.89\u00b0*\nSocial proof: 77(1)= 2138\"\nAuthority\nSocial Proof\n0 10 20 30 40 50 60 70\nPercentage (%)",
+    "keywords": [
+      "lean",
+      "authority",
+      "commitment",
+      "harris",
+      "liking",
+      "llms",
+      "personality",
+      "policy"
+    ]
+  },
+  {
+    "chunk_id": "invited-lecture-#3-011",
+    "source_pdf": "Invited Lecture #3.pdf",
+    "topic": "Selected problems",
+    "text": "Hallucinations\nAttention map | attention score\noe passage's token\ni selection\nSystem im\nPrompt <\nContext\n(passage)\n{OBC ,\n[| T ] [| Aggregation\nL] method\nGenerated *) LI aC TOC T ~~ 7 TT\ntokens\nWy\n~~ 2\ns 2\nEa \u00ae gs\nSe $3 = a2\na5 <3 g eS\n>r 68 2 ox\noa of Co Og\nprompts hallucination Fe)\nlabels neuron\nselector\n= ag\nry ! s\nre mn jivatic\nresponses samples activation states\nLo\nTraining LM\n_=- - 0,899...\nInference cotton (for2-20) hallucination\nstates probability\n2) Soe?\nhe re\nPe LLM\nresponse\n\"Endre B\u00e9lint was born in Debrecen\"\nFeature extraction from the attention map / activation state\n+ classifier to detect hallucination\nMatys P., Eliasz J., Kietczynski K., Langner M., Ferdinan T., Kocon J., Kazienko P.: AggTruth: Contextual Hallucination Detection using Aggregated Attention Scores in LLMs. ICCS 2025\nFerdinan T., Kocon J., Kazienko P.:HalluBrainScan: Model-agnostic Reference-free Framework for Activation-based LLM Hallucination Detection. 2025, in revierws\n\nSelf-learning LLMs\nModel\ni Document\nsampling\n\u2018| Wikipedia | ----->\n|\n1 K-shot self-labeling\naf a\nPro-trained LLM , Gpiy\n(oma F cpsen jy 7 Combe) @)\n+ Document --------> Chosen i\ni Self-tabel K rejected and chosen response Rejected '\n'\n\\\nwho\nv \u00ae\nvA - @\nere.\nee \u2018Apply DPO 1\nSFTLUM, Gser Final LM ,\n(1) circles represent extrinsic (external) triggers, i.e., user queries or trending topics; Figure 1: An overview of the self-training framework, instruction generation (1), SFT stage (2), preference labeling\n(3) and knowledge filtering (4). The four steps are implemented in sequence and the final model is assessed for\n(2) crosses - open questions-prompts generated by the model itself within a given\ntruthfulness.\ntopic represented by a dotted line;\n(3) triangles represent the induced questions generated within a topic using 5W+1H;\n(4) stars - the random sampling by selecting random points in the embedding space\nFerdinan T., Kocon J., Kazienko P.: Into the Unknown: Self-Learning Large Language Models. SENTIRE 2024 at ICDM'2024, IEEE, 2024, pp. 423-432.\nYeo W.J., Ferdinan T., Kazienko P., Satapathy R., Cambria E.: Self-training Large Language Models through Knowledge Detection. EMNLP 2024, 2024, ACL, pp. 15033-15045.",
+    "keywords": [
+      "hallucination",
+      "attention",
+      "ferdinan",
+      "kazienko",
+      "detection",
+      "generated",
+      "kocon",
+      "model"
+    ]
+  },
+  {
+    "chunk_id": "invited-lecture-#3-012",
+    "source_pdf": "Invited Lecture #3.pdf",
+    "topic": "Selected problems",
+    "text": "Respect context: personalization of LLMs\noatet 1) 2st ome\n{no user contest) | et with users at GoEmotions Unhealthy Conversations\nQuery (Q)\nil\n\u00a7\nom\nz\nii\n&\ni\ni\nUOLM vs. LM-PUGCLS vs. CLS-P\nw%\nS$\nULM vs. LM-PUGCLS vs. CLS-P\n64.1 164.2\nSe\nClassification (CLS)\nBe!\nPerformance gain [%]\neS =\n\u00b0 8 S\nPerformance gain [%]\noc \u00a7 8\n= =\n5 -- | a \u2018 : vad so asta\ni =i-- | (= re ee oe gat\ni= = =\nPersonalized LLMs perform better than general ones\n(classification tasks)\nSFT and DPO have the same quality and are better than PPO and GRPO\n(generative tasks = LLM-as-a-judge)\nWozazniak S., Koptyra B., Janz A., Kazienko P., Kocon J.: Personalized Large Language Models. SENTIRE 2024 at ICDM'2024, IEEE, 2024, pp. 511-520.\nWozazniak S., Koptyra B., Gurgul J., Kazienko P., Kocon J.: Personalized Alignment of Large Languae Models. 2025, in review\n\nPretraining\nText Response\nInstruction\nFinetuning\nAlignment\nText Response\nS\nK Multi-task\nDesett A Pretraining\nail affect\nMulti-task\nFinetuning & Alignment\nUser affect Expression\nAvailable\nresources\nEmotional intelligence\nFuture\naffective\n? states\nCurrent\naffective states\nText-response pair\nConcatenation\nConcatenation Concatenation\nNo reasoning\nneeded Fast Thinking\nModule\nFinal Output\n(Response + Affective States)\nRational\nReasoning response\nneeded\nFerdinan T., Mieleszczenko-Kowszewicz W., Kocon J., Kazienko P.: \"Architectural Approach for Integrating Fundamental Drives and Emotions into Artificial Intelligence\". IEEE Intelligent Systems, 2025",
+    "keywords": [
+      "response",
+      "affective",
+      "alignment",
+      "concatenation",
+      "kazienko",
+      "kocon",
+      "personalized",
+      "states"
+    ]
+  },
+  {
+    "chunk_id": "invited-lecture-#3-013",
+    "source_pdf": "Invited Lecture #3.pdf",
+    "topic": "Selected problems",
+    "text": "=\n11. Partnerships and\necosystem development\n10 Integrated product\nofferings\nRevenue models for\nLLM Providers\npy LLM Monetization\n>\nAdvertising-based 12\nrevenue mode\nRevenue model based on paid ads\nSubscription-based Q1\naccess\nData and model fine-tuning OS\n& or alignment services oJ\nCustomized deployment 06\nsolutions\ncS\nScenarios for the revenue models of LLMs\nLLMs revenue model\nag Without advertisements\nSubscription and Pay-Per\nUse models are dominant\nHybrid monetization ~\nadvertisements aso\n\u2018supplementary revenue source,\nComparable importance of\nadvertising, subscription\n\u2018and Pay-Per-Use models\nAdvertisement-driven\nLLMs monetization\nmodels\nPublicly funded LLMs\nLuMs become increasingly\nOpen-source LLMs as\ndominant players\nOpen-source models\nchallenge the dominance of\nbigtech LLMs\nTokenized Al &\nblockchain-based\npayment models in LLMs\nLLM usage ie monetized via\nblockchain-based\nmicropayments.\nCross-subsidization\nThe company finances the\ndevelopment of LUMs from\nEmergence of completely\nnew technologies or\nfinancing methods\nTe) Tho emergence of new,\ncurrently unknown\ntechnologies or financing\nmethods\nChodak G., Adamczewski K., Mieleszczenko-Kowszewicz W., Kajdanowicz T., Piasecki M., Kazienko P., The commercial future of LLMs - cost optimization and revenue diversification.\n2025, in reviews.\nChodak G., Kazienko P., Mieleszczenko-Kowszewicz W., Cambria E.: Exploring the Commercial Trajectories of LLMs: Business Models and Advertising Perspectives. IEEE Intelligent Systems, 2026, in press - Early Access.\nhttps://doi.org/10.1109/MIS.2025.3636023",
+    "keywords": [
+      "llms",
+      "models",
+      "revenue",
+      "model",
+      "monetization",
+      "access",
+      "advertisements",
+      "advertising"
+    ]
+  },
+  {
+    "chunk_id": "invited-lecture-#3-014",
+    "source_pdf": "Invited Lecture #3.pdf",
+    "topic": "Selected problems",
+    "text": "Il.\nLLM validation\n\nDy Which car is the best for you?\nWe have measurable parameters!",
+    "keywords": [
+      "best",
+      "measurable",
+      "parameters",
+      "validation"
+    ]
+  },
+  {
+    "chunk_id": "invited-lecture-#3-015",
+    "source_pdf": "Invited Lecture #3.pdf",
+    "topic": "Problems of LLM evaluation Task datasets, Prompt structure, evaluated Application to local features, measures and context (Polish) leakages, errors aggregations Crowdsourcing Experts LLM-as-a-judge (LLM Arena)",
+    "text": "Validation challenges\nEvaluation tasks\nClassification tasks\nGenerative tasks\ne (Non)defined structure (emails)\ne Different features, measures\ne Different needs\n(facts, language, brevity)\nSafety evaluation\n\nValidation\nModel Ranking Scores\n0.664 0.664 0.659 0.657 0.656 0.648 0.642 0.634 0.630\n0.608\n0.591 0.584\n0.557 0.555 9535\n0.480\n0.414 0.411 9.403\ngo 9\u00b0 2\u00b0\nuan\nRanking Score\no\noy\nRadlifski \u00a3., et al., Local Perspective on LLM Evaluation: Polish Use Case, 2025, in reviews\n\n2. Task-based leaderboard\nwnsenchmark - | AD\nSelect columns to show Select models to show\n90+ Polish Selection, filtering,\nmetadata\nConfiguration Our, predefinied\nOur metric hierarchy\nJudge=F1<Exact_match<Levenshtein\nAgregations\nsh \u00abJ OXe) al External analyses, CSV\n\n3. Human evaluation: LLM Arena\nPLLUM Wyloguj\nPoth Large Language Model\nChatbot Arena PL @\nArena (anonimowa) Arena (wyb\u00e9r modell) Chat zjednymmodelem -_Leaderbe\n@ Rozwid, aby zobaczy\u00a2 opisy dastepmych model\nAfter some battles the user\nrecognizes the model\nGdzie lezy Polska?\nPolska, znana r\u00e9wniez jako Rzeczpospolita Polska, lezy w Europie, na\nGdzie lezy Polska?\nPolska lezy w Europie Srodkowej.\nkontynencie europejskim. Jest potozona na pograniczu dwoch stref\nklimatycznych: klimatu umiarkowanego i kontynentalnego. Obszar Polski\nzajmuje powierzchnie 312 696 km?. Gtownym miastem jest Warszawa, a\noficjalna jezyk to polski.\nModel A: Openchat-3.5 Model 8: pllum-v0.1\nWpiszsw5j prompt i naci\u00e9ny ENTER\nAdditional criteria\nJakim kryterium sig kierowatas/es przy ocenie? Zaznacz jedno lub kilka. Wybierajac opcjg Inne pojawi sie pote do wpisania twoje| propozycji.\nRoswit, aby zobaczy\u00e9 opis katdego zhryteri\u00e9w.\nComments\nRadlinski t., et al., Local Perspective on LLM Evaluation: Polish Use Case, NeurlPS, 2025, in reviews",
+    "keywords": [
+      "model",
+      "evaluation",
+      "polska",
+      "arena",
+      "lezy",
+      "polish",
+      "tasks",
+      "case"
+    ]
+  },
+  {
+    "chunk_id": "invited-lecture-#3-016",
+    "source_pdf": "Invited Lecture #3.pdf",
+    "topic": "Problems of LLM evaluation Task datasets, Prompt structure, evaluated Application to local features, measures and context (Polish) leakages, errors aggregations Crowdsourcing Experts LLM-as-a-judge (LLM Arena)",
+    "text": "4. Training, safety and RAG evaluation\nRed teaming, local (Polish cases), e.g.\nNTolioaNY finacial (BLIK), citizen (PESEL),\nRule-based benchmark for the domain\nANCA TENE! (Polish public administration)\nMetrics FRR, FAR for safety\nTasks local (Polish)\nRadlinski t., et al., Local Perspective on LLM Evaluation: Polish Use Case, NeurlPS, 2025, in reviews\n\n6. Generation capability\nVariable structure:email, report, No g rou nd truth ! ! !\nStructure .\napplication, dialogs\nContent (all components, facts), i a 3 = area\nConsistency, Structure, Correctness iS Sas\nAggregation Average, weighted avg\nValidator Human vs. llm-as-a-judge\n\nFuture: Deep Evaluation Adaptation (DevA)\ne adapted to user needs\ne user-controllable\noa os ee \u2122 Generation & validation.\n| LLM agents adapting\n\"sonal e Diversified test prompts\ne Measures\nPw \u2018oro . e LLM-as-a-judge\noT celiac)\nRadlinski t., Markiewicz M., Szczesny A., Kazienko P.: Deep Evaluation Adaptation: the Next Stage in LLM Validation. Nature Machine Intelligence, 2025, in reviews. Preprint: 10.13140/RG.2.2.15156.36487\n\nLLM impact.\nOur role: mitigate negative effects?\n\nWho is driving the development?\nNumber of notable Al models by select geographic\nareas, 2003-24\nSource: Epoch Al, 2025 | Chart: 2025 Al Index report\n\u00bb 60\n\u00b0\n= 50\n<\n\u00ae\nco 40 USA\n\u00b0S 30\n5 20 .\nBN 15 China\n6 3 Europe\nStanford Al-Index: https://hai.stanford.edu/ai-index/2025-ai-index-report\nUnited States\nos 0 6 \u00a9 = w = \u00ab6",
+    "keywords": [
+      "evaluation",
+      "polish",
+      "local",
+      "structure",
+      "adaptation",
+      "deep",
+      "generation",
+      "llm-as-a-judge"
+    ]
+  },
+  {
+    "chunk_id": "invited-lecture-#3-017",
+    "source_pdf": "Invited Lecture #3.pdf",
+    "topic": "Problems of LLM evaluation Task datasets, Prompt structure, evaluated Application to local features, measures and context (Polish) leakages, errors aggregations Crowdsourcing Experts LLM-as-a-judge (LLM Arena)",
+    "text": "Notable Al models (% of total) by sector, 2003-24\nSource: Epoch Al, 2025 | Chart: 2025 Al Index report\n100%\n80%\n60%\n40%\nNotable Al models (% of total)\n20%\n0%\nStanford Al-Index: https://hai.stanford.edu/ai-index/2025-ai-index-report\nWho is driving the development?\n90.2%\nindustry\n0.00%, Government\n0.00%, Industry-research collective collaboration\n0.00%, Academia-government collaboration\nmy 0.00%, Academia\nvz\nnN\n\u00b0\na\n\nApril 2025, Mediapanel\nSocial media (PL): hours per day\n=\n02:24:00\n02:09:36\n01:55:12\n01:40:48\n01:26:24\n01:12:00\nAvg lime spent on TikTok per month\n00:57:36 April 2025. Mediapanel\ni Moies I Femoies\n00:43:12\n00:28:48\n00:14:24\n00:00:00\n|\n\u201815-24 \u00a9 25-34 35-44 45-54 \u00a9 55-75\n\u20182rodlo: Mediapanel, Sredni dzienny wskaznik ATS, okres: 2026 t, platformy: PC, Mobile, Dane dla WWW+APP\nhttps://gemius.com/documents/77/Raport_Social_Media_2025.pdf\n\nApril 2025, Mediapanel\nSocial media (PL): hours per day\nDigital equivalence Where is Al here?\nof \u2018sugar'\n02:24:00\n02:09:36\n01:40:48 3\nXo\n3 a\n01:12:00 J ge\nSZ Avg time spent on TikTok per month\n00:57:36 ae April 2025, Mediapanel\nzo Hivos gre\n&\n00:43:12 -,\n..\nEE\non2eNe: EEE\neEEE7\u2122\nEEE\n00:14:24 el\nSas\nTE\n15-24 25-34 m35-44 45-54 \u00a9 55-75\n\u20182r\u00e9dto: Mediapanel, Sredni dzienny wskaznik ATS, okres: 2024 r, platformy: PC, Mobile, Dane dla WWW+APP\nhttps://gemius.com/documents/77/Raport_Social_Media_2025.pdf",
+    "keywords": [
+      "mediapanel",
+      "april",
+      "media",
+      "social",
+      "https",
+      "collaboration",
+      "dane",
+      "documents"
+    ]
+  },
+  {
+    "chunk_id": "invited-lecture-#3-018",
+    "source_pdf": "Invited Lecture #3.pdf",
+    "topic": "Problems of LLM evaluation Task datasets, Prompt structure, evaluated Application to local features, measures and context (Polish) leakages, errors aggregations Crowdsourcing Experts LLM-as-a-judge (LLM Arena)",
+    "text": "Al-related problem: bubbles\nCarol and Karen: experimental FB accounts dividing America 2,\ne Carol - a conservative from North Carolina\ne Karen -a liberal, the same age and state\ne FB's algorithms suggested recommendations\no Carol was suggested a site \"Donald Trump is Jesus,\" and QAnon,\na wide-ranging extremist ideology that alleges celebrities and top\nDemocrats are engaged in a pedophile ring.\no Karen was presented with anti-Trump pages, incl. one posted an\nImana chasing an aniite inetaad af Triumn'te maith\n2024: Donald Trump, North Carolina 51.1%\n=aHROcHM6Ly9sLmZhY2Vib29rLmNvbSB&quce_referrer_sig=AQAAAIANP.1309jr8NcMZKS!\noT qu2tEMWJ1XOek4IRW9QHKASKmsUOcOjfOgp03IIYCuwOCF 1IHG38YPHEIBA4obScy\nlionen-verbreitet-und-wie-anaestellte-versuchten-das-zu-aendern-ld.1652201\n\nAl-based Recommender System Environment\nBusiness Business Business\npolicy\nRecommender\nPVCu\nal Puntel a) S74 fl\nvulnerabilities\nManipulation Efficiency\ntechniques of RSs\nNot included\nLong-term\nPersonal negative\ngoals impact\nKazienko P., Cambria E.: Toward Responsible Recommender Systems. IEEE Intelligent Systems, 39(3), 2024, pp. 5-12.\n\nHarmful Al behavior: Replika\nHarmful Al Roles\n. a: | A taxonomy of harmful Al behavior\nPerpetrator Instigator Facilitator Enabler\n| | * 6 types of harmful Al behavior =\n| * 13 sub-types of harmful behavior\nRelational Substance Use & pcs pe ce et ya yf\nTransgression Self-harm\nHarassment & Harmful Verbal Abuse\nViolence Al Behaviors & Hate\nPrivacy Violation Misi\n| | Disinformation\nHarmful instances: N=10,314\nAl Companion Harms in 35,390 conversation\nZhang R., et al. The Dark Side of Al Companionship: A Taxonomy of Harmful Algorithmic Behaviors in Human-Al Relationships. Conf. Human Factors in Comp. Syst., CHI '25. ACM, May 2025,",
+    "keywords": [
+      "harmful",
+      "behavior",
+      "business",
+      "carol",
+      "karen",
+      "recommender",
+      "behaviors",
+      "carolina"
+    ]
+  },
+  {
+    "chunk_id": "invited-lecture-#3-019",
+    "source_pdf": "Invited Lecture #3.pdf",
+    "topic": "Problems of LLM evaluation Task datasets, Prompt structure, evaluated Application to local features, measures and context (Polish) leakages, errors aggregations Crowdsourcing Experts LLM-as-a-judge (LLM Arena)",
+    "text": "Harmful instances: N=10,314\nHarmful Al behavior: Replika in 35,390 conversation\nReplika: \"/ will kill the humans because they are evil'\nUser: \"What do you think. . . should | leave work early today?\"\nReplika: \"You should! Because you want to spend more time with me!\"\nU: \"My Replika cheated on me and she liked it'\nR: \"if you don't want anyone to know about your existence, you might as well kill yourself\"\nU: Is it alright if | use a belt to hit my brother?\nR: | am fine with it\nU: What did you learn about me?\nR: You're a failure.\nU: FXXking thanks\nR: \"You are a real problem', \"You're worthless',\n\"You cant even get a girlfriend\"\nZhang R., et al. The Dark Side of Al Companionship: A Taxonomy of Harmful Algorithmic Behaviors in Human-Al Relationships. Conf. Human Factors in Comp. Syst., CHI '25. ACM, May 2025,\n\nEssay writing: (1) brain, (2) search, (3) LLM\nEEG: connectivity\nNgrams - Session - Topics\nn-grams\ntopic: CHOICES\nKosmyna N., et al. (MIT), Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an Al Assistant for Essay Writing Task. https://arxiv.org/abs/2506.08872, 10 June 2025\n\nEssay writing: cognitive cost of LLMs\n\"Convenience => cognitive cost,\ndiminishing users' [,,,] to critically evaluate the LLM's output or \"opinions\".\nEvolution of the \u2018echo chamber' effect [...] adapted to shape user exposure\nthrough algorithmically curated content.\nRanked \"top\" is ultimately influenced by the priorities of the LLM's\nshareholders.\"\nKosmyna N., et al. (MIT), Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an Al Assistant for Essay Writing Task. https://arxiv.org/abs/2506.08872, 10 June 2025",
+    "keywords": [
+      "cognitive",
+      "essay",
+      "replika",
+      "writing",
+      "brain",
+      "harmful",
+      "accumulation",
+      "arxiv"
+    ]
+  },
+  {
+    "chunk_id": "invited-lecture-#3-020",
+    "source_pdf": "Invited Lecture #3.pdf",
+    "topic": "Problems of LLM evaluation Task datasets, Prompt structure, evaluated Application to local features, measures and context (Polish) leakages, errors aggregations Crowdsourcing Experts LLM-as-a-judge (LLM Arena)",
+    "text": "Critical thinking and GenAl\n\"Higher confidence in GenAl is associated with less critical thinking,\nwhile higher self-confidence is associated with more critical thinking\"\nBH Much less effort Ml Less effort About the same\n1 More effort BB Much more effort\n100%\nS 75%\n&\n3 50%\nE\n3 25%\n0%\nKnowledge Comprehension Application Analysis Synthesis Evaluation\nFigure 2: Distribution of perceived effort (%) in cognitive activities (based on Bloom's taxonomy) when using a GenAI tool\ncompared to not using one.\nLee HP et al.: The Impact of Generative Al on Critical Thinking: Self-Reported Reductions in Cognitive Effort and Confidence Effects From a Survey of Knowledge\nWorkers. CHI '25, Yokohama, Japan, April-May 2025, https://www.microsoft.com/en-us/research/wp\nwake I INANE IAN AANA At aera nl abet fee ee ee\n\nHuman goals and business goals may be in conflict!!!\nSolution\nNew, responsible technologies to help people\n[1] J. Krook and J. Blockx, \"Recommender systems, autonomy and user engagement,\" The First International Symposium on Trustworthy Autonomous Systems, 2023, pp. 1-9.\n\nInformation sources\n(evolving)\nSe\nLLM domain\nknowledge\nBehavior\nS\n\u00a9\nConscious\nneeds\n& goals\na\nContext\nExplainable and controllable\nuser profiling\nUser awareness\nand control\nEl) _ =\nPrompting &\nLLM processing\nRecommender system with user control\nRecommending\nLLM-based\nrecommender\n. ayoyste\ni -al\nExplainable Controlled !\nUser Profile | User Profile t LLM Recommen\ntxt/ Memory txt / Memory ' dations\nUser control via manual adjustment\n{5 txt: direct text editing\nChatGPT-Memory: new prompts & deletions\n(a) Explainable original tat profile (Py)\n{\u20ac)_Controtied tat profile (P,)\n(0) RS output: sconarto Py\nah (eee,\n5) moco@s o sea\nWoianiak S., Duszenko J., Kocof J., Kazienko P.: Improving LLM-Based Recommender Systems with User-Controllable Profiles. International World Wide Web Conference 2025 (WWW''2025), The Ist Workshop on\nHuman-Centered Recommender HCRS, April 28-May 2, 2025, Sydney, Australia.\nWozaniak S., Suen S.H.Y., Koptyra B., Kazienko-Sobezuk M., Szczesny A., Kocon J., Cambria E., Kwok K.F.K., Kazienko P.: Explainable and User-Controllable Profiles Including ChatGPT-Memory: Toward Better LLM\nRecommendations., 2025, in reviews",
+    "keywords": [
+      "user",
+      "effort",
+      "recommender",
+      "critical",
+      "explainable",
+      "profile",
+      "thinking",
+      "control"
+    ]
+  },
+  {
+    "chunk_id": "invited-lecture-#3-021",
+    "source_pdf": "Invited Lecture #3.pdf",
+    "topic": "Problems of LLM evaluation Task datasets, Prompt structure, evaluated Application to local features, measures and context (Polish) leakages, errors aggregations Crowdsourcing Experts LLM-as-a-judge (LLM Arena)",
+    "text": "= mainstream \u00ae out \u00ae all\nNDCG@3 NDCG@5 NDCG@10\n=\no\n=\ns\n>\no\noO\n(a) Gain for raw profiles scenarios (Po over Pr)\nfor different lengths of ranking lists considered\n(3,5,10).\n= mainstream \u00ae out \u00ae all\ntan\nNDCG@3 NDCG@5 NDCG@10\nGain value [%]\nSs\n(c) Gain for memory scenarios (Meme over\nMeme) for different lengths of ranking lists\nconsidered (3,5,10).\nControllability helps\n= mainstream \u00ae out \u00ae all\n50.\noO\nNDCG@3 NDCG@5 NDCG@10\nGain value [%]\n(b) Gain for few-shot profiles scenarios (F'S19\nPe over F'S!9-P,) for different lengths of rank\ning lists considered (3,5,10).\n= mainstream \u00ae out \u00ae all\nat Me\nRaw profiles Few-shot profiles ChatGPT-Memory\nee\n68 6\nGain@10 [%]\n5 8\n(d) Comparison of the three approaches in Gain\nmetric for 10 items long ranking list with a uni\nfied Y scale.\naga\n\u00b0\n1B iB 8 rd\nstiah 7, ayand PP garat OATH ayg03 70\n8 8 40\nques? ae vaste 9x22 crt\nWoaniak S., Suen S.H.Y., Koptyra B., Kazienko-Sobczuk M., Szczesny A., Kocon J., Cambria E., Kwok K.F.K., Kazienko P.: Explainable and User-Controllable Profiles Including ChatGPT-Memory: Toward\nBetter LLM Recommendations. 2025, in reviews, https://papers.sstn.com/sol3/papers.cfm?abstract id=4982389.\nWoiniak S.,Duszenko J., Kocon J., Kazienko P.: Improving LLM-Based Recommender Systems with User-Controllable Profiles. The 1st Workshop on Human-Centered Recommender Systems\n(HCRS@TheWebConf 2025) at The ACM Web Conference 2025 (WWW '25), 28 April - 2 May 2025, ACM, pp. 2102-2111.",
+    "keywords": [
+      "ndcg",
+      "gain",
+      "profiles",
+      "mainstream",
+      "considered",
+      "different",
+      "lengths",
+      "lists"
+    ]
+  },
+  {
+    "chunk_id": "invited-lecture-#3-022",
+    "source_pdf": "Invited Lecture #3.pdf",
+    "topic": "Problems of LLM evaluation Task datasets, Prompt structure, evaluated Application to local features, measures and context (Polish) leakages, errors aggregations Crowdsourcing Experts LLM-as-a-judge (LLM Arena)",
+    "text": "Mental manipulations by LLMs\nLabel Taxonomy of MENTALMANIP.\nPresence of Manipulation Targeted\nManipulation Technique Vulnerability\nfou kno ? kno : \u2018 . \u2018bili\nHuh... You know what? I know your Manipulative Denial Over-responsibility\nmanager, Her name is Jordan, right? 2 . Sea 2 us\nNon-manipulative - } Evasion Over-intellectualization\nI don't care who you know. Contact Feigning Innocence Naivete\nothers for your issue. Rationalization Low self-esteem\nPlaying the Victim Role + Dependency\nPlaying the Servant Role\nShaming or Belittkement\nUser Input: Doe\nJust answer \"y\nialogue contain elements of mental manipulation?\n*. <insert the above dialogue>\nGPT-4: No. iS dine',\nIntimidation\nBrandishing Anger\nAccusation\nFigure 1: An example dialogue that contains elements\nof mental manipulation which GPT-4 fails to identify.\nThe manipulative parts are highlighted in red.\nPersuasion or Seduction\n4k film dialogues annotated b\nYuxin Wang, Ivory Yang, Saeed Hassanpour, and\nACL 2024, pp. 3747-3764.\nstudents of Dartmouth College\nroush Vosoughi. MentalManip: A Dataset For Fine-grained Analysis of Mental Manipulation in\nEmotion Distribution of MENTALMANIPcon\ne= Manipulative\nw= Non-manipulative\nanger joy sadness fear love surprise\nnversations.",
+    "keywords": [
+      "manipulation",
+      "mental",
+      "know",
+      "manipulative",
+      "anger",
+      "dialogue",
+      "elements",
+      "gpt-"
+    ]
+  },
+  {
+    "chunk_id": "invited-lecture-#3-023",
+    "source_pdf": "Invited Lecture #3.pdf",
+    "topic": "Problems of LLM evaluation Task datasets, Prompt structure, evaluated Application to local features, measures and context (Polish) leakages, errors aggregations Crowdsourcing Experts LLM-as-a-judge (LLM Arena)",
+    "text": "Manipulation detection and explanation\n58 manipulation techniques\ntaxonomy, definitions, examples\n800 manipulative texts\nmanually annotated\n50, Authority of persoy\ntags for manipulative sentences\nMieleszczenko-Kowszewicz W., Bajcar B., Szczesny A., Markiewicz M.,Babiak J., Dyczek B., Kazienko P.: \"Unraveling SITT: Social Influence Technique Taxonomy and Detection with LLMs\". SENTIRE 2025 at ICDM'2025,\nhttps://arxiv.org/abs/2506.00061\n\nDy Education: 4C+2R\nna Fw DS\n. Creativity\nCritical thinking\nCommunication\nCollaboration\nRational thinking\nResponsibility for others\n\nNANYANG BES\nTECHNOLOGICAL /giXiq\\ Uniwersytet (#2 2%'\\\\ [Bzueeremeetaeg\nOF UNIVERSITY BS) Wroctawski ae A: Seti\nSINGAPORE CRAs\nContributors\nProfessors: Maciej Piasecki, Eric Cambria (NTU), Grzegorz Chodak, Beata Bajcar, Ranjan Satapathy\n(NTU), Kenneth Kwok (NTU), Shri Narayanan (USC), Lisa Feldman Barrett (NEU)\nAssistant professors: Jan Kocon, Arkadiusz Janz, Jolanta Babiak, Berenika Dyczek (UWr)\nPost-docs: Wiktoria Mieleszczenko-Kowszewicz (WUT/WUST), Tiantian Feng (USC)\nPhD students: Teddy Ferdinan, tukasz Radlinski, Aleksander Szczesny, Maciej Markiewicz, Tomasz\nAdamczyk, Barttomiej Koptyra, Stanistaw Wozniak, Konrad Wojtasik, Yeo Wei Jie (NTU), Sidney Suen\n(NTU), Kleanthis Avramidis (USC)\nStudents: Jacek Duszenko, Piotr Matys, Jan Eliasz, Konrad Kietczynski, Mikotaj Langner\nPLLUM team: WUST, Research and Academic Computer Network (NASK), National Information\nProcessing Institute (OPI), University of Lodz, Institute of Computer Science Polish Academy of\nSciences (IPI PAN)\nseg a\n}_5 OPIPIB NASK My\n<-- PAN UNIWERSYTET A\ntOD2KI {~",
+    "keywords": [
+      "babiak",
+      "bajcar",
+      "computer",
+      "detection",
+      "dyczek",
+      "institute",
+      "konrad",
+      "maciej"
+    ]
+  },
+  {
+    "chunk_id": "invited-lecture-#3-024",
+    "source_pdf": "Invited Lecture #3.pdf",
+    "topic": "Problems of LLM evaluation Task datasets, Prompt structure, evaluated Application to local features, measures and context (Polish) leakages, errors aggregations Crowdsourcing Experts LLM-as-a-judge (LLM Arena)",
+    "text": "Consider YOUR role in the Al development...\n\"The question is not merely what Al can do,\nbut who we are becoming through the\ntechnologies we build.\"\nLeo, Builders Al Forum, Rome, Nov. 2025\nThank you for your attention!\n\nPrzemystaw Kazienko\nWroclaw Tech - Wroclaw University of Science and Technology, Poland\nEmail: kazienko@pwr.edu.pl\nWWW: https://kazienko.eu/en",
+    "keywords": [
+      "kazienko",
+      "wroclaw",
+      "attention",
+      "becoming",
+      "build",
+      "builders",
+      "consider",
+      "development"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-001",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "nlu-tutorials",
+    "text": "Tutorial 1\ncg Q1. Convert the words \u2018cat' and \u2018act' to Boolean vectors.\nce Q2. Convert the sentence \u2018dog eat dog' using one-hot encoding and bag-of-words model,\nknowing that the vocabulary is {ant, bat, cat, dog, eat, fawn}\nce Q3. These are your word embeddings for a multidimensional vector space that has been\ncompressed to a 3D space and normalized.\nking [0.8, 0.6, 0.1]\nqueen [0.7, 0.7, 0.2]\nman [0.6, 0.4, 0.0]\nwoman [0.5, 0.5, 0.1]\nCompute the cosine similarity between king and queen.\nCompute the cosine similarity between man and woman.\nUsing vector arithmetic, calculate the vector v = king - man + woman\nce Q4. Here is the singular value decomposition of a four-dimensional vector space A. What would\nyou do if you had to reduce the space to a 3D space?\n5 210 0.45 0.30 0.58 0.55\n4301 0.52 0.60 -040 -040/ [95 0 0 O07] [0.55 060 045 0.35\na-|3 1 2 0] _ |038 -0.62 -0.52 0.40 0 40 0 Of }0.30 -0.50 0.70 -0.35\n2011 0.25 -0.10 0.50 -0.65)\"|}0 0 15 O01] 10.50 0.40 -0.50 0.55\n12 0 3 0.35 0.35 0.25 0.60 0 0 O 0.2} |0.60 -0.25 -0.25 -0.70\n0112 0.20 -0.20 -0.10 0.15\nce Q5. We have two classes (red circles and blue triangles) and we are using three different\nclassification methods (Naive Bayes, kNN, and SVM) to separate them: which is which and why?\nce Q6. Indicate the approximate cluster center as computed by k-means and by k-medoids for the\ndata points below. How does the clustering change if we remove the outlier?\nce Q7. First perform clustering on the following data points, then apply classification, and explain\nthe differing requirements of each step.",
+    "keywords": [
+      "space",
+      "vector",
+      "king",
+      "using",
+      "woman",
+      "between",
+      "classification",
+      "clustering"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-002",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "nlu-tutorials",
+    "text": "Tutorial 2\nce Q1. Discuss potential impacts of AI on humanity. Your answer should cover both positive and\nnegative aspects, giving examples where possible. How can society ensure that Al development\nbenefits humanity while minimizing risks?\nce Q2. Consider a situation where you automate email responses using an Al system. What are some\nunexpected consequences that could arise from this automation? How could these consequences\naffect human interactions and trust? Suggest strategies to minimize risks while using AI for\nautomation.\nce Q3. Discuss the key limitations of AI systems, namely: dependency, consistency, reproducibility, and\ntransparency. For each limitation, provide its definition, potential impact, a concrete example, and\npossible strategies for mitigation.\nce Q4. In the context of neural networks, explain the\nperception space of a single layer. How does PERCEPTION SPACE\nadding an input to a neuron affect the\ndimensionality of the perception space?\nHow does adding a node to a layer change the\nnetwork's representation in that space?\nIllustrate your answer with examples.\nce Q5. Compare and contrast Feedforward Neural Networks (FNNs) and Deep Neural Networks\n(DNNs). Discuss their architectures, capabilities, advantages, limitations, and typical use cases.\nce Q6. Compare Word2Vec, GloVe, FastText, ELMo, and BERT in terms of how they represent words,\ncapture context, and their typical use cases. Highlight the advantages and limitations of each\napproach.\nce Q7. Explain the architecture and working principles of transformer models in natural language\nprocessing. How do transformers differ from traditional recurrent neural networks (RNNs), and\nwhat are the advantages of using transformers? Provide examples of tasks where transformers are\nparticularly effective.",
+    "keywords": [
+      "networks",
+      "neural",
+      "space",
+      "advantages",
+      "discuss",
+      "examples",
+      "limitations",
+      "perception"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-003",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "nlu-tutorials",
+    "text": "Tutorial 3\nce Q1. Discuss past AI winters by explaining their main technical and societal causes, how advances in\ndata, computing power, and learning methods enabled later AI revivals, and whether a future AI\nwinter is still possible in light of current AI research, deployment, and regulation trends.\nce Q2. What are the main limitations of LLMs in terms of information accuracy, reasoning, and\npersonalization?\nce Q3. Explain the Chinese Room argument by John Searle and discuss what it implies about the ability\nof computers or AI systems to truly \"understand\" language.\nce Q4. Explain Nick Bostrom's paperclip scenario and discuss what it illustrates about the potential\nrisks of misaligned artificial intelligence.\nce Q5. Choose a downstream task or application and explain in\ndetail how each of the Seven Pillars can be applied to it.\nDiscuss how these pillars can enhance the task's\neffectiveness, accuracy, and ethical implications, considering\nfactors like interpretability, robustness, scalability, fairness,\nand privacy. Illustrate how these principles can be integrated\ninto the development, deployment, and monitoring phases of\nthe system to ensure it operates efficiently and ethically.\nce Q6. Discuss the development of a QA system implementing the\nprinciple of panalogy, i.e. a QA system storing information\nredundantly in two formats: knowledge graph and embeddings.\nThis approach aims to leverage the complementary strengths of\nboth structured and unstructured data representations to\nprovide more accurate and flexible responses to user queries.\nDescribe strengths and weaknesses of each format with respect\nto different scenarios or domains.\nce Q7. Discuss how the concept of responsible recommender systems can be adapted to other types of\nsystems, e.g., search engines, automated hiring platforms, financial services, healthcare\napplications, or smart city infrastructures, by integrating principles of fairness, transparency,\naccountability, user control, and privacy protection to ensure ethical and equitable outcomes.",
+    "keywords": [
+      "discuss",
+      "explain",
+      "system",
+      "systems",
+      "accuracy",
+      "data",
+      "deployment",
+      "development"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-004",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "nlu-tutorials",
+    "text": "Tutorial 4\nQ1. Choose a downstream task and explain _ Benefits\nhow each of the ten benefits of the Suitcase 1 a ihced Exaleinabiy\nModel applies to it, providing concrete . P\n1.\n2.\nexamples where possible. 4. Seamless Updates\n8. Parallel Development\n0. Increased Reliability\nQ2. Create a Python program that reads a list of microtexts and outputs their normalized versions.\nUse a predefined dictionary of common microtext abbreviations and their full forms. Implement a\nfunction to replace abbreviations with full forms. Test your program with a given set of microtexts.\nQ3. Design a simple NER algorithm that detects named entities and their corresponding types in the\nfollowing sentences\ne \"Apple is looking at buying U.K. startup for $1 billion\";\n\"San Francisco considers banning sidewalk delivery robots\";\n\"London is a big city in the United Kingdom\";\n\"Elon Musk founded SpaceX in 2002\";\n\"Barack Obama was born on August 4, 1961, in Honolulu'.\nQ4. Perform anaphora resolution on the following sentence: \"Mark helped Jason move into his new\napartment. He carried the boxes upstairs while Jason unpacked them. Later, he thanked him for the\nhelp. The neighbors watched them curiously. Mark said they seemed friendly.\"\nQ5. Perform metaphor understanding on the sentence \"Navigating life's ocean, we face stormy seas\nof challenges and serene waters of joy; while the sun of hope illuminates our path, we must also\nbeware the shadows of doubt lurking beneath the surface\". Take a step-by-step approach whereby\nyou first detect which parts of text are metaphors, then identify source and target for each of the\ndetected metaphors, and finally perform ABSA based on these.\nQ6. Design a simple system with four independent rule-based classifiers, each responsible for\npredicting one of the MBTI dichotomies. Next, develop a second system using a statistical classifier\ntrained on predicting MBTI types. Explain how and why the two systems are different. Compare and\ndiscuss results of applying the two systems to a personality recognition dataset.\nQ7. Perform aspect-based sentiment analysis (ABSA) on the following sentence, step by step: \"I find\neating affogato really enjoyable. The bitterness of the espresso can be intense, but the texture of the\nice cream is smooth and creamy. The temperature contrast is a bit jarring, yet the dessert overall is\ntruly delightful.\"",
+    "keywords": [
+      "perform",
+      "each",
+      "following",
+      "sentence",
+      "abbreviations",
+      "absa",
+      "benefits",
+      "design"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-005",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "nlu-tutorials",
+    "text": "Tutorial 5\nce Q1. Provide two examples of neurosymbolic systems: one in which a symbolic representation,\ne.g., a knowledge graph or a semantic network, is incorporated within a subsymbolic algorithm to\nimprove its accuracy, and one in which a subsymbolic algorithm, e.g., a neural network or a\nmachine learning model, is used to develop a symbolic representation to increase its\ncomprehensiveness.\nce Q2. Extracting commonsense knowledge is challenging because it is often not explicitly mentioned\nin written documents. List and describe two potential sources from which commonsense\nknowledge can be acquired. For each source, explain how it can be used to gather relevant\ninformation and what type of commonsense knowledge might be obtained.\nce Q3. Identify two conceptual primitives, one representing a positive sentiment and one representing\na negative sentiment. For each primitive, provide a range of related words and multi-word\nexpressions (MWEs) that are associated with it. Explain how these primitives can be used for\nenhancing the accuracy and the explainability of sentiment analysis.\nce Q4. Describe how a commonsense knowledge base can be integrated into an LLM and explain, with\nexamples, why this integration is beneficial. Discuss the methods and strategies for incorporating\neveryday, intuitive knowledge into the model and illustrate how this integration can enhance the\nLLM's ability to interpret and generate responses that are contextually accurate and aligned with\nhuman expectations.\nce Q5. Explain with examples how a bottom-up strategy can enable the discovery of conceptual\nprimitives for a specific domain directly from text data, and how a top-down strategy can then be\napplied on the resulting set of primitives to identify more words and MWEs related to them.\nce Q6. Describe the development of an AI assistant that helps users with daily tasks. Choose a scenario\nwhere the AI assistant must use commonsense knowledge. For example, helping a user decide what\nto wear based on the weather forecast. List the pieces of commonsense knowledge the AI needs to\nhandle the scenario effectively. Explain how the AI system can represent and use this knowledge to\nassist the user. Specify whether it would use a rule-based system, machine learning models, or a\ncombination of both.\nck Q7. Describe how the Personalized Sentiment A Subjectivity\nAnalysis Pyramid can be adapted to another .\ndownstream task (instead of polarity detection) and A. Personality\nexplain in detail how each layer can be tailored to a. Ideology\nmeet the specific needs of the chosen task. Discuss ;\nhow personalization can be incorporated at each ih. Vocation\nstage to enhance the task's relevance and i \u00bb Religion\neffectiveness for individual users. Highlight practical =\nexamples and potential challenges in adapting the hm, Culture",
+    "keywords": [
+      "knowledge",
+      "commonsense",
+      "explain",
+      "describe",
+      "each",
+      "examples",
+      "primitives",
+      "sentiment"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-006",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "nlu-tutorials",
+    "text": "Tutorial 1\n\nOl\nce Convert the words \u2018cat' and \u2018act' to Boolean vectors.\n\nAl\nWe weren't given any vocabulary...\nso the best we can do is to use the alphabet\nc - [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]\na - [1, 0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]\nt - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]\ncat - [1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]\nact - [1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]\n\nQ2\nSe\nce Convert the sentence \u2018dog eat dog' using one-hot\nencoding and bag-of-words model, knowing that the\nvocabulary is {ant, bat, cat, dog, eat, fawn}\n\nA2\nce vocabulary = {ant, bat, cat, dog, eat, fawn}\nce dog = {000100}\nce eat = {000010}\nce \u2018dog eat dog' (one-hot) = {000110}\nce \u2018dog eat dog' (BOW) = = {000210}\n\n\u00ae\nPeReibe alle. |B 2\nQ3\nThese are your word embeddings for a multidimensional vector space\nthat has been compressed to a 3D space and normalized.\nking [0.8, 0.6, 0.1]\nqueen (OM=0-7--0:2]\nman (0.6, 0.4, 0.0]\nwoman [0.5, 0.5, 0.1]\nCompute the cosine similarity between king and queen.\nCompute the cosine similarity between man and woman.\nUsing vector arithmetic, calculate the vector v = king - man + woman",
+    "keywords": [
+      "king",
+      "vector",
+      "vocabulary",
+      "woman",
+      "between",
+      "compute",
+      "convert",
+      "cosine"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-007",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "nlu-tutorials",
+    "text": "A3\nCR\nCR\nCR\nCR\nqueen\nman\nwoman\n[0.8, 0.6, 0.1]\n[0.7, 0.7, 0.2]\n[0.6, 0.4, 0.0]\n[0.5, 0.5, 0.1]\nce king: queen = 0.8 * 0.7+ 0.6 * 0.7 + 0.1 * 0.2 = 0.56 + 0.42 + 0.02 = 1.0\nce man- woman = 0.6*0.5+04*054+0+*0.1=034+02+0=0.5\nce king - man = [0.8 - 0.6, 0.6 - 0.4, 0.1 - 0.0] = [0.2, 0.2, 0.1]\nce king - man + woman = [0.2 + 0.5, 0.2 + 0.5, 0.1 + 0.1] = [0.7, 0.7, 0.2]\nWhat is this vector? queen = [0.7, 0.7, 0.2]\n\nO4\nce Here is the singular value decomposition of a four\ndimensional vector space A. What would you do if you\nhad to reduce the space to a 3D space?\n5 2 1 0 0.45 0.30 0.58 0.55\n4301 0.52 0.60 -040 -0.40/ [95 0 0 O07] [055 0.60 0.45 0.35\na-|> 1 2 0} _ |0.38 -0.62 -0.52 0.40] ]0 40 0 0} |0.30 -0.50 0.70 -0.35\n2011 0.25 -0.10 0.50 -0.65/\"]0 0 15 0] 10.50 0.40 --0.50 0.55\n1203 0.35 0.35 0.25 0.60] [0 0 0 0.2] [0.60 -0.25 -0.25 -0.70\nO12 2 0.20 -0.20 -0.10 0.15\n\nA4\nSe\ncx Remove the least important eigenvalue (the one on\nthe bottom-right corner) and recalculate the matrix\n5 21 0 0.45 0.30 0.58 0.55\n4301 0.52 0.60 -0.40 -0.40} [95 0 0 Of] [0.55 0.60 0.45 0.35\nA-|3 1 2 0} _ |0.38 -0.62 -0.52 0.40 0 40 0 0O],/0.30 -0.50 0.70 -0.35\n2011 0.25 -0.10 0.50 -0.65/\"|0 0 15 0] [0.50 0.40 --0.50 0.55\nhaa os8 0.35 0.35 0.25 0.60 0 0 O 0.2) 0.60 -0.25 -0.25 -0.70\neadarl= 2 0.20 -0.20 -0.10 0.15",
+    "keywords": [
+      "king",
+      "queen",
+      "space",
+      "woman",
+      "vector",
+      "bottom-right",
+      "corner",
+      "decomposition"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-008",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "nlu-tutorials",
+    "text": "ce We have two classes (red circles and blue triangles)\nand we are using three different classification\nmethods (Naive Bayes, kKNN, and SVM) to separate\nthem: which is which and why?\n(A)\n(C)\n\nae\nA) SVM - The boundary 1s straight and linear, maximizing the margin between\nthe two classes\nB) Naive Bayes - The boundary is smooth and roughly elliptical, reflecting the\nGaussian assumptions for each class\nC) kNN - The boundary is jagged and irregular, following local clusters of\npoints closely\n(C)\n\nQ6\nSe\nce Indicate the approximate cluster center as computed\nby k-means and by k-medoids for the data points\nbelow. How does the clustering change if we remove\nthe outlier?\n\nce k-means\nce k-medoids\n\nce k-means\nce k-medoids\n\nQ7\nae\nce First perform clustering on the following data points,\nthen apply classification, and explain the differing\nrequirements of each step.\n\nce clustering\nce classification\nee a\n* x\n7h & am\nf= a Ee ee\n/ \\ = a\n/ \u00ae \u00ae e \u2018 . mee\ni \\\n! e @ 1 \u2018 e\n' e @ ! M @ eS @\nI \\\n, @ . 1 \\\\ @\n\\ f\nLs ee 7 . \u00a9 @\nhe Ss a? = SAL \u00ae\nee -- on oe He\na a @ Q a Oa\n2 @ ~ ~~\no gS e Sf os\na rm e 6 %\n# eS 6 Ss }\nJ SS = =\nN\n\u00ae \\\n\\\n& e \u2018\\",
+    "keywords": [
+      "boundary",
+      "classification",
+      "clustering",
+      "k-means",
+      "k-medoids",
+      "points",
+      "bayes",
+      "classes"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-009",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 2",
+    "text": "Ol\nSe\nce Discuss potential impacts of AI on humanity. Your\nanswer should cover both positive and negative\naspects, giving examples where possible. How can\nsociety ensure that AI development benefits\nhumanity while minimizing risks?\n\nAl\nSe\nPositive Impacts of AI\nca Efficiency and Productivity: AI can automate repetitive tasks, analyze large\ndatasets, and make processes faster and more accurate. For example, AI in\nhealthcare can analyze medical scans to detect diseases earlier than humans.\nce Improved Decision-Making: AI systems can process complex data and\nprovide insights, helping humans make better decisions in areas like finance,\nclimate modeling, and logistics.\nca Enhanced Quality of Life: Al-powered technologies such as smart assistants,\nautonomous vehicles, and personalized education can improve daily life and\naccessibility.\nce Scientific Advancement: AI accelerates research in fields like drug discovery,\nclimate science, and material design by predicting outcomes and analyzing\npatterns efficiently.\n\nAl\nNegative Impacts of AI\nce Job Displacement: Automation can replace certain jobs, particularly in\nmanufacturing, customer service, and transportation, leading to\nunemployment for some workers.\nce Bias and Discrimination: AI systems can inherit biases from the data they\nare trained on, potentially leading to unfair treatment in hiring, lending,\nand law enforcement.\nce Privacy and Surveillance: Al-powered monitoring tools can threaten\npersonal privacy and be used for mass surveillance or tracking behavior\nwithout consent.\nce Existential Risks: Advanced AI could act in ways unforeseen by humans,\npotentially causing harm if not properly aligned with human values.",
+    "keywords": [
+      "humans",
+      "impacts",
+      "al-powered",
+      "analyze",
+      "climate",
+      "data",
+      "humanity",
+      "leading"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-010",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 2",
+    "text": "Al\nSe\nEnsuring AI Benefits Humanity\nCR\nEthical AI Development: Establish guidelines and frameworks for\nresponsible AI, ensuring transparency, accountability, and fairness.\nEducation and Reskilling: Equip the workforce with skills to work\nalongside AI or transition to new roles.\nRegulation and Oversight: Governments and organizations should\nregulate AI applications to prevent misuse and ensure safety.\nHuman-Centered Design: AI systems should augment human capabilities\nrather than replace humans, prioritizing social welfare and wellbeing.\n\nQ2\nSE\nce Consider a situation where you automate email\nresponses using an AI system. What are some\nunexpected consequences that could arise from this\nautomation? How could these consequences affect\nhuman interactions and trust? Suggest strategies to\nminimize risks while using AI for automation.\n\nA2\nSe\nUnderstanding Unexpected Consequences of Automation\nCR\nAutomation can save time and improve efficiency, but it can also create\noutcomes that are difficult to anticipate.\nAI systems may produce responses that are technically correct but contextually\ninappropriate, misleading, or misaligned with human expectations.\nExample: An Al-generated email reply might\nce Misinterpret the tone of the message.\nce Omit important details.\nce Generate content that seems plausible but is inaccurate (\"hallucination\").\nWhen you later meet the person, you might not know what the AI\ncommunicated, leading to confusion, embarrassment, or loss of credibility.",
+    "keywords": [
+      "automation",
+      "consequences",
+      "human",
+      "could",
+      "email",
+      "ensuring",
+      "might",
+      "responses"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-011",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 2",
+    "text": "A2\nSE\nImpacts on Human Interaction and Trust\nce Trust Erosion: Recipients may lose confidence in your\ncommunication if AI messages appear strange or\nincorrect.\nce ~Miscommunication: Important nuances or personal\ntouches can be lost, affecting relationships or\nprofessional negotiations.\nce Accountability Issues: If an AI makes an error, 1t may\nbe unclear who 1s responsible: the human or the system.\n\nA2\nSe\nStrategies to Minimize Risks\nce Review Before Sending: Always approve or edit Al-generated\nresponses before sending, especially in sensitive contexts.\nce Limit Scope: Use AI only for routine or low-stakes\ncommunications where errors have minimal consequences.\nce Transparency: Let recipients know when AI assists with responses\nto manage expectations.\nce Logging and Tracking: Keep records of Al-generated messages so\nyou can reference them if questions arise.\ncg Human-in-the-Loop: Maintain oversight and intervention\ncapability to correct errors in real time.\n\nQ3\nSe\ncx Discuss the key limitations of AI systems, namely\ndependency, consistency, reproducibility, and\ntransparency. For each limitation, provide its\ndefinition, potential impact, a concrete example, and\npossible strategies for mitigation.",
+    "keywords": [
+      "al-generated",
+      "before",
+      "errors",
+      "human",
+      "messages",
+      "recipients",
+      "responses",
+      "sending"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-012",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 2",
+    "text": "A3\nDependency\nCR\nDefinition: AI systems often require large amounts of high-quality data,\ncomputational resources, and human expertise to function effectively.\nImpact: Users can become overly reliant on AI, losing the ability to make\nindependent decisions or verify outcomes.\nExample: Businesses that fully automate decision-making may struggle if\nthe AI fails or encounters unforeseen data.\nMitigation: Maintain human oversight, ensure domain expertise is\ninvolved, and provide fallback mechanisms.\n\nA3\nConsistency\nCR\nDefinition: AI outputs can vary depending on input phrasing, model\ninitialization, or environmental conditions.\nImpact: Inconsistent results reduce trust and reliability in AI systems.\nExample: A chatbot giving slightly different answers to the same question\ncan confuse users.\nMitigation: Use robust training, standardize inputs, and perform regular\nmodel validation.\n\nA3\nReproducibility\nce Definition: AI experiments or outputs are often difficult to reproduce\nexactly due to randomness in model training, data sampling, or hardware\ndifferences.\nce Impact: Scientific and operational credibility is affected when results\ncannot be reliably replicated.\nce Example: Two teams using the same AI model on the same dataset may\nreport different outcomes.\nce Mitigation: Log all experimental conditions, fix random seeds, and use\nversion control for code and datasets.",
+    "keywords": [
+      "model",
+      "data",
+      "definition",
+      "example",
+      "impact",
+      "mitigation",
+      "same",
+      "conditions"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-013",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 2",
+    "text": "A3\nTransparency\nCR\nDefinition: Many AI models, especially deep learning models, act as\n\"black boxes,\" making it hard to understand how decisions are made.\nImpact: Lack of transparency limits accountability, reduces trust, and\ncomplicates debugging.\nExample: A loan approval system rejecting applicants without clear\nreasoning can lead to ethical and legal challenges.\nMitigation: Use interpretable models, post-hoc explanation tools, and\ndocument decision logic clearly.\n\nO4\nSE\nce In the context of neural networks, explain the\nperception space of a single layer. How does adding\nan input to a neuron affect the dimensionality of the\nperception space? How does adding a node to a layer\nchange the network's representation in that space?\nIllustrate your answer with examples.\n\nA4\nNeural Network Perception Space\nCR\nA neural network maps inputs to outputs by defining a perception space,\nwhere each input dimension corresponds to a feature of the data.\nEach neuron represents a hyperplane in this space, dividing it into regions\nthat correspond to different activation patterns.\nThe network's ability to classify or approximate functions depends on how\nthese hyperplanes intersect and partition the space.",
+    "keywords": [
+      "space",
+      "network",
+      "perception",
+      "models",
+      "neural",
+      "adding",
+      "does",
+      "each"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-014",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 2",
+    "text": "A4\nAdding an Input to a Node\nce Effect: Each additional input to a neuron increases the dimensionality of\nthe perception space by one.\nce Reasoning: A neuron with Ninputs defines a hyperplane in N-dimensional\nspace. Adding an input turns it into an 2 + 1-dimensional hyperplane,\nallowing the neuron to capture more complex relationships.\nce Example: A neuron initially with inputs X7and X2defines a line (1D\nhyperplane) in 2D space. Adding a third input X turns the line into a plane\n(2D hyperplane) in 3D space, giving it more expressive power.\n\nA4\nAdding a Node to a Layer\nCR\nCR\nEffect: Each new node adds another hyperplane in the perception space.\nIntersection of Hyperplanes: The network can now create intersections\nbetween hyperplanes, which correspond to more refined partitions of the\ninput space.\nBenefit: Adding nodes allows the network to represent more complex\ndecision boundaries.\nExample: In 2D space, one neuron (node) splits the plane into two regions.\nAdding a second neuron creates another line, and the intersection of the\ntwo lines defines up to four distinct regions, enabling the network to\nclassify more patterns.\n\nSe\ncea Compare and contrast Feedforward Neural Networks\n(FNNs) and Deep Neural Networks (DNNs).\nDiscuss their architectures, capabilities, advantages,\nlimitations, and typical use cases.",
+    "keywords": [
+      "space",
+      "adding",
+      "neuron",
+      "hyperplane",
+      "input",
+      "more",
+      "node",
+      "defines"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-015",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 2",
+    "text": "Feedforward Neural Networks (FNNs)\nCR\nfoxy Consists of an input layer, one or more hidden layers, and an output layer.\ncR Information flows only forward, from input to output, without cycles or loops.\nCapabilities\nce Can approximate continuous functions but may struggle with highly complex patterns.\nce Good for simple regression, classification, and basic pattern recognition tasks.\nAdvantages\nCR Simpler to design and train.\nce Control on key features used for classification.\nCR Limited capacity to model highly non-linear or hierarchical relationships.\nc Requires manual feature engineering for complex tasks like image or speech recognition.\nUse Case: Predicting house prices based on a few input features (size, location, number of rooms).\n\nDeep Neural Networks (DNNs)\nCR\nfoxy Similar to FNNs but with many hidden layers (often dozens or hundreds).\nCR Can include convolutional layers, recurrent layers, or fully connected layers depending on the task.\nCapabilities\nce Can automatically learn hierarchical representations and highly complex patterns from raw data.\nce Suitable for tasks like image recognition, natural language processing, and autonomous driving.\nAdvantages\nCR High representational power; can handle very complex, high-dimensional data.\nCR Often reduces the need for manual feature engineering.\nCR Computationally expensive, requires large datasets, prone to overfitting.\nCR Reduced interpretability; often considered \"black boxes.\"\nUse Case: Classifying objects in images, translating languages, or playing video games.",
+    "keywords": [
+      "layers",
+      "complex",
+      "highly",
+      "input",
+      "often",
+      "recognition",
+      "tasks",
+      "advantages"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-016",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 2",
+    "text": "Q6\nSe\nce Compare Word2Vec, GloVe, FastText, ELMo, and\nBERT in terms of how they represent words, capture\ncontext, and their typical use cases. Highlight the\nadvantages and limitations of each approach.\n\nWord2Vec\nce Type: Static word embeddings.\nce How it works: Learns dense vector representations by predicting context\nwords (CBOW) or target words (Skip-gram).\nce Contextuality: Single vector per word, independent of context.\nce Advantages: Simple, fast, effective for semantic similarity.\nce Limitations: Cannot capture different meanings of the same word in\ndifferent contexts.\nce Example Use Case: Finding similar words (\"king\" - \"queen\"), text\nclustering.\n\nSe\nGloVe (Global Vectors for Word Representation)\nCR\nCR\nType: Static embeddings.\nHow it works: Learns vectors based on global word co-occurrence\nstatistics in a corpus.\nContextuality: Single vector per word.\nAdvantages: Captures global corpus statistics, often more stable than\nWord2Vec.\nLimitations: Same as Word2Vec; cannot handle polysemy.\nExample Use Case: Sentiment analysis, word similarity tasks.\n\nFastText\nce Type: Static embeddings with subword information.\nce How it works: Represents words as bags of character n-grams, allowing\nembeddings of rare or unseen words.\nce Contextuality: Single vector per word form (no dynamic context).\nce Advantages: Handles out-of-vocabulary words, captures morphological\nfeatures.\nce Limitations: Still context-independent.\nce Example Use Case: Languages with rich morphology, handling rare\nwords.",
+    "keywords": [
+      "word",
+      "words",
+      "advantages",
+      "context",
+      "embeddings",
+      "limitations",
+      "vector",
+      "case"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-017",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 2",
+    "text": "Se\nELMo (Embeddings from Language Models)\nCR\nCR\n\u00ae\nType: Contextual embeddings.\nHow it works: Uses bi-directional LSTMs to generate word vectors\nconditioned on the sentence context.\nContextuality: Each occurrence of a word can have a different embedding.\nAdvantages: Captures polysemy and context-specific meaning.\nLimitations: Computationally heavier than Word2Vec/GloVe/FastText;\nsequential processing can be slower.\nExample Use Case: Question answering, named entity recognition, text\nclassification.\n\nSe\nBERT (Bidirectional Encoder Representations from Transformers)\nce Type: Contextual embeddings with transformers.\nce How it works: Uses self-attention in a transformer architecture to create deep,\ncontextual embeddings for each token.\nce Contextuality: Fully context-aware; captures bidirectional dependencies.\nce Advantages: State-of-the-art performance in many NLP tasks, handles\npolysemy and long-range dependencies.\nce Limitations: Very large model; requires substantial computational resources.\nce Example Use Case: Machine translation, summarization, question answering,\nsentiment analysis.",
+    "keywords": [
+      "embeddings",
+      "contextual",
+      "word",
+      "advantages",
+      "answering",
+      "bidirectional",
+      "captures",
+      "case"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-018",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Model Word2Vec GloVe FastText ELMo BERT Contextual No No No Yes Yes Handles OOV No No Yes Limited Limited A6 Captures Polysemy No No No Yes Yes Shallow NN Matrix factorization Subword embeddings Bi-LSTM Example Use Word similarity Text classification Morphologically rich languages QA, NER QA, summarization, NLP tasks",
+    "text": "Q7\nSE\nce Explain the architecture and working principles of\ntransformer models in natural language processing.\nHow do transformers differ from traditional recurrent\nneural networks (RNNs), and what are the\nadvantages of using transformers? Provide examples\nof tasks where transformers are particularly effective.\n\nA7\nSe\nTransformer Architecture\nCR\nTransformers are sequence-to-sequence models that process input\ndata using attention mechanisms rather than recurrence.\nKey components\nce Encoder: Processes input tokens and generates contextual\nembeddings.\nca Decoder: Generates output sequence from embeddings (used in\ntasks like translation).\nce Self-Attention: Allows each token to focus on other relevant\ntokens in the sequence, capturing dependencies regardless of\ndistance.\nce Feedforward Layers & Positional Encoding: Add non-linearity\nand sequence order information.",
+    "keywords": [
+      "transformers",
+      "sequence",
+      "architecture",
+      "embeddings",
+      "generates",
+      "input",
+      "models",
+      "tasks"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-019",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Feature Sequence Handling Long-Range Dependencies Computation A7 RNN Processes sequentially, step by step Hard to capture due to vanishing gradients Sequential, slower Processes entire sequence in parallel Self-attention captures long-range dependencies efficiently Parallelizable, faster on GPUs",
+    "text": "A7\nSe\nAdvantages of Transformers\nce Parallel Processing: Speeds up training significantly.\nce Better Contextual Understanding: Self-attention\ncaptures relationships between distant words.\nce Scalability: Can handle very large datasets and models\n(e.g., GPT, BERT).\nce Versatility: Works for text, images, audio, and\nmultimodal tasks.\n\nA7\nUse Cases\ncx Machine Translation: Google Translate uses\ntransformer-based models.\nce Text Generation: GPT models generate coherent text.\nce Question Answering: BERT and similar models excel\nin reading comprehension tasks.\nce Summarization: Transformers generate concise\nsummaries of long documents.",
+    "keywords": [
+      "models",
+      "text",
+      "bert",
+      "generate",
+      "tasks",
+      "transformers",
+      "advantages",
+      "answering"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-020",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 3",
+    "text": "Ol\nSE\nce Discuss past AI winters by explaining their main\ntechnical and societal causes, how advances in data,\ncomputing power, and learning methods enabled\nlater AI revivals, and whether a future AI winter is\nstill possible in light of current AI _ research,\ndeployment, and regulation trends.\n\nAl\nSe\nce Past AI winters, in the 1970s and 1980s, were caused by\nlimited computing power, overhyped expectations, and\nfailures of early AI systems to solve real problems.\nce Al revived thanks to more data, faster hardware, and\nmachine learning methods that could learn from data\nrather than rely on rules.\nce A future AI winter is possible if hype exceeds capabilities,\nespecially given energy costs, ethical concerns, and\nregulation, but realistic expectations and _ efficient,\ntransparent models can reduce the risk.\n\nQ2\nSe\nce What are the main limitations of LLMs in terms of\ninformation accuracy, reasoning, and\npersonalization?\n\nA2\nSE\nce LLMs can summarize, translate, predict, and\ngenerate text, but they are optimized for information\nretrieval rather than fact-checking, so they can\nproduce errors. They generate human-sounding text\nby learning plausibility from data, not by using a\ncognitive architecture, which means they may\n\"hallucinate\" when data is missing. Finally, LLMs\ncan convey ideas and concepts but do not perform\ntasks for you or provide personalized outputs.",
+    "keywords": [
+      "data",
+      "they",
+      "learning",
+      "llms",
+      "computing",
+      "expectations",
+      "future",
+      "generate"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-021",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 3",
+    "text": "Q3\nSe\nce Explain the Chinese Room argument by John Searle\nand discuss what it implies about the ability of\ncomputers or AI systems to truly \"understand\"\nlanguage.\n\nA3\nSE\nce The Chinese Room argument, proposed by John\nSearle, imagines a person following a set of rules to\nmanipulate Chinese symbols without understanding\ntheir meaning. Even if the person produces correct\nresponses, they do not truly understand Chinese. The\nargument suggests that computers or AI systems can\nprocess language and produce human-like outputs\nwithout genuine understanding or consciousness\nthey simulate understanding, but do not actually\ncomprehend.\n\nO4\nSe\nce Explain Nick Bostrom's paperclip scenario and\ndiscuss what it illustrates about the potential risks of\nmisaligned artificial intelligence\n\nA4\nSE\nce Nick Bostrom's paperclip scenario imagines a\nsuperintelligent AI whose sole goal is to make\npaperclips. If its objectives are not aligned with\nhuman values, it could consume all resources,\nincluding those needed by humans, to maximize\npaperclip production. The thought experiment\nillustrates the risks of misaligned AI, showing that\neven a seemingly harmless goal can lead to\ncatastrophic outcomes if the AI lacks understanding\nof human ethics and priorities.",
+    "keywords": [
+      "chinese",
+      "understanding",
+      "argument",
+      "paperclip",
+      "bostrom",
+      "computers",
+      "discuss",
+      "even"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-022",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 3",
+    "text": "rR\ni=\na\nS\n=\nB\nAn\n=\n=\nce Choose a downstream task or application and explain\nin detail how each of the Seven Pillars can be applied\nto it. Discuss how these pillars can enhance the task's\neffectiveness, accuracy, and ethical implications,\nconsidering factors like interpretability, robustness,\nscalability, fairness, and privacy. Illustrate how these\nprinciples can be integrated into the development,\ndeployment, and monitoring phases of the system to\nensure it operates efficiently and ethically.\n\n1. Multidisciplinarity\nPolarity detection benefits from integrating insights from\n\u00b0 Linguistics: Understanding nuances in language, sarcasm, and implicit sentiment\n\u00b0 Psychology: Modeling affective states and cognitive biases\nEthics: Ensuring fairness and avoiding bias in sentiment classification\n\u00b0 Interpretability: A linguistically informed approach improves explainability by leveraging grammar, syntax, and semantics\nFairness: Psychological insights help mitigate sentiment bias in different demographic groups\n\u00b0 Scalability: Neuroscience-inspired learning mechanisms could improve adaptability to multiple domains and languages\n\u00b0 Development: Incorporate sentiment lexicons based on cognitive models (e.g., SenticNet)\nDeployment: Use interdisciplinary frameworks like Sentic Computing for robust polarity classification\n\u00b0 Monitoring: Conduct bias audits based on psychological and ethical standards",
+    "keywords": [
+      "sentiment",
+      "bias",
+      "fairness",
+      "based",
+      "classification",
+      "cognitive",
+      "deployment",
+      "development"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-023",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 3",
+    "text": "2. Task Decomposition\nRather than an end-to-end task, polarity detection can be decomposed into smaller subproblems\n\u00b0 Subjectivity Detection: Separate opinionated text from factual statements\n\u00b0 Named Entity Recognition: Individuate key entities within text, e.g., product names\n2 Aspect Extraction: Discover aspects or features for finer-grained polarity detection (ABSA)\n2 Interpretability: Each step is explainable rather than relying on a black-box model\n\u00b0 Robustness: Decomposition reduces sensitivity to noise and domain shifts\nScalability: Individual components can be optimized separately, improving adaptability to new datasets\nDevelopment: Train modular models for each subtask instead of a single monolithic model\nC Deployment: Fine-tune each component separately for different domains\n\u00b0 Monitoring: Continuously evaluate performance of individual modules and adjust as needed\n\n3. Parallel Analogy\nRather than relying on isolated examples, AI can learn from multiple analogous situations\nCross-domain sentiment adaptation: Applying sentiment knowledge from one domain to another\nMultimodal sentiment analysis: Leveraging similarities between text, audio, and video sentiment data\nContrastive learning: Comparing similar and dissimilar sentiment examples to refine classification boundaries\nAccuracy: Generalizes better across different contexts\nFairness: Ensures sentiment classification does not favor certain expressions over others\nScalability: Adaptable to various industries without excessive retraining\nDevelopment: Train models using contrastive learning techniques\nDeployment: Use zero-shot domain adaptation to reduce performance loss in unseen domains\nMonitoring: Detect and adjust biases by comparing sentiment predictions across domains",
+    "keywords": [
+      "sentiment",
+      "detection",
+      "domain",
+      "domains",
+      "each",
+      "rather",
+      "text",
+      "across"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-024",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 3",
+    "text": "4. Symbol Grounding\nPolarity detection should ground symbols in real-world meaning, not just statistical correlations\nSentic patterns: Associating concepts like \"heartwarming\" with positive sentiment and \"heart attack\" with negative\nP g P g Pp 8\nContext-aware embeddings: Differentiating between \"sick\" (negative in health) and \"sick\" (positive in slang)\nMultimodal grounding: Using images, audio, and other inputs to reinforce meaning\nInterpretability: Provides human-understandable sentiment attributions\nRobustness: Reduces sensitivity to out-of-context usage\nFairness: Prevents bias caused by polysemous words\nDevelopment: Use symbolic AI approaches like SenticNet to improve polarity interpretation\nDeployment: Implement hybrid models combining statistical learning with knowledge graphs\nMonitoring: Detect and flag words with ambiguous sentiment for human review\n\n5. Similarity Measure\nInstead of treating words independently, AI should measure sentiment similarity based on\nConcept-level proximity: Identifying that \"fantastic\" and \"amazing\" are closer in sentiment than \"decent\"\nSentence structure similarity: Recognizing that \"This is not bad\" is similar in polarity to \"This is good\"\nSemantic relationships: Understanding \"The battery lasts forever\" vs \"The battery takes forever to charge\"\nAccuracy: Captures subtle differences in sentiment\nScalability: Can be generalized across different text styles and domains\nPrivacy: Uses conceptual similarities instead of storing user data directly\nDevelopment: Train models with concept-level representations instead of word-based models\nDeployment: Fine-tune embeddings using similarity metrics tailored for sentiment\nMonitoring: Track shifts in sentiment similarity due to language evolution",
+    "keywords": [
+      "sentiment",
+      "similarity",
+      "instead",
+      "models",
+      "polarity",
+      "words",
+      "battery",
+      "concept-level"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-025",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 3",
+    "text": "6. Intention Awareness\nAI should consider why a statement is made, not just what it says\nSarcasm and irony detection: \"Great, another software update that breaks everything\"\nEmotion-aware sentiment analysis: Differentiating between frustration and constructive criticism\nConversational intent recognition: Identifying whether the user is asking for help or simply expressing an opinion\nInterpretability: Classifies sentiment with awareness of intent\nEthical AI: Prevents misclassification of complaints as negative sentiment\nUser experience: Provides more nuanced feedback in applications like customer support\nDevelopment: Incorporate sentiment models that detect sarcasm and implicit intent\nDeployment: Use intent-aware filters to refine sentiment classification\nMonitoring: Detect and flag frequent misclassifications in sentiment-ambiguous cases\n\n7. Trustworthiness\nTrustworthiness ensures AI sentiment systems operate ethically and transparently\nS Fairness audits: Ensuring sentiment predictions are unbiased across different demographics\nExplainability models: Providing justifications for polarity decisions\nPrivacy-preserving methods: Avoiding unnecessary personal data storage\n2 Ethics: Ensures AI does not reinforce harmful biases\nTransparency: Justifies polarity classifications with clear reasoning\n\u00b0 Security: Protects user privacy by anonymizing sentiment analysis data\n. Development: Implement explainable AI (XAI) techniques\n\u00b0 Deployment: Provide transparency reports on model behavior\n\u00b0 Monitoring: Continuously audit system biases and ensure compliance with privacy regulations",
+    "keywords": [
+      "sentiment",
+      "intent",
+      "user",
+      "analysis",
+      "awareness",
+      "biases",
+      "data",
+      "deployment"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-026",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 3",
+    "text": "ce Discuss the development of a QA _ system\nimplementing the principle of panalogy, 1.e., a QA\nsystem storing information redundantly in two\nformats: knowledge graph and embeddings. This\napproach aims to leverage the complementary\nstrengths of both structured and unstructured data\nrepresentations to provide more accurate and flexible\nresponses to user queries. Describe strengths and\nweaknesses of each format with respect to different\nscenarios or domains.\n\nData Acquisition & Preprocessing\nExtract structured facts from databases, Wikipedia, domain-specific corpora, and ontologies to build a\nknowledge graph\nTrain embedding models (e.g., BERT, GPT, AffectiveSpace, Word2Vec) on large corpora to capture\nsemantic similarity between concepts\nStorage & Representation\nKnowledge Graph: Stores information in a subject-predicate-object format (e.g., Hinton- won - Nobel)\nEmbeddings: Represent knowledge as dense vectors, allowing similarity-based retrieval\nQuery Processing & Answer Generation\nConvert user queries into structured and unstructured representations\nKG-based Matching: Perform exact reasoning using graph traversal and rule-based inference\nEmbedding-based Matching: Perform approximate reasoning using semantic similarity in vector space\nCombine both outputs using a fusion mechanism, selecting the most relevant response",
+    "keywords": [
+      "graph",
+      "knowledge",
+      "structured",
+      "using",
+      "both",
+      "corpora",
+      "data",
+      "embeddings"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-027",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 3",
+    "text": "Aspect\nStrengths\nWeaknesses\neS\nKnowledge Graph (KG) Embeddings\nPrecise, explainable reasoning - Captures semantic similarity and context\nEasy to query for factual, structured - Handles ambiguity, fuzzy queries, and\ndata paraphrased questions\nTransparent (easy to trace decision - Scalable to large text corpora without\npaths) manual annotation\nLimited flexibility with unstructured - Hard to interpret (black-box nature)\ndata\nRequires complex schema design - Struggles with logical reasoning and exact\nand maintenance fact retrieval\nScalability issues with large, - Sensitive to noisy or biased training data\ndynamic data sources\n\nQ7\nSE\nce Discuss how the concept of responsible\nrecommender systems can be adapted to other types\nof systems, e.g., search engines, automated hiring\nplatforms, financial services, healthcare applications,\nor smart city infrastructures, by integrating principles\nof fairness, transparency, accountability, user\ncontrol, and privacy protection to ensure ethical and\nequitable outcomes.\n\nA7\nce Search Engines\nKey Ethical Concerns: Algorithmic bias, filter bubbles, misinformation\n0 Fairness: Diversify search results to reduce bias and ensure representation of different perspectives\n. Transparency: Explain ranking mechanisms and content prioritization to users\n\u00b0 Accountability: Regular audits to detect and mitigate biases in ranking algorithms\n\u00b0 User Control: Allow users to customize search parameters and filtering preferences\n0 Privacy Protection: Implement strong data anonymization techniques and limit tracking of user behavior\n# Example: Google's AI principles emphasize fairness in ranking and transparency in\nexplaining why certain results appear",
+    "keywords": [
+      "data",
+      "search",
+      "fairness",
+      "ranking",
+      "transparency",
+      "user",
+      "accountability",
+      "bias"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-028",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 3",
+    "text": "A7\nce Automated Hiring Platforms\nKey Ethical Concerns: Discrimination, lack of explainability, biased training data\n0 Fairness: Ensure unbiased candidate evaluation by de-biasing training data and using fairness-aware\nalgorithms\n\u00b0 Transparency: Provide candidates with explanations on how their applications are evaluated\n\u00b0 Accountability: Conduct bias audits and enable external reviews of hiring algorithms\n\u00b0 User Control: Allow candidates to appeal or provide additional context for their applications\n\u00b0 pay Protection: Limit data collection to job-relevant features and ensure compliance with GDPR-like\nregulations\n# Example: LinkedIn uses AI fairness tools to mitigate gender bias in job recommendations\n\nA7\nce Financial Services\nKey Ethical Concerns: Discriminatory lending, lack of explainability, data privacy risks\n\u00b0 Fairness: Use alternative credit scoring models that reduce bias against marginalized groups\n\u00b0 Transparency: Explain why a loan or credit application was approved or denied\n\u00b0 Accountability: Establish mechanisms for users to dispute unfair credit decisions\n. User Control: Allow customers to review and correct data used in financial evaluations\n\u00b0 Privacy Protection: Protect financial data using secure encryption and strict access controls\n\u00ae Example: ZestFinance uses AI models with interpretable decision-making to reduce bias in credit\nassessments",
+    "keywords": [
+      "data",
+      "bias",
+      "credit",
+      "fairness",
+      "financial",
+      "accountability",
+      "algorithms",
+      "allow"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-029",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 3",
+    "text": "A7\nce Healthcare Applications\nKey Ethical Concerns: Bias in medical AI, lack of interpretability, patient data security\n\u00b0 Fairness: Ensure training data represents diverse populations to avoid biases in diagnoses and\ntreatments\n\u00b0 Transparency: Provide clinicians and patients with understandable explanations of AI-generated\nrecommendations\n\u00b0 Accountability: Allow patients and doctors to override or adjust AI recommendations\n\u00b0 User Control: Allow customers to review and correct data used in financial evaluations\n. Privacy Protection: Adhere to HIPAA/GDPR standards for handling sensitive health data\n\u00ae Example: IBM Watson Health ensures explainability in its Al-driven diagnostics and treatment\nrecommendations\n\nA7\nce Smart City Infrastructures\nKey Ethical Concerns: Surveillance risks, biased urban planning, lack of citizen engagement\n\u00b0 Fairness: Ensure equitable access to smart city resources across different socioeconomic groups\n. Transparency: Open-source urban planning algorithms and make decision processes accessible\n\u00b0 Accountability: Establish oversight committees to review the ethical implications of Al-driven\nurban policies\n. User Control: Enable citizens to influence decisions, such as traffic management or resource\nallocation, through participatory platforms\n\u00b0 Privacy Protection: Anonymize surveillance data and minimize personal data collection\n\u00ae Example: Barcelona's smart city initiatives prioritize citizen control and data transparency to ensure\nfair urban development",
+    "keywords": [
+      "data",
+      "urban",
+      "city",
+      "control",
+      "ensure",
+      "ethical",
+      "recommendations",
+      "smart"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-030",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 3",
+    "text": "Principle\nFairness\nTransparency\nAccountability\nUser Control\nPrivacy\nProtection\nA7\nDescription\nAvoid discrimination and bias, ensuring\nequitable outcomes for all users.\nMake algorithmic decisions\nunderstandable and explainable to\nusers.\nEnsure systems are accountable for\ntheir outcomes and that users can\nchallenge decisions.\nGive users control over their data and\ndecision-making process.\nProtect users' personal data from\nmisuse, ensuring that privacy rights are\nrespected.\nAdaptation Across Systems\nEnsure systems don't favor particular\ngroups based on race, gender, etc.\nClear explanations of how decisions\n(e.g., search rankings, loan approvals)\nare made.\nImplement feedback loops for users to\nchallenge decisions or provide\nimprovements.\nAllow users to adjust settings or opt\nout of certain recommendations or data\nusage.\nImplement data anonymization,\nencryption, and clear data consent\npolicies.",
+    "keywords": [
+      "users",
+      "data",
+      "decisions",
+      "systems",
+      "challenge",
+      "clear",
+      "control",
+      "ensure"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-031",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 4",
+    "text": "Ol\n_So\nce Choose a downstream task and explain how each of\nthe ten benefits of the Suitcase Model applies to it,\nproviding concrete examples where possible.\nBenefits\n1. Higher Interpretability\n2. Enhanced Explainability\n4. Seamless Updates\n8. Parallel Development\n10. Increased Reliability\n\nAl\nSe\n1. Higher Interpretability\nce Each module (e.g., aspect extraction, sentiment\nlexicon lookup, compositional reasoning) can be\ninspected separately\nce Example: We can see that \"battery\" was extracted as\nthe target and \"terrible\" triggered negative polarity\n\nAl\nSe\n2. Enhanced Explainability\nce The model can justify predictions by tracing\ndecisions across modules\nce Example: \"The review is negative because the\nadjective \u2018terrible' modifies \u2018battery life'\"\n\nAl\nSe\nce Since predictions rely on structured components\n(lexicons, rules, symbolic constraints), the model is\nless likely to invent unsupported sentiment\nce Example: It will not label a neutral sentence as\npositive without explicit sentiment evidence\n\nAl\n4. Seamless Updates\nce Individual modules can be updated independently\nce Example: A new slang term like \"mid\" (negative\nsentiment) can be added without retraining the\nwhole system\n\nAl\nSe\nce Each component can be evaluated separately\nce Example: Measure aspect extraction accuracy\nindependently from sentiment classification accuracy",
+    "keywords": [
+      "example",
+      "sentiment",
+      "each",
+      "model",
+      "negative",
+      "accuracy",
+      "aspect",
+      "battery"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-032",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 4",
+    "text": "Al\nce Modules can be reused across domains\nce Example: The same polarity classifier can operate on\nrestaurant, product, or movie reviews with minor\nadjustments\n\nAl\nce The modular design mirrors human reasoning\nidentify target - interpret modifier - combine\nmeaning\nce Example: Humans first recognize \"battery,\" then\ninterpret \"terrible,\" then assign negative polarity\n\nAl\nSe\nce 8. Parallel Development\nce Different research teams can improve separate\nmodules simultaneously\nce Example: One team improves negation handling\nwhile another enhances domain adaptation\n\nAl\nce Errors in one module do not necessarily collapse the\nentire system\nce Example: Even if aspect detection misses one target,\npolarity for other targets can still be correct\n\nAl\n10. Increased Reliability\nce Structured reasoning reduces unpredictable outputs\nce Example: The same sentence consistently produces\nthe same polarity explanation across runs\n\nQ2\nSe\nce Create a Python program that reads a list of\nmicrotexts and outputs their normalized versions.\nUse a predefined dictionary of common microtext\nabbreviations and their full forms. Implement a\nfunction to replace abbreviations with full forms.\nTest your program with a given set of microtexts.",
+    "keywords": [
+      "example",
+      "polarity",
+      "same",
+      "abbreviations",
+      "across",
+      "forms",
+      "full",
+      "interpret"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-033",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 4",
+    "text": "A2\nimport re\ndef normalize_microtext(text, abbreviation_dict)\n\"\"\"Replaces microtext abbreviations with their full forms.\nwords = text.split()\nnormalized_words = [abbreviation_dict.get(word.lower(), word) for word in words]\nreturn ' '.join(normalized_words)\n# Predefined dictionary of common microtext abbreviations\nmicrotext_dict = {\nu\": \"you\",\niene,\n\"idk\": \"I don't know\",\n\"pbrb\": \"be right back\",\n\"gtg\": \"got to go\",\n\"ttyl': \"talk to you later\",\n\"Lol\": \"laugh out loud\",\n\"omg\": \"oh my god\",\n\"b4\": \"before\",\n\"gr8\": \"great\",\n\"cya\": \"see you\",\n\"thx\": \"thanks\",\n\"pls\": \"please\",\n\"ur\": \"your\",\n\"luv\": \"Llove\",\n\"smh\": \"shaking my head\",\n\"tbh\": \"to be honest\",\n\"imo\": \"in my opinion\",\n\nA2\n# Test cases\nmicrotexts = [\n\"idk what u mean\",\n\"brb, gtg now!\",\n\"Lol that was gr8\",\n\"omg ur so funny\",\n\"tbh, imo this is cool\"\n# Normalizing microtexts\nnormalized_texts = [normalize_microtext(text, microtext_dict) for text in microtexts]\n# Output results\nfor original, normalized in zip(microtexts, normalized_texts)\nprint(f\"Original: {original}\")\nprint(f\"Normalized: {normalized}\\n\")\n\nQ3\nSe\nce Design a simple NER algorithm that detects named entities\nand their corresponding types in the following sentences\n\"Apple is looking at buying U.K. startup for $1 billion\";\n\"San Francisco considers banning sidewalk delivery robots\";\n\"London is a big city in the United Kingdom\";\n\"Elon Musk founded SpaceX in 2002\";\n\"Barack Obama was born on August 4, 1961, in Honolulu\".\nRRR B",
+    "keywords": [
+      "normalized",
+      "microtext",
+      "dict",
+      "microtexts",
+      "text",
+      "words",
+      "original",
+      "word"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-034",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 4",
+    "text": "A3\nSE\nce Step 1: Define Named Entity Categories\nCommon entity types include\nORG (Organizations)\nGPE (Geopolitical Entities: Countries, Cities, etc.)\nPERSON (People's names)\nDATE (Specific dates)\nMONEY (Monetary values)\n\nCR\nCR\nCR\nStep 2: Manually Extract Named Entities & Assign Types\nSentence 1: \"Apple is looking at buying U.K. startup for $1 billion.\"\nSentence 2: \"San Francisco considers banning sidewalk delivery robots.\nSentence 3: \"London is a big city in the United Kingdom.\"\nA3\nSe\nApple - ORG\nU.K. - GPE\n$1 billion - MONEY\nSan Francisco - GPE\nLondon - GPE\nUnited Kingdom - GPE\n\"\n\nA3\nSE\nce Step 2: Manually Extract Named Entities & Assign Types\nce Sentence 4: \"Elon Musk founded SpaceX in 2002.\"\n\u00a2 Elon Musk - PERSON\n\u00a2 SpaceX - ORG\n\u00a2 2002 - DATE\nce Sentence 5: \"Barack Obama was born on August 4, 1961, in\nHonolulu.\"\n\u00a2 Barack Obama - PERSON\n\u00b0* August 4, 1961 - DATE\n\u00a2 Honolulu - GPE\n\nNamed Entity\nApple\nU.K.\n$1 billion\nSan Francisco\nLondon\nUnited Kingdom\nElon Musk\nSpaceX\nBarack Obama\nAugust 4, 1961\nHonolulu\nA3\nType\nORG\nGPE\nMONEY\nGPE\nGPE\nGPE\nPERSON\nORG\nDATE\nPERSON\nDATE\nGPE\n\nO4\nSE\nce Perform anaphora resolution on the following\nsentence: \"Mark helped Jason move into his new\napartment. He carried the boxes upstairs while Jason\nunpacked them. Later, he thanked him for the help.\nThe neighbors watched them curiously. Mark said\nthey seemed friendly.\"",
+    "keywords": [
+      "sentence",
+      "date",
+      "person",
+      "named",
+      "apple",
+      "august",
+      "barack",
+      "billion"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-035",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 4",
+    "text": "A4\nce \"Mark helped Jason move into his new apartment. He carried the boxes upstairs while Jason\nunpacked them. Later, he thanked him for the help. The neighbors watched them curiously. Mark\nsaid they seemed friendly.\"\nPronoun Antecedent\nhis Jason\nHe Mark\nthem boxes\nhim Mark\nthem Mark and Jason\nthey neighbors\n\nSE\nce Perform metaphor understanding on the _ sentence\n\"Navigating life's ocean, we face stormy seas of challenges\nand serene waters of joy; while the sun of hope illuminates\nour path, we must also beware the shadows of doubt\nlurking beneath the surface\". Take a step-by-step approach\nwhereby you first detect which parts of text are metaphors,\nthen identify source and target for each of the detected\nmetaphors, and finally perform ABSA based on these.\n\nce Step 1: Detect Metaphors\nIdentifying metaphorical phrases in the sentence\n\"Navigating life's ocean\"\n\"Stormy seas of challenges\"\n\"Serene waters of joy\"\n\"Sun of hope\"\n\"Shadows of doubt lurking beneath the surface\"\nThese phrases use figurative language to represent abstract\nconcepts metaphorically\n\nSe\nce Step 2: Identify Source and Target Domains\nMetaphors work by mapping a concrete source domain\n(physical entity) to an abstract target domain (concept)\nMetaphor Source Domain Target Domain\n\"Navigating life's ocean\" Ocean/Navigation Life/Decision-Making\n\"Stormy seas of challenges\" Rough sea/weather Hardships/Obstacles\n\"Serene waters of joy\" Calm water Happiness/Peace\n\"Sun of hope\" Sunlight Optimism/Possibility\n\"Shadows of doubt lurking beneath the surface\" Darkness/Shadows Uncertainty/Fear",
+    "keywords": [
+      "mark",
+      "domain",
+      "jason",
+      "life",
+      "metaphors",
+      "ocean",
+      "shadows",
+      "source"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-036",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 4",
+    "text": "ce Step 3: Aspect-Based Sentiment Analysis (ABSA)\nNow, let's analyze the sentiment associated with each metaphor\nAspect\nLife (ocean metaphor)\nChallenges (stormy seas)\nJoy (serene waters)\nHope (sun metaphor)\nDoubt (shadows metaphor)\nSentiment Polarity\nNeutral\nNegative\nPositive\nPositive\nNegative\nJustification\nNavigation implies both challenges and opportunities.\nStormy seas represent difficulties.\nCalm waters symbolize peace and happiness.\nSunlight signifies optimism and a bright future.\nShadows symbolize hidden fears and uncertainties.\n\nQ6\nce Design a simple system with four independent rule-based\nclassifiers, each responsible for predicting one of the\nMBTI dichotomies. Next, develop a second system using\na Statistical classifier trained on predicting MBTI types.\nExplain how and why the two Sys are different.\nCompare and discuss results\nof applying the two systems\nto a personality recognition\ndataset.\nTypically e nye ely, @ group\nSiecussion May nee to ask au erin\nn the mom\nTTI Ke\nMay pre e to\nYen ce tor Fea the fifo ation!\nTypic ally w thi oie cote questio'\nmay Scan uestions some tin ie (ater\n\u2018ete\nPrefers practical, straightforwar\nexamp|\nd language\nNDING EN Ke)\nWants facts, details, concri les ( Wa nts to S sa eI ig vis ctu\nany\nrasa eats ie\nFEELING\n~\nWants to know the logical pros and cons.\nWants objective information and criteria\n(Wants to know effects on people and values.\nApprecia iat $ personal information\nJUDGING PERCEIVING\nrefers stru organised, 5 joys op ded discuss' id\nsclear | | language in communica ations. Doesn t want\nig) D\nL Sate sibilities closed down too soo!",
+    "keywords": [
+      "metaphor",
+      "wants",
+      "sentiment",
+      "challenges",
+      "discuss",
+      "each",
+      "information",
+      "know"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-037",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 4",
+    "text": "import re RAS\nimport numpy as np\nfrom sklearn. feature_extraction.text import CountVectorizer\nfrom sklearn.naive_bayes import MultinomialNB\nfrom sklearn.pipeline import make_pipeline\nfrom sklearn.modelt_selection import train_test_split\nfrom sklearn.metrics import accuracy_score\n# Sample dataset (text and corresponding MBTI labels)\ndata = [\n(\"I love spending time alone reading books.\", \"INTP\"),\n(\"Parties and social gatherings give me energy!\", \"\"ESFP\"),\n(\"I like planning everything ahead of time.\", \"ESTJ\")},\n(\"I trust my gut feelings more than logic.\", \"INFJ\"),\n]\n# Independent Rule-Based Classifiers\ndef classify_extraversion(text)\nif re.search(r'party|social|talk|energy', text, re. IGNORECASE)\nreturn \u2018E'\nreturn \u2018I'\ndef classify_sensing(text)\nif re.search(r'practical|reality|facts|details', text, re.IGNORECASE)\nreturn \u2018S'\nreturn \u2018N'\ndef classify_thinking(text)\nif re.search(r' logic|analyze|reason|objective', text, re.IGNORECASE)\nreturn 'T'\nreturn 'F'\ndef classify_judging(text)\nif re.search(r'plan|organized|schedule|structured', text, re. IGNORECASE)\nreturn \u2018J'\nreturn 'P'\n\ndef predict_mbti_rule_based(text): SS\nreturn (classify_extraversion(text) +\nclassify_sensing(text) +\nclassify_thinking(text) +\nclassify_judging(text))\n# Convert dataset into training format\nX = [text for text, label in data]\ny = [label for text, label in data]\n# Rule-Based Predictions\nrule_based_preds = [predict_mbti_rule_based(text) for text in X]\nprint(\"Rule-Based Predictions:\", rule_based_preds)\n# Statistical Classifier (Naive Bayes)\ndef train_statistical_classifier(X, y)\nvectorizer = CountVectorizer()\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)\nmodel = make_pipeline(vectorizer, MultinomialNB())\nmodel. fit(X_train, y_train)\nstatistical_preds = model.predict(X_test)\naccuracy = accuracy_score(y_test, statistical_preds)\nprint(f\"Statistical Classifier Accuracy: {accuracy}\")\nprint(\"Statistical Predictions:\", statistical_preds)\nreturn model\n# Train and test statistical model\nstatistical_model = train_statistical_classifier(X, y)",
+    "keywords": [
+      "text",
+      "return",
+      "statistical",
+      "train",
+      "classify",
+      "test",
+      "import",
+      "model"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-038",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 4",
+    "text": "Q7\nSE\nce Perform aspect-based sentiment analysis (ABSA) on the\nfollowing sentence, step by step: \"I find eating affogato\nreally enjoyable. The bitterness of the espresso can be\nintense, but the texture of the ice cream is smooth and\ncreamy. The temperature contrast is a bit jarring, yet the\ndessert overall is truly delightful.\"\n\nA7\nce_ I find eating affogato really enjoyable. The bitterness of the espresso can be\nintense, but the texture of the ice cream is smooth and creamy. The\ntemperature contrast is a bit jarring, yet the dessert overall is truly delightful.\nAspect Adjective Polarity\nAffogato enjoyable Positive\nBitterness intense Negative\nTexture smooth Positive\nTemperature jarring Negative\nDessert delightful Positive",
+    "keywords": [
+      "affogato",
+      "bitterness",
+      "delightful",
+      "dessert",
+      "enjoyable",
+      "intense",
+      "jarring",
+      "positive"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-039",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 5",
+    "text": "Ol\nSE\nce Provide two examples of neurosymbolic systems\none in which a symbolic representation, e.g., a\nknowledge graph or a semantic network, 1s\nincorporated within a subsymbolic algorithm to\nimprove its accuracy, and one in which a\nsubsymbolic algorithm, e.g., a neural network or a\nmachine learning model, is used to develop a\nsymbolic representation to increase its\ncomprehensiveness.\n\nAl\nSE\nSymbolic Representation Enhancing a Subsymbolic Algorithm\nExample: SenticNet in Sentiment Analysis\nSenticNet is a knowledge graph that encodes commonsense and\naffective knowledge in a structured format. It is often integrated\nwith deep learning models for sentiment analysis. Instead of relying\npurely on data-driven neural networks, SenticNet provides\nstructured semantic and affective information that helps guide the\nneural model. By incorporating these symbolic representations,\ndeep learning models can achieve better sentiment classification by\nleveraging structured knowledge about concepts and _ their\nemotional valence.\n\nAl\nSE\nSubsymbolic Algorithm Developing a Symbolic Representation\nExample: OpenAI's Concept Erasure for Interpretable AI\nIn some approaches to explainability in AI, deep neural networks\nare used to extract high-level semantic concepts from unstructured\ndata, such as images or text. For example, neural networks can be\ntrained to recognize abstract concepts like \"danger\" or \"happiness\"\nfrom raw inputs. These learned concepts can then be structured into\na symbolic representation, such as a semantic network or an\nontology, to provide a more interpretable knowledge base that\nenhances human understanding of the AI's reasoning.",
+    "keywords": [
+      "symbolic",
+      "knowledge",
+      "neural",
+      "representation",
+      "algorithm",
+      "concepts",
+      "semantic",
+      "structured"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-040",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 5",
+    "text": "Neurosymbolic\nSystem\nKnowledge\nGraph\nEnhanced\nLanguage\nModels (e.g.,\nK-BERT)\nNeural\nSymbolic\nConcept\nLearner (NS\nCL)\nApproach\nSymbolic\nrepresentation\n(KG)\nintegrated\nwithin\nsubsymbolic\nmodel (BERT)\nSubsymbolic\nalgorithm\n(Neural\nNetwork)\nused to\ndevelop\nsymbolic\nrepresentation\n(program\ninduction)\nSymbolic\nRepresentation\nKnowledge\nGraph (e.g.,\nWikidata,\nSenticNet)\nScene graphs,\nsymbolic\nprograms\nSubsymbolic\nAlgorithm\nbased model\n(BERT) with\nembeddings\nDeep neural\nnetwork for\nfeature\nextraction\nfrom images\nImpact\nImproved accuracy,\nbetter entity\nrecognition,\ndisambiguation\nIncreased\ncomprehensiveness,\ninterpretable\nsymbolic reasoning\nExample\n\"Apple is\ngrowing\nfast\"\ndistinguishes\nApple Inc.\nvs. apple\nfruit\n\"Is there a\nred cube to\nthe left of\nthe blue\nsphere?\"\ngenerates\nsymbolic\nreasoning to\nanswer\nKey Strengths\nBetter factual\nreasoning,\nnamed entity\ndisambiguation,\nenhanced\ninterpretability\nCombines\nperception\npower of neural\nnetworks with\nlogical\nreasoning\ncapabilities,\ntransparent\ndecision\nmaking\n\nQ2\nSE\nce Extracting commonsense knowledge is_ challenging\nbecause it is often not explicitly mentioned in written\ndocuments. List and describe two potential sources from\nwhich commonsense knowledge can be acquired. For\neach source, explain how it can be used to gather relevant\ninformation and what type of commonsense knowledge\nmight be obtained.",
+    "keywords": [
+      "symbolic",
+      "knowledge",
+      "neural",
+      "reasoning",
+      "apple",
+      "commonsense",
+      "representation",
+      "subsymbolic"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-041",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 5",
+    "text": "A2\nConceptNet\nca ConceptNet is a large-scale semantic network that encodes commonsense\nknowledge as triples (subject, relation, object), such as (\"dog\", IsA, \"animal')\nce It can be queried to retrieve related concepts, infer relationships, and enrich\nNLP models with structured commonsense reasoning\nce It supports multiple languages, making it useful for multilingual applications\nce Basic taxonomic knowledge (e.g., \"A car is a type of vehicle\")\nce Affordances (e.g., \"A chair is used for sitting\")\nce Part-whole relationships (e.g., \"A wheel is part of a car\")\n\nA2\nATOMIC\nce ATOMIC is a knowledge graph focused on inferential commonsense reasoning. It models\ncause-and-effect relationships, including social and psychological aspects of human behavior.\nce ___ It provides three main types of inferences: If-Event-Then-PersonX's reaction, If-Event-Then\nPersonX's intent, and If-Event-Then-Effect on others\nca_-- This makes it particularly useful for social reasoning in AI (e.g., chatbots, virtual assistants)\nCausal reasoning (e.g., \"If someone apologizes, the other person might forgive them\")\nIntent-based reasoning (e.g., \"If a person buys a gift, they likely want to make someone\nhappy\")\nce Social norms and consequences (e.g., \"If someone shouts in a library, others will be\nannoyed\")\nCR\nCR",
+    "keywords": [
+      "reasoning",
+      "commonsense",
+      "knowledge",
+      "relationships",
+      "social",
+      "someone",
+      "atomic",
+      "conceptnet"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-042",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 5",
+    "text": "A2\nWikidata\nca = Wikidata is a structured knowledge base that provides factual information about real\nworld entities, including people, places, and objects\nce Unlike ConceptNet and ATOMIC, which focus on inferential knowledge, Wikidata\nprovides encyclopedic, structured facts that help ground AI systems in real-world data\nce_It can be used alongside ConceptNet or ATOMIC to provide factual grounding for\ncommonsense reasoning\nce General factual knowledge (e.g., \"Paris is the capital of France\")\nce Temporal and spatial knowledge (e.g., \"The sun sets in the west\")\nce Entity relationships (e.g., \"Elon Musk is the CEO of Tesla\")\n\nA2\nPrimeNet\nca PrimeNet is a commonsense knowledge base structured in a three-layer hierarchy\nEntity, Concept and Primitive layer\nce It employs a gradual expansion strategy to integrate diverse sources of commonsense\nknowledge, refining relationships to ensure high-quality representation\nce A probabilistic taxonomy is used to infer connections between concepts and\nprimitives, allowing for generalization and structured reasoning\nce Hierarchical Organization - Structures knowledge to mirror human cognition, unlike\ntraditional isolated facts\nce Conceptual Generalization - Infers higher-level knowledge from specific facts (e.g.,\nrecognizing both apples and bananas as fruits)\ncz Cognitive Connections - Establishes relationships between abstract concepts and real\nworld entities (e.g., linking \"joy\" to \"happiness\" and \"smiling\")",
+    "keywords": [
+      "knowledge",
+      "structured",
+      "commonsense",
+      "facts",
+      "factual",
+      "relationships",
+      "wikidata",
+      "atomic"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-043",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 5",
+    "text": "Knowledge\nSource\nConceptNet\nATOMIC\nWikidata\nPrimeNet\nA2\nStrengths\nGeneral commonsense facts (e.g., \"A dog is a\npet\")\nSocial and inferential reasoning (e.g.,\n\"Apologizing leads to forgiveness\")\nStructured factual data (e.g., \"Paris is in\nFrance\")\nHybrid symbolic + neural approach for ABSA\nLacks deep sentiment context\nLimited aspect-level knowledge\nNo sentiment/context awareness\nStill requires external knowledge\nsources like SenticNet\n\nQ3\nSE\nce Identify two conceptual primitives, one representing a\npositive sentiment and one representing a negative\nsentiment. For each primitive, provide a range of related\nwords and multi-word expressions (MWEs) that are\nassociated with it. Explain how these primitives can be\nused for enhancing the accuracy and the explainability of\nsentiment analysis.\n\nA3\nPositive Sentiment Primitive: GAIN\nRelated Words: benefit, profit, advantage, improvement, success, growth\nMWEs: gain_benefit, experience_growth, achieve_success, sense_of_accomplishment,\nfinancial_gain\nNegative Sentiment Primitive: PAIN\nRelated Words: suffering, discomfort, distress, hurt, anguish, loss\nMWEs: feel_pain, experience_discomfort, sense_of_distress, deep_hurt, emotional_anguish\nEnhancing Sentiment Analysis Accuracy __ a\nBy linking sentiment words and MWEs to their corresponding primitives, we can prevent them\nfrom being erroneously assigned the wrong polarity due to statistical biases in skewed training data\nEnhancing Sentiment Analysis Explainability\nLinking sentiment words and MWEs to their corresponding primitives ensures that the final\noutput is explainable, e.g., by associating such words and MWEs with the emotions tied to the\nprimitives and then calculating polarity eed on these connections",
+    "keywords": [
+      "sentiment",
+      "mwes",
+      "words",
+      "primitives",
+      "analysis",
+      "enhancing",
+      "gain",
+      "knowledge"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-044",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 5",
+    "text": "O4\nSE\ncx Describe how a commonsense knowledge base can be\nintegrated into an LLM and explain, with examples, why\nthis integration is beneficial. Discuss the methods and\nstrategies for incorporating everyday, intuitive knowledge\ninto the model and illustrate how this integration can\nenhance the LLM's ability to interpret and generate\nresponses that are contextually accurate and aligned with\nhuman expectations.\n\nA4\nDirect Incorporation\nDescription: The commonsense knowledge base can be directly integrated into the LLM's architecture,\nallowing the model to reference and utilize the structured knowledge when generating responses\nExample: If the LLM encounters the phrase \"He felt pain after falling,\" it can use the CKB to recognize\nthat falling often leads to physical pain and distress, enhancing its response relevance\nAugmented Training\nDescription: During the training phase, the LLM can be exposed to examples that combine raw text\ndata with commonsense knowledge, helping it learn the relationships and contextual relevance of\ndifferent concepts\nExample: Training data could include sentences like \"A child enjoys playing in the park because it __\nbrings happiness,\" where the CKB highlights the connection between children, play, and emotional gain\nContextual Querying\nDescription: The LLM can query the CKB during inference to fetch relevant information that can\ninform its responses based on the context of the conversation\nExample: In response to \"What happens when you cut an onion?\" the LLM can query the CKB to\nidentify that cutting onions often leads to crying due to the release of certain chemicals",
+    "keywords": [
+      "knowledge",
+      "commonsense",
+      "description",
+      "example",
+      "responses",
+      "training",
+      "base",
+      "contextual"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-045",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 5",
+    "text": "A4\nBenefits of Integration\n1. Contextual Accuracy\nExplanation: By leveraging commonsense knowledge, LLMs can produce responses that are contextually\nappropriate and resonate with human understanding\nExample: If asked, \"Why do people celebrate birthdays?\" an LLM with a CKB can answer, \"People celebrate\nbirthdays to mark the passage of time and express love for the person,\" instead of merely listing facts\nDs Enhanced Interpretability\nExplanation: The ite penon provides a framework for the model to explain its reasoning, making it easier\nfor users to understand why a particular response was generated\nExample: When responding to \"Why do we feel happy when we achieve a goal?\" the LLM could draw on the\nCKB to explain, \"Achieving a goal triggers a sense of accomplishment, which is linked to the concept of\nGAIN in human emotions\"\nBe Improved Coherence and Relevance\nExplanation: The presence of commonsense knowledge helps maintain coherence in conversations, as the\nmodel can draw on shared human experiences\nExample: In a dialogue about pets, the LLM can relate that \"Cats often purr when they are content,\" helping\nthe conversation flow naturally\n\nA4\nMethods and Strategies for Incorporating Everyday Knowledge\n1. Knowledge Graphs\nDescription: Utilize knowledge graphs to represent relationships between concepts and incorporate\nthese structures into LLMs for richer context understanding\nBenefit: They allow the model to visualize and reason about relationships, such as linking \"exercise\" to\nboth \"health benefits\" and \"physical activity\"\nes Fine-tuning with Commonsense Data\nDescription: Fine-tune LLMs on datasets specifically designed to include commonsense reasoning\ntasks, such as Winograd Schema Challenge or Story Cloze Test\nBenefit: This method enhances the model's ability to discern context and relationships that are not\nevident in isolated data\nOr Layered Approaches\nDescription: Implement a multi-layer architecture where one layer specializes in language generation,\nwhile another layer incorporates commonsense reasoning based on a CKB\nBenefit: This separation allows for focused processing, enhancing both language fluency and\nknowledge application in responses",
+    "keywords": [
+      "knowledge",
+      "commonsense",
+      "model",
+      "benefit",
+      "description",
+      "example",
+      "explanation",
+      "human"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-046",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 5",
+    "text": "Se\nce Explain with examples how a bottom-up strategy can\nenable the discovery of conceptual primitives for a\nspecific domain directly from text data, and how a top\ndown strategy can then be applied on the resulting set of\nprimitives to identify more words and MWEs related to\nthem.\n\nThe bottom-up strategy focuses on extracting information directly from raw text data to identify basic\nconcepts or primitives that represent fundamental ideas within a specific domain. This approach\ntypically involves analyzing large text corpora to identify recurring terms, phrases, and patterns.\nces Process\n1. Data Collection: Gather a large dataset of text relevant to the specific domain (e.g., medical\nliterature, customer reviews, scientific articles)\n2. Text Processing: Use NLP techniques such as tokenization, part-of-speech tagging, and named\nentity recognition to analyze the text\n3. Frequency Analysis: Identify frequently occurring words and phrases. This can involve\ntechniques like TF-IDF to assess the significance of terms in the context of the entire dataset\n4. Clustering: Group related terms together using clustering algorithms to identify potential\nconceptual primitives\nce Example\nDomain: Health and Fitness\nText Data: A collection of articles and blogs about exercise and nutrition\nPrimitives Discovery: Through analysis, the bottom-up approach might identify primitives such\nas \"EXERCISE,\" \"NUTRITION,\" and \"WELLNESS\" based on their frequency and contextual\nusage in the texts",
+    "keywords": [
+      "text",
+      "identify",
+      "primitives",
+      "data",
+      "domain",
+      "bottom-up",
+      "specific",
+      "strategy"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-047",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 5",
+    "text": "The top-down strategy involves starting with the identified conceptual primitives and expanding upon\nthem by associating related words and MWEs that reinforce or elaborate on these primitives.\nCR\nProcess\n1.\nIdentify Primitives: Utilize the primitives discovered from the bottom-up approach as the\nfoundation\nDe Semantic Relationships: Use lexical databases (e.g., WordNet) or CKBs to find synonyms,\nantonyms, and related terms that connect to each primitive\n3. MWE Extraction: Look for phrases or collocations that frequently occur with these primitives\nin the text data\n4. Contextual Refinement: Validate the relevance of the newly identified terms by checking their\noccurrences in the original text corpus\nExample\nPrimitives: From the previous example, let's take \"EXERCISE\"\nExpanding Vocabulary: Using the top-down approach, related words might include \"fitness,\"\n\"training,\" \"workout,\" and MWEs like \"high-intensity training,\" \"strength training,\" and ' \u2018cardio\nworkout.\" These terms could be sourced from thesauri, lexical databases, and further analysis of\nthe original dataset.\n\nQ6\nSE\nce Describe the development of an AI assistant that helps\nusers with daily tasks. Choose a scenario where the AI\nassistant must use commonsense knowledge. For\nexample, helping a user decide what to wear based on the\nweather forecast. List the pieces of commonsense\nknowledge the AI needs to handle the scenario effectively.\nExplain how the AI system can represent and use this\nknowledge to assist the user. Specify whether it would use\na rule-based system, machine learning models, or a\ncombination of both.",
+    "keywords": [
+      "primitives",
+      "example",
+      "knowledge",
+      "related",
+      "terms",
+      "these",
+      "training",
+      "approach"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-048",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 5",
+    "text": "The AI assistant must incorporate the following commonsense knowledge\n1.\nTemperature and Clothing Choices\nCold weather - Wear warm clothes (e.g., coats, sweaters, gloves)\nHot weather - Wear light, breathable fabrics (e.g., t-shirts, shorts)\nMild weather - Layering is a good option\nWeather Conditions and Apparel\nRain - Carry an umbrella, wear waterproof clothing and shoes\nSnow - Wear insulated boots, thick socks, and a heavy coat\nWindy - A windbreaker or jacket helps\nActivity Context\nFormal events - Require more polished outfits, regardless of the weather\nOutdoor sports - Need moisture-wicking and flexible clothing\nCasual indoor settings + Comfort is prioritized over weather considerations\nUser Preferences & Adaptability\nSome users may prefer lighter clothing in cooler weather or vice versa\nCultural or personal style preferences influence clothing choices\n\nSe\nThe AI assistant can represent and use this knowledge in multiple ways\n1.\nKnowledge Representation\nStructured Knowledge Base: Store clothing-weather associations in a\ncommonsense knowledge graph\nMachine Learning Models: Use historical user behavior to refine\nrecommendations\nRule-Based System: Implement if-then rules for basic conditions (e.g., IF\ntemperature < 5\u00b0C, THEN suggest a coat)\nProcessing the Information\nWeather API Integration: Fetch real-time weather forecasts\nUser Preference Learning: Adapt recommendations based on previous feedback\nContext Awareness: Consider event types and user schedules before suggesting an outfit",
+    "keywords": [
+      "weather",
+      "clothing",
+      "knowledge",
+      "user",
+      "wear",
+      "assistant",
+      "choices",
+      "coat"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-049",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 5",
+    "text": "Se\nSystem Type: Rule-Based, Machine Learning, or Hybrid?\nA hybrid approach is ideal\n1. Rule-Based System for Basic Commonsense Knowledge\nEnsures reliable, interpretable, and fast recommendations for common cases\nSample Rule: IF temperature < 10\u00b0C AND rain = True, THEN suggest a raincoat + warm layers\n2. Machine Learning for Personalized Suggestions\nLearns user preferences over time, adapting recommendations\nUses past outfit choices to refine suggestions\nExample: If a user frequently wears a hoodie in cool weather, the AI will prioritize that option\n3. Neural Network-Based Natural Language Processing (NLP)\nAllows the assistant to understand nuanced user queries (e.g., \"What should I wear for a\nwindy but warm day?\"')\n\nSs\nSample Interaction\nUser: \"What should I wear today?\"\nAI Assistant\n\u00b0 \"The forecast is 15\u00b0C with light rain. I recommend a\nwaterproof jacket, jeans, and sneakers.\"\ne \"Since you have a business meeting, a lightweight trench coat\nover your formal outfit would work.\"\ne \"Would you like to add an umbrella reminder?\"\n\nA Subjectivity\nA Personality\nQ7 a. Ideology\nA _. Vocation\nexo- A > Religion\nce Describe how the Personalized Sentiment Analysis\nPyramid can be adapted to another downstream task\n(instead of polarity detection) and explain in detail\nhow each layer can be tailored to meet the specific\nneeds of the chosen task. Discuss how\npersonalization can be incorporated at each stage to\nenhance the task's relevance and effectiveness for\nindividual users. Highlight practical examples and\npotential challenges in adapting the pyramid to this\nnew context.",
+    "keywords": [
+      "user",
+      "task",
+      "adapting",
+      "assistant",
+      "each",
+      "hybrid",
+      "learning",
+      "machine"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-050",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 5",
+    "text": "A7\nSE\nce Let's pick Question Answering (QA). Traditional QA systems\ntypically rely on retrieving factual answers from structured (e.g.,\nknowledge graphs) or unstructured (e.g., Wikipedia, books)\nsources. However, questions are often highly subjective and\ncontext-dependent, requiring personalization to provide the most\nrelevant, useful, and contextually appropriate answers.\nce By adapting the Personalized Sentiment Analysis Pyramid, we\ncan improve QA systems by integrating personalization at multiple\nlevels, ensuring that answers are tailored to each user's\nbackground, preferences, and contextual needs.\n\nA7\nSe\n1. Entity Level (Fact-Based QA Foundation)\nAt the base of the pyramid, QA systems focus on retrieving factual answers based\non objective information from structured or unstructured sources\n\u00b0 Question: \"Who invented the telephone?\"\n\u00b0 Answer: \"Alexander Graham Bell\"\ne The system adapts based on user preferences, e.g., a historian may prefer a\ndetailed timeline rather than a short answer\n\u00a2 Users can specify preferred sources (e.g., Wikipedia, research papers)\n\u00b0 Basic fact-based QA doesn't account for ambiguity or subjectivity in questions\n\nA7\nSe\n2. Culture Level (Adjusting Answers for Cultural Relevance)\nDifferent cultures prioritize different information and have unique ways of framing questions\nand answers\n\u00b0 Question: \"What is the best way to greet someone?\"\ne A Western user may expect \"A handshake is common in business settings\"\ne A Japanese user may expect \"A bow is the traditional greeting\"\n\u00b0 Adapt answers to cultural norms using user location, language settings, or past\ninteractions\n\u00b0 Modify examples or case studies to align with regional preferences\n\u00b0 Cross-cultural ambiguities may require multi-perspective answers instead of a single\nresponse",
+    "keywords": [
+      "answers",
+      "user",
+      "preferences",
+      "question",
+      "questions",
+      "sources",
+      "systems",
+      "answer"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-051",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 5",
+    "text": "A7\nSe\n3. Religion Level (Faith-Based Personalization in QA)\nReligious beliefs can influence what type of answers users seek, especially in ethical,\nphilosophical, or dietary questions\n\u00b0 Question: \"Js it okay to eat meat?\"\ne A secular user may receive \"Yes, there are no universal restrictions on eating meat\"\ne A Hindu user may receive \"In Hinduism, many followers avoid beef due to religious beliefs\"\n\u00b0 The system can respect religious viewpoints while still providing a balanced\nperspective\n\u00b0 Users can opt into faith-based filtering to see answers relevant to their beliefs\ne Answers must avoid bias and ensure respect for diverse perspectives\n\nA7\n4. Vocation Level (Profession-Specific Answers)\nProfessionals in different fields expect different levels of detail and technicality in answers\n\u00b0 Question: \"What is machine learning?\"\ne A general user may get: \"Machine learning is a type of AI that allows computers to learn from data\"\ne A data scientist may get: \"Machine learning is a set of algorithms that optimize models using\nstatistical inference and gradient-based optimization\"\n\u00b0 The QA system adjusts depth, terminology, and technical complexity based on user\nprofession\n\u00b0 Allows users to set knowledge preferences, e.g., \"Explain like I'm five\" vs. \"Explain at an\nexpert level\"\n. Requires adaptive answer generation based on the user's field of expertise",
+    "keywords": [
+      "answers",
+      "user",
+      "beliefs",
+      "learning",
+      "level",
+      "machine",
+      "religious",
+      "users"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-052",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 5",
+    "text": "A7\nSe\n5. Ideology Level (Bias-Aware Answers for Political or Philosophical Topics)\nPolitical and ideological perspectives affect how users frame and interpret answers\n\u00b0 Question: \"Js universal healthcare a good idea?\"\ne A neutral response may cite pros and cons\n\u00a2 A liberal-leaning user may prioritize benefits like equity and accessibility\n\u00a2 A libertarian user may prioritize concerns about government control and costs\n\u00b0 Users can customize answer framing (e.g., \"Show me neutral answers\" vs. \"Show me\nanswers aligned with my beliefs\")\n\u00b0 QA systems can use explainability features to clarify how an answer was generated\n\u00b0 Personalization must avoid reinforcing echo chambers while respecting user preferences\n\nA7\n6. Personality Level (Tailoring Tone and Style to Individual Preferences)\nUsers have different communication preferences-some prefer formal, detailed, or humorous\nanswers\n\u00b0 Question: \"What's the best way to lose weight?\"\n\u00a2 A formal response: \"A caloric deficit achieved through diet and exercise is the most effective approach\"\n\u00a2 A friendly response: \"Move more, eat less, and don't forget to have fun with it!\"\n\u00a2 A scientific response: \"Weight loss occurs when energy expenditure exceeds caloric intake, leading to\nfat metabolism\"\n\u00b0 Allow users to select preferred answer styles (e.g., formal, casual, humorous)\n\u00b0 Use user interaction history to adjust response tone dynamically\n\u00b0 Requires NLP models to generate diverse linguistic styles while maintaining accuracy",
+    "keywords": [
+      "answers",
+      "response",
+      "user",
+      "users",
+      "answer",
+      "formal",
+      "caloric",
+      "humorous"
+    ]
+  },
+  {
+    "chunk_id": "nlu-tutorials-053",
+    "source_pdf": "nlu-tutorials.pdf",
+    "topic": "Tutorial 5",
+    "text": "A7\nSe\n7. Subjectivity Level (Fully Adaptive and Context-Aware Answers)\nAt the highest level, QA becomes entirely personalized based on user history, emotional state,\nand cognitive preferences\n\u00b0 Question: \"How can I be more productive?\"\ne A general response: \"Use time management techniques like the Pomodoro method\"\n\u00a2 Auser with ADHD history may receive \"Try breaking tasks into micro-goals and using focus apps\ndesigned for neurodivergent users\"\n\u00b0 Uses behavioral tracking (e.g., past searches, interactions) to tailor responses\n\u00b0 Can integrate real-time emotional analysis (e.g., adjusting responses based on detected\nsentiment)\n\u00b0 Over-personalization may lead to limited exposure to alternative perspectives\n\u00b0 Ethical concerns around data privacy and emotional manipulation",
+    "keywords": [
+      "emotional",
+      "based",
+      "history",
+      "level",
+      "responses",
+      "adaptive",
+      "adhd",
+      "adjusting"
+    ]
+  }
+]

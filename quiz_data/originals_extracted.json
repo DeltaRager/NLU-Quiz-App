@@ -1,0 +1,1702 @@
+[
+  {
+    "id": "orig-draft-001",
+    "question": "What is the difference between NLP and NLU?",
+    "options": [
+      "NLP and NLU are synonymous and can be used interchangeably",
+      "NLP focuses on text meaning, NLU on processing and generating text",
+      "NLU includes more theoretical tasks, NLP is more focused on applications",
+      "NLP handles language interaction, NLU focuses on understanding meaning"
+    ],
+    "correct_option": "D",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-002",
+    "question": "What does task decomposition typically involve?",
+    "options": [
+      "Splitting a complex NLP task into simpler, manageable subtasks",
+      "Translating text from one language to another",
+      "Summarizing long documents into shorter versions",
+      "Evaluating the accuracy of an NLP model"
+    ],
+    "correct_option": "A",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-003",
+    "question": "What is the meaning of panalogy?",
+    "options": [
+      "Comparing machine learning models using parallel datasets",
+      "Using parallel processing to speed up computations",
+      "Comparing different concepts by examining their parallel structures",
+      "Enhancing natural language processing by using parallel corpora"
+    ],
+    "correct_option": "C",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-004",
+    "question": "What does symbol grounding refer to in the context of AI?",
+    "options": [
+      "The process of translating symbols into natural language",
+      "The ability to create new symbols for unknown concepts",
+      "Relating symbols to real-world objects or concepts to give them meaning",
+      "The use of symbols to perform logical operations"
+    ],
+    "correct_option": "C",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-005",
+    "question": "What is a topology-aware similarity measure?",
+    "options": [
+      "A method that considers the geometric arrangement of data points",
+      "A technique for comparing the colors in images",
+      "An approach for evaluating the textual similarity between documents",
+      "A measure that assesses the similarity of time series based on frequency"
+    ],
+    "correct_option": "A",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-006",
+    "question": "What does intention awareness refer to in the context of HCI?",
+    "options": [
+      "The ability of a system to predict user actions based on past behavior",
+      "The system's understanding of the user's goals and purposes",
+      "The user's ability to comprehend the system's functionalities",
+      "The system's ability to execute commands accurately"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-007",
+    "question": "What is the primary difference between explainability and interpretability?",
+    "options": [
+      "The former focuses on model accuracy, the latter focuses on model complexity",
+      "The former is understanding decisions; the latter is explaining model workings",
+      "The former is about data transparency, the latter about algorithm transparency",
+      "The former deals with system performance, the latter with prediction outcomes"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-008",
+    "question": "Which approach can be used for microtext normalization?",
+    "options": [
+      "Dictionary-based replacement",
+      "Machine translation",
+      "Sentiment analysis",
+      "Syntax parsing"
+    ],
+    "correct_option": "A",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-009",
+    "question": "Which of the following techniques is often used in microtext normalization?",
+    "options": [
+      "TF-IDF",
+      "POS tagging",
+      "Levenshtein distance",
+      "NER"
+    ],
+    "correct_option": "C",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-010",
+    "question": "Why is microtext normalization important in NLU?",
+    "options": [
+      "It makes text shorter and more concise",
+      "It helps in translating text to other languages",
+      "It enhances NLU tasks by standardizing informal text",
+      "It helps in generating text summaries"
+    ],
+    "correct_option": "C",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-011",
+    "question": "Which of the following is a challenge in microtext normalization?",
+    "options": [
+      "Identifying the language of the text",
+      "Converting numeric values to words",
+      "Handling the ambiguity of abbreviations and slang",
+      "Translating text to multiple languages"
+    ],
+    "correct_option": "C",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-012",
+    "question": "Which one of these is a popular dataset for microtext normalization?",
+    "options": [
+      "LexNorm",
+      "SenticNet",
+      "WordNet",
+      "LIWC"
+    ],
+    "correct_option": "A",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-013",
+    "question": "What challenge does SBD address?",
+    "options": [
+      "Recognizing the context of idiomatic expressions",
+      "Differentiating between abbreviations and sentence endings",
+      "Identifying the main topic of a paragraph",
+      "Translating text into different dialects"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-014",
+    "question": "Which of the following tools can be used for SBD?",
+    "options": [
+      "Named entity recognizer",
+      "Tokenizer",
+      "POS tagger",
+      "Lemmatizer"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-015",
+    "question": "Which of the following is a common dataset used for evaluating SBD systems?",
+    "options": [
+      "Penn Treebank",
+      "OntoNote",
+      "MIMIC",
+      "SIGMORPHON"
+    ],
+    "correct_option": "A",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-016",
+    "question": "Why is SBD important in NLU?",
+    "options": [
+      "It helps in translating text accurately",
+      "It improves the performance of downstream NLU tasks",
+      "It reduces the size of text data",
+      "It helps in detecting the language of the text"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-017",
+    "question": "In addition to punctuation, what other feature can help in SBD?",
+    "options": [
+      "Font size",
+      "Capitalization",
+      "Word embeddings",
+      "Lemmatization"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-018",
+    "question": "What is POS tagging about?",
+    "options": [
+      "Identifying the sentiment of a sentence",
+      "Labeling words in a sentence as noun, verb, adjective, and more",
+      "Translating text into another language",
+      "Parsing the grammatical structure of sentences"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-019",
+    "question": "Which sentence could be ambiguous for POS tagging?",
+    "options": [
+      "\"The dog barked loudly\"",
+      "\"She will can the peaches\"",
+      "\"It is a sunny day\"",
+      "\"He enjoys reading books\""
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-020",
+    "question": "Which resource is commonly used for training and evaluating POS taggers?",
+    "options": [
+      "OntoNote",
+      "Penn Treebank",
+      "LexNorm",
+      "LIWC"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-021",
+    "question": "In addition to words, what other feature can be useful in POS tagging?",
+    "options": [
+      "Word length",
+      "Word frequency",
+      "Word embeddings",
+      "Lemmatization"
+    ],
+    "correct_option": "D",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-022",
+    "question": "Text chunking is often referred to as",
+    "options": [
+      "Sentence splitting",
+      "Shallow parsing",
+      "Deep parsing",
+      "Text summarization"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-023",
+    "question": "Which machine learning technique is commonly used for text chunking?",
+    "options": [
+      "K-means clustering",
+      "HMM",
+      "SVM",
+      "Decision trees"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-024",
+    "question": "Which of the following is a key application of text chunking?",
+    "options": [
+      "Image recognition",
+      "Speech synthesis",
+      "NER",
+      "OCR"
+    ],
+    "correct_option": "C",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-025",
+    "question": "Which resource is commonly used for training and evaluating chunking systems?",
+    "options": [
+      "Penn Treebank",
+      "OntoNote",
+      "LexNorm",
+      "MIMIC"
+    ],
+    "correct_option": "A",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-026",
+    "question": "What challenge does text chunking address in NLU?",
+    "options": [
+      "Translating text into different dialects",
+      "Assigning correct POS tags to each word",
+      "Grouping words into meaningful phrases for further analysis",
+      "Detecting the boundaries between sentences"
+    ],
+    "correct_option": "C",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-027",
+    "question": "Which of the following is the lemma of the word \"running\"?",
+    "options": [
+      "ran",
+      "runs",
+      "run",
+      "runner"
+    ],
+    "correct_option": "C",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-028",
+    "question": "How does lemmatization differ from stemming?",
+    "options": [
+      "It removes only suffixes, stemming removes both prefixes and suffixes",
+      "It uses a dictionary to find the base form, stemming uses rules to strip affixes",
+      "It is faster than stemming",
+      "It is used only for verbs, stemming is used for all POS tags"
+    ],
+    "correct_option": "",
+    "source": "original",
+    "topic": null,
+    "needs_review": true,
+    "notes": "answer text did not match options for Q28; missing answer key entry",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-029",
+    "question": "Which of the following tools is commonly used for lemmatization in Python?",
+    "options": [
+      "NLTK",
+      "OpenCV",
+      "TensorFlow",
+      "Scikit-learn"
+    ],
+    "correct_option": "A",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-030",
+    "question": "Which library provides the WordNetLemmatizer in Python?",
+    "options": [
+      "Gensim",
+      "Scikit-learn",
+      "NLTK",
+      "SpaCy"
+    ],
+    "correct_option": "C",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-031",
+    "question": "Which of the following is the correct lemma for the word \"better\"?",
+    "options": [
+      "good",
+      "best",
+      "well",
+      "better"
+    ],
+    "correct_option": "A",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-032",
+    "question": "In lemmatization, what role does the POS tag play?",
+    "options": [
+      "It determines the root form of a word",
+      "It helps in splitting text into sentences",
+      "It is used to identify named entities",
+      "It helps in summarizing text"
+    ],
+    "correct_option": "A",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-033",
+    "question": "Which of the following words has the same lemma and root form in English?",
+    "options": [
+      "Running",
+      "Happier",
+      "Cats",
+      "Quick"
+    ],
+    "correct_option": "D",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-034",
+    "question": "Which of the following is a common approach to WSD?",
+    "options": [
+      "Bag of words",
+      "NER",
+      "Supervised machine learning",
+      "Text summarization"
+    ],
+    "correct_option": "C",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-035",
+    "question": "Which of the following resources is commonly used in WSD tasks?",
+    "options": [
+      "WordNet",
+      "OntoNote",
+      "SIGMORPHON",
+      "LexNorm"
+    ],
+    "correct_option": "A",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-036",
+    "question": "What is the definition of \u2018cool' language?",
+    "options": [
+      "A language where a lot of microtext is used",
+      "A language with very difficult sentence structure",
+      "A language where understanding a sentence relies more on context",
+      "A language that uses a lot of stopwords and redundancies"
+    ],
+    "correct_option": "C",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-037",
+    "question": "Which machine learning model can be used for WSD?",
+    "options": [
+      "Decision trees",
+      "CNN",
+      "RNN",
+      "K-Means clustering"
+    ],
+    "correct_option": "C",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-038",
+    "question": "Which of the following is a challenge in WSD?",
+    "options": [
+      "Identifying the boundaries between sentences",
+      "Handling the ambiguity of words with multiple meanings",
+      "Translating text to multiple languages",
+      "Summarizing long texts"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-039",
+    "question": "In WSD, what role does context play?",
+    "options": [
+      "It helps in translating text",
+      "It is used to identify named entities",
+      "It determines the correct meaning of a word",
+      "It helps in text summarization"
+    ],
+    "correct_option": "C",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-040",
+    "question": "Which evaluation metric is commonly used to assess WSD performance?",
+    "options": [
+      "Accuracy",
+      "Euclidean distance",
+      "BLEU score",
+      "MSE"
+    ],
+    "correct_option": "A",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-041",
+    "question": "Which of the following is an unsupervised method for WSD?",
+    "options": [
+      "Decision trees",
+      "K-means clustering",
+      "SVM",
+      "Naive Bayes classifier"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-042",
+    "question": "Which of the following categories is commonly used in NER?",
+    "options": [
+      "Sentiment",
+      "POS",
+      "Organization",
+      "Syntax"
+    ],
+    "correct_option": "C",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-043",
+    "question": "Which machine learning model is commonly used for NER?",
+    "options": [
+      "Decision trees",
+      "K-means clustering",
+      "CRF",
+      "PCA"
+    ],
+    "correct_option": "C",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-044",
+    "question": "What is the main challenge in NER?",
+    "options": [
+      "Identifying sentence boundaries",
+      "Disambiguating words with multiple meanings",
+      "Correctly classifying entities with varying contexts",
+      "Translating text into different dialects"
+    ],
+    "correct_option": "C",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-045",
+    "question": "Which resource is commonly used for training and evaluating NER systems?",
+    "options": [
+      "OntoNote",
+      "Penn Treebank",
+      "CoNLL-2003 dataset",
+      "SenticNet"
+    ],
+    "correct_option": "C",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-046",
+    "question": "What is a common evaluation metric for assessing NER performance?",
+    "options": [
+      "BLEU score",
+      "F1 Score",
+      "MSE",
+      "Euclidean distance"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-047",
+    "question": "Which of the following techniques is most useful for concept extraction?",
+    "options": [
+      "NER",
+      "POS tagging",
+      "TF-IDF",
+      "OCR"
+    ],
+    "correct_option": "C",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-048",
+    "question": "Which of the following functionalities is provided by the Sentic Parser?",
+    "options": [
+      "Text summarization",
+      "Concept extraction",
+      "NER",
+      "Shallow parsing"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-049",
+    "question": "Which NLU task is closely related to concept extraction?",
+    "options": [
+      "Text summarization",
+      "Machine translation",
+      "NER",
+      "POS tagging"
+    ],
+    "correct_option": "C",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-050",
+    "question": "What is the main challenge in concept extraction?",
+    "options": [
+      "Identifying sentence boundaries",
+      "Disambiguating words with multiple meanings",
+      "Extracting relevant concepts from unstructured text",
+      "Translating text into different dialects"
+    ],
+    "correct_option": "C",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-051",
+    "question": "Which of the following tools can be used for concept extraction in Python?",
+    "options": [
+      "OpenCV",
+      "NLTK",
+      "Scikit-learn",
+      "SpaCy"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-052",
+    "question": "Which of the following is an example of an anaphoric expression?",
+    "options": [
+      "Quickly",
+      "It",
+      "Beautiful",
+      "Running"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-053",
+    "question": "Which NLU task is most closely related to anaphora resolution?",
+    "options": [
+      "NER",
+      "Text summarization",
+      "POS tagging",
+      "Sentiment analysis"
+    ],
+    "correct_option": "A",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-054",
+    "question": "What is the primary challenge in anaphora resolution?",
+    "options": [
+      "Translating text into different dialects",
+      "Correctly identifying the antecedent of an anaphoric expression",
+      "Extracting key ideas or topics from a text",
+      "Identifying sentence boundaries"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-055",
+    "question": "Which of the following algorithms can be used for anaphora resolution?",
+    "options": [
+      "LDA",
+      "SVM",
+      "CRF",
+      "Neural networks"
+    ],
+    "correct_option": "C",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-056",
+    "question": "Which resource is often used to help with anaphora resolution in NLU?",
+    "options": [
+      "WordNet",
+      "OntoNote",
+      "Penn Treebank",
+      "SenticNet"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-057",
+    "question": "Which machine learning technique is commonly used for subjectivity detection?",
+    "options": [
+      "K-means clustering",
+      "Decision trees",
+      "SVM",
+      "PCA"
+    ],
+    "correct_option": "C",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-058",
+    "question": "What is the difference between ambivalence and neutrality in sentiment analysis?",
+    "options": [
+      "Ambivalence means mixed feelings, while neutrality means no sentiment",
+      "Ambivalence means no sentiment, while neutrality means mixed feelings",
+      "Ambivalence and neutrality are the same",
+      "Ambivalence means strong feelings, while neutrality means extreme emotions"
+    ],
+    "correct_option": "A",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-059",
+    "question": "Which of the following features is most useful for subjectivity detection?",
+    "options": [
+      "Named entities",
+      "POS Tags",
+      "TF-IDF",
+      "OCR"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-060",
+    "question": "Which evaluation metric can be used to assess subjectivity detection?",
+    "options": [
+      "BLEU score",
+      "F1 score",
+      "MSE",
+      "Euclidean distance"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-061",
+    "question": "Which of the following techniques can be used for metaphor detection in NLU?",
+    "options": [
+      "NER",
+      "Topic modeling",
+      "POS tagging",
+      "WSD"
+    ],
+    "correct_option": "D",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-062",
+    "question": "In metaphor understanding, what is the \"source domain\"?",
+    "options": [
+      "The literal meaning of the metaphorical phrase",
+      "The figurative context that gives meaning to the metaphor",
+      "The grammatical structure of the metaphor",
+      "The direct comparison using \"like\" or \"as\""
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-063",
+    "question": "Which of the following is a common challenge in metaphor understanding?",
+    "options": [
+      "Translating text into different languages",
+      "Detecting metaphors that are culturally specific",
+      "Summarizing long texts",
+      "Identifying sentence boundaries"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-064",
+    "question": "Which of the following NLU techniques is often used to understand metaphors?",
+    "options": [
+      "CNN",
+      "SVM",
+      "SRL",
+      "OCR"
+    ],
+    "correct_option": "C",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-065",
+    "question": "Which resource can be useful for training metaphor understanding models?",
+    "options": [
+      "WordNet",
+      "OntoNote",
+      "PropBank",
+      "Penn Treebank"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-066",
+    "question": "Which of the following sentences is an example of sarcasm?",
+    "options": [
+      "\"I absolutely love getting stuck in traffic\"",
+      "\"The sky is blue\"",
+      "\"I enjoy reading books\"",
+      "\"She is very kind\""
+    ],
+    "correct_option": "A",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-067",
+    "question": "Which feature can be indicative of sarcasm in text?",
+    "options": [
+      "Positive sentiment words in a negative context",
+      "Frequent use of punctuation",
+      "Proper noun usage",
+      "Numerical data"
+    ],
+    "correct_option": "A",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-068",
+    "question": "Which of the following is a common challenge in sarcasm detection?",
+    "options": [
+      "Identifying sentence boundaries",
+      "Disambiguating words with multiple meanings",
+      "Correctly interpreting the intended meaning behind sarcastic statements",
+      "Translating text into different languages"
+    ],
+    "correct_option": "C",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-069",
+    "question": "Which machine learning model can be used for sarcasm detection?",
+    "options": [
+      "K-means clustering",
+      "Decision trees",
+      "RNN",
+      "Linear regression"
+    ],
+    "correct_option": "C",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-070",
+    "question": "Which NLU technique can be useful for detecting sarcasm in text?",
+    "options": [
+      "NER",
+      "Sentiment analysis",
+      "POS tagging",
+      "Text summarization"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-071",
+    "question": "Which of the following resources can help improve sarcasm detection models?",
+    "options": [
+      "SenticNet",
+      "OntoNote",
+      "Penn Treebank",
+      "SIGMORPHON"
+    ],
+    "correct_option": "A",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-072",
+    "question": "Which of the following models is commonly used for personality recognition?",
+    "options": [
+      "CNN",
+      "RNN",
+      "SVM",
+      "Decision trees"
+    ],
+    "correct_option": "C",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-073",
+    "question": "In personality recognition, what does the \"Big Five\" model assess?",
+    "options": [
+      "Cognitive abilities",
+      "Openness, conscientiousness, extraversion, agreeableness, and neuroticism",
+      "Emotional intelligence",
+      "Linguistic diversity"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-074",
+    "question": "Which feature is often used in text-based personality recognition?",
+    "options": [
+      "NER",
+      "TF-IDF",
+      "POS tagging",
+      "OCR"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-075",
+    "question": "Which approach can assess user personality based on social media activity?",
+    "options": [
+      "Sentiment analysis",
+      "Text classification",
+      "Personality prediction models",
+      "NER"
+    ],
+    "correct_option": "C",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-076",
+    "question": "What is a key advantage of using machine learning for personality recognition?",
+    "options": [
+      "It can provide real-time feedback on personality traits",
+      "It can translate text into multiple languages",
+      "It can generate new text automatically",
+      "It can correct grammatical errors in text"
+    ],
+    "correct_option": "A",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-077",
+    "question": "Which resource can be useful for evaluating personality recognition models?",
+    "options": [
+      "WordNet",
+      "Personality-labeled text datasets",
+      "OntoNote",
+      "Penn Treebank"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-078",
+    "question": "Which technique is commonly used for aspect extraction in text?",
+    "options": [
+      "NER",
+      "Sentiment analysis",
+      "Topic modeling",
+      "POS tagging"
+    ],
+    "correct_option": "C",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-079",
+    "question": "Which of the following is a common challenge in aspect extraction?",
+    "options": [
+      "Identifying grammatical errors in text",
+      "Accurately extracting relevant aspects from text",
+      "Translating text into different languages",
+      "Summarizing long texts"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-080",
+    "question": "Which of the following algorithms can be used for aspect extraction?",
+    "options": [
+      "LDA",
+      "K-means clustering",
+      "Decision trees",
+      "PCA"
+    ],
+    "correct_option": "A",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-081",
+    "question": "Which NLU tool or library can be useful for aspect extraction?",
+    "options": [
+      "OpenCV",
+      "NLTK",
+      "TensorFlow",
+      "Keras"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-082",
+    "question": "What is the role of Sentic GCN in sentiment analysis?",
+    "options": [
+      "It classifies sentiment using word sequences",
+      "It uses graph-based models to extract aspects from text",
+      "It applies rule-based approaches to sentiment lexicons",
+      "It analyzes images to extract sentiment"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-083",
+    "question": "What is polarity detection in the context of NLU?",
+    "options": [
+      "Identifying the grammatical structure of a sentence",
+      "Determining whether the sentiment expressed in text is positive or negative",
+      "Translating text into another language",
+      "Splitting text into sentences"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-084",
+    "question": "Which of the following is a common application of polarity detection?",
+    "options": [
+      "Image recognition",
+      "Spam email filtering",
+      "Text summarization",
+      "Speech synthesis"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-085",
+    "question": "Which of the following methods can be used to perform polarity detection?",
+    "options": [
+      "LDA",
+      "SVM",
+      "CNN",
+      "PCA"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-086",
+    "question": "What is a common challenge in polarity detection?",
+    "options": [
+      "Identifying grammatical errors",
+      "Correctly detecting the sentiment in ambiguous or sarcastic text",
+      "Summarizing long documents",
+      "Translating text into multiple languages"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-087",
+    "question": "Which of the following libraries can be used for polarity detection in Python?",
+    "options": [
+      "OpenCV",
+      "Scikit-learn",
+      "TensorFlow",
+      "SpaCy"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-088",
+    "question": "Which evaluation metric is commonly used to assess polarity detection?",
+    "options": [
+      "BLEU score",
+      "F1 score",
+      "MSE",
+      "Euclidean distance"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-089",
+    "question": "In polarity detection, what role do sentiment lexicons play?",
+    "options": [
+      "They provide grammatical rules for text",
+      "They contain lists of words with predefined sentiment values",
+      "They translate text into different languages",
+      "They summarize the content of the text"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-090",
+    "question": "Which resource is useful for training a polarity detection model?",
+    "options": [
+      "SenticNet",
+      "OntoNote",
+      "Penn Treebank",
+      "LexNorm"
+    ],
+    "correct_option": "A",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-091",
+    "question": "Which of the following is a common technique for knowledge representation?",
+    "options": [
+      "Gradient descent",
+      "Decision trees",
+      "Semantic networks",
+      "Reinforcement learning"
+    ],
+    "correct_option": "C",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-092",
+    "question": "What is an ontology in the context of knowledge representation?",
+    "options": [
+      "A method for reducing dimensionality of data",
+      "A formal representation of a set of concepts and their relationships",
+      "A type of neural network",
+      "A statistical model for predicting outcomes"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-093",
+    "question": "In knowledge representation, what is a frame?",
+    "options": [
+      "A data structure for dividing a program into separate parts",
+      "A network of connected nodes representing knowledge",
+      "A collection of attributes and values describing an entity",
+      "A technique for visualizing data"
+    ],
+    "correct_option": "C",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-094",
+    "question": "What is the purpose of a semantic network?",
+    "options": [
+      "To train machine learning models",
+      "To represent knowledge in interconnected nodes and edges",
+      "To perform clustering of data",
+      "To improve image processing tasks"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-095",
+    "question": "Which of the following best describes a knowledge graph?",
+    "options": [
+      "A graph used to represent statistical data",
+      "A structure that represents entities and their interrelationships",
+      "A method for optimizing algorithms",
+      "A type of decision tree"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-096",
+    "question": "What is the primary feature of PrimeNet?",
+    "options": [
+      "It uses a flat structure to organize concepts and entities",
+      "It integrates commonsense knowledge via a hierarchical structure",
+      "It focuses solely on sentiment analysis without conceptual organization",
+      "It employs a rule-based system for automatic text summarization"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-097",
+    "question": "Which aspect of PrimeNet's design helps in emulating human-like reasoning?",
+    "options": [
+      "A large collection of unrelated facts",
+      "A single-layer network with random connections",
+      "A three-layer architecture with conceptual primitives, concepts, and entities",
+      "Exclusive use of machine translation techniques"
+    ],
+    "correct_option": "C",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-098",
+    "question": "What is the function of rules in rule-based systems?",
+    "options": [
+      "To create visualizations from data",
+      "To apply logical operations to facts to derive conclusions",
+      "To train deep learning models",
+      "To perform statistical analysis"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-099",
+    "question": "What is a key limitation of using logic-based knowledge representation?",
+    "options": [
+      "Inability to handle uncertainty",
+      "High computational cost",
+      "Lack of interpretability",
+      "Difficulty in visualizing data"
+    ],
+    "correct_option": "A",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  },
+  {
+    "id": "orig-draft-100",
+    "question": "What does a concept hierarchy represent in knowledge representation?",
+    "options": [
+      "The order of execution in a program",
+      "A taxonomy of concepts, from general to specific",
+      "The performance metrics of an algorithm",
+      "The architecture of a neural network"
+    ],
+    "correct_option": "B",
+    "source": "original",
+    "topic": null,
+    "needs_review": false,
+    "notes": "",
+    "source_pdf": null,
+    "source_snippet": null
+  }
+]

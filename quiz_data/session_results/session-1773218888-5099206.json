@@ -1,0 +1,551 @@
+{
+  "session_id": "session-1773218888-5099206",
+  "started_at_iso": "2026-03-11T08:48:08.374395+00:00",
+  "completed_at_iso": "2026-03-11T09:06:05.044263+00:00",
+  "time_limit_seconds": 1080,
+  "duration_seconds": 1076,
+  "score": 16,
+  "total_questions": 30,
+  "answers": [
+    {
+      "id": "orig-draft-077",
+      "question": "Which resource can be useful for evaluating personality recognition models?",
+      "selected_option": "C",
+      "correct_option": "C",
+      "correct_option_text": "Personality-labeled text datasets",
+      "options": [
+        "Penn Treebank",
+        "OntoNote",
+        "Personality-labeled text datasets",
+        "WordNet"
+      ],
+      "is_correct": true,
+      "source": "original",
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-001",
+      "question": "What is the difference between NLP and NLU?",
+      "selected_option": "D",
+      "correct_option": "D",
+      "correct_option_text": "NLP handles language interaction, NLU focuses on understanding meaning",
+      "options": [
+        "NLU includes more theoretical tasks, NLP is more focused on applications",
+        "NLP and NLU are synonymous and can be used interchangeably",
+        "NLP focuses on text meaning, NLU on processing and generating text",
+        "NLP handles language interaction, NLU focuses on understanding meaning"
+      ],
+      "is_correct": true,
+      "source": "original",
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-039",
+      "question": "In WSD, what role does context play?",
+      "selected_option": "A",
+      "correct_option": "D",
+      "correct_option_text": "It determines the correct meaning of a word",
+      "options": [
+        "It helps in text summarization",
+        "It helps in translating text",
+        "It is used to identify named entities",
+        "It determines the correct meaning of a word"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-073",
+      "question": "In personality recognition, what does the \"Big Five\" model assess?",
+      "selected_option": "C",
+      "correct_option": "C",
+      "correct_option_text": "Openness, conscientiousness, extraversion, agreeableness, and neuroticism",
+      "options": [
+        "Emotional intelligence",
+        "Linguistic diversity",
+        "Openness, conscientiousness, extraversion, agreeableness, and neuroticism",
+        "Cognitive abilities"
+      ],
+      "is_correct": true,
+      "source": "original",
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-009",
+      "question": "Which of the following techniques is often used in microtext normalization?",
+      "selected_option": "C",
+      "correct_option": "D",
+      "correct_option_text": "Levenshtein distance",
+      "options": [
+        "POS tagging",
+        "NER",
+        "TF-IDF",
+        "Levenshtein distance"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-048",
+      "question": "Which of the following functionalities is provided by the Sentic Parser?",
+      "selected_option": "B",
+      "correct_option": "C",
+      "correct_option_text": "Concept extraction",
+      "options": [
+        "Shallow parsing",
+        "NER",
+        "Concept extraction",
+        "Text summarization"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-078",
+      "question": "Which technique is commonly used for aspect extraction in text?",
+      "selected_option": "A",
+      "correct_option": "A",
+      "correct_option_text": "Topic modeling",
+      "options": [
+        "Topic modeling",
+        "NER",
+        "POS tagging",
+        "Sentiment analysis"
+      ],
+      "is_correct": true,
+      "source": "original",
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-026",
+      "question": "What challenge does text chunking address in NLU?",
+      "selected_option": "D",
+      "correct_option": "D",
+      "correct_option_text": "Grouping words into meaningful phrases for further analysis",
+      "options": [
+        "Translating text into different dialects",
+        "Detecting the boundaries between sentences",
+        "Assigning correct POS tags to each word",
+        "Grouping words into meaningful phrases for further analysis"
+      ],
+      "is_correct": true,
+      "source": "original",
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-002",
+      "question": "What does task decomposition typically involve?",
+      "selected_option": "C",
+      "correct_option": "C",
+      "correct_option_text": "Splitting a complex NLP task into simpler, manageable subtasks",
+      "options": [
+        "Summarizing long documents into shorter versions",
+        "Evaluating the accuracy of an NLP model",
+        "Splitting a complex NLP task into simpler, manageable subtasks",
+        "Translating text from one language to another"
+      ],
+      "is_correct": true,
+      "source": "original",
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-085",
+      "question": "Which of the following methods can be used to perform polarity detection?",
+      "selected_option": "B",
+      "correct_option": "B",
+      "correct_option_text": "SVM",
+      "options": [
+        "LDA",
+        "SVM",
+        "PCA",
+        "CNN"
+      ],
+      "is_correct": true,
+      "source": "original",
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-005",
+      "question": "What is a topology-aware similarity measure?",
+      "selected_option": "C",
+      "correct_option": "A",
+      "correct_option_text": "A method that considers the geometric arrangement of data points",
+      "options": [
+        "A method that considers the geometric arrangement of data points",
+        "A technique for comparing the colors in images",
+        "An approach for evaluating the textual similarity between documents",
+        "A measure that assesses the similarity of time series based on frequency"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-098",
+      "question": "What is the function of rules in rule-based systems?",
+      "selected_option": "C",
+      "correct_option": "C",
+      "correct_option_text": "To apply logical operations to facts to derive conclusions",
+      "options": [
+        "To perform statistical analysis",
+        "To create visualizations from data",
+        "To apply logical operations to facts to derive conclusions",
+        "To train deep learning models"
+      ],
+      "is_correct": true,
+      "source": "original",
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-099",
+      "question": "What is a key limitation of using logic-based knowledge representation?",
+      "selected_option": "B",
+      "correct_option": "D",
+      "correct_option_text": "Inability to handle uncertainty",
+      "options": [
+        "Difficulty in visualizing data",
+        "High computational cost",
+        "Lack of interpretability",
+        "Inability to handle uncertainty"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-056",
+      "question": "Which resource is often used to help with anaphora resolution in NLU?",
+      "selected_option": "C",
+      "correct_option": "B",
+      "correct_option_text": "OntoNote",
+      "options": [
+        "Penn Treebank",
+        "OntoNote",
+        "WordNet",
+        "SenticNet"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-075",
+      "question": "Which approach can assess user personality based on social media activity?",
+      "selected_option": "B",
+      "correct_option": "B",
+      "correct_option_text": "Personality prediction models",
+      "options": [
+        "NER",
+        "Personality prediction models",
+        "Text classification",
+        "Sentiment analysis"
+      ],
+      "is_correct": true,
+      "source": "original",
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-070",
+      "question": "Which NLU technique can be useful for detecting sarcasm in text?",
+      "selected_option": "A",
+      "correct_option": "B",
+      "correct_option_text": "Sentiment analysis",
+      "options": [
+        "POS tagging",
+        "Sentiment analysis",
+        "Text summarization",
+        "NER"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-011",
+      "question": "Which of the following is a challenge in microtext normalization?",
+      "selected_option": "D",
+      "correct_option": "D",
+      "correct_option_text": "Handling the ambiguity of abbreviations and slang",
+      "options": [
+        "Converting numeric values to words",
+        "Identifying the language of the text",
+        "Translating text to multiple languages",
+        "Handling the ambiguity of abbreviations and slang"
+      ],
+      "is_correct": true,
+      "source": "original",
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-049",
+      "question": "Which NLU task is closely related to concept extraction?",
+      "selected_option": "B",
+      "correct_option": "D",
+      "correct_option_text": "NER",
+      "options": [
+        "Machine translation",
+        "Text summarization",
+        "POS tagging",
+        "NER"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-036",
+      "question": "What is the definition of \u2018cool' language?",
+      "selected_option": "B",
+      "correct_option": "C",
+      "correct_option_text": "A language where understanding a sentence relies more on context",
+      "options": [
+        "A language with very difficult sentence structure",
+        "A language where a lot of microtext is used",
+        "A language where understanding a sentence relies more on context",
+        "A language that uses a lot of stopwords and redundancies"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-076",
+      "question": "What is a key advantage of using machine learning for personality recognition?",
+      "selected_option": "C",
+      "correct_option": "C",
+      "correct_option_text": "It can provide real-time feedback on personality traits",
+      "options": [
+        "It can translate text into multiple languages",
+        "It can correct grammatical errors in text",
+        "It can provide real-time feedback on personality traits",
+        "It can generate new text automatically"
+      ],
+      "is_correct": true,
+      "source": "original",
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-061",
+      "question": "Which of the following techniques can be used for metaphor detection in NLU?",
+      "selected_option": "C",
+      "correct_option": "B",
+      "correct_option_text": "WSD",
+      "options": [
+        "NER",
+        "WSD",
+        "Topic modeling",
+        "POS tagging"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-032",
+      "question": "In lemmatization, what role does the POS tag play?",
+      "selected_option": "B",
+      "correct_option": "D",
+      "correct_option_text": "It determines the root form of a word",
+      "options": [
+        "It helps in summarizing text",
+        "It helps in splitting text into sentences",
+        "It is used to identify named entities",
+        "It determines the root form of a word"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-082",
+      "question": "What is the role of Sentic GCN in sentiment analysis?",
+      "selected_option": "A",
+      "correct_option": "A",
+      "correct_option_text": "It uses graph-based models to extract aspects from text",
+      "options": [
+        "It uses graph-based models to extract aspects from text",
+        "It classifies sentiment using word sequences",
+        "It analyzes images to extract sentiment",
+        "It applies rule-based approaches to sentiment lexicons"
+      ],
+      "is_correct": true,
+      "source": "original",
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-030",
+      "question": "Which library provides the WordNetLemmatizer in Python?",
+      "selected_option": "B",
+      "correct_option": "B",
+      "correct_option_text": "NLTK",
+      "options": [
+        "Gensim",
+        "NLTK",
+        "SpaCy",
+        "Scikit-learn"
+      ],
+      "is_correct": true,
+      "source": "original",
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-053",
+      "question": "Which NLU task is most closely related to anaphora resolution?",
+      "selected_option": "D",
+      "correct_option": "B",
+      "correct_option_text": "NER",
+      "options": [
+        "Sentiment analysis",
+        "NER",
+        "POS tagging",
+        "Text summarization"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-096",
+      "question": "What is the primary feature of PrimeNet?",
+      "selected_option": "B",
+      "correct_option": "C",
+      "correct_option_text": "It integrates commonsense knowledge via a hierarchical structure",
+      "options": [
+        "It focuses solely on sentiment analysis without conceptual organization",
+        "It employs a rule-based system for automatic text summarization",
+        "It integrates commonsense knowledge via a hierarchical structure",
+        "It uses a flat structure to organize concepts and entities"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-046",
+      "question": "What is a common evaluation metric for assessing NER performance?",
+      "selected_option": "D",
+      "correct_option": "D",
+      "correct_option_text": "F1 Score",
+      "options": [
+        "Euclidean distance",
+        "MSE",
+        "BLEU score",
+        "F1 Score"
+      ],
+      "is_correct": true,
+      "source": "original",
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-083",
+      "question": "What is polarity detection in the context of NLU?",
+      "selected_option": "D",
+      "correct_option": "D",
+      "correct_option_text": "Determining whether the sentiment expressed in text is positive or negative",
+      "options": [
+        "Splitting text into sentences",
+        "Translating text into another language",
+        "Identifying the grammatical structure of a sentence",
+        "Determining whether the sentiment expressed in text is positive or negative"
+      ],
+      "is_correct": true,
+      "source": "original",
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-081",
+      "question": "Which NLU tool or library can be useful for aspect extraction?",
+      "selected_option": "C",
+      "correct_option": "C",
+      "correct_option_text": "NLTK",
+      "options": [
+        "Keras",
+        "TensorFlow",
+        "NLTK",
+        "OpenCV"
+      ],
+      "is_correct": true,
+      "source": "original",
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    },
+    {
+      "id": "orig-draft-091",
+      "question": "Which of the following is a common technique for knowledge representation?",
+      "selected_option": "B",
+      "correct_option": "A",
+      "correct_option_text": "Semantic networks",
+      "options": [
+        "Semantic networks",
+        "Decision trees",
+        "Reinforcement learning",
+        "Gradient descent"
+      ],
+      "is_correct": false,
+      "source": "original",
+      "topic": null,
+      "source_pdf": null,
+      "source_snippet": null
+    }
+  ]
+}
