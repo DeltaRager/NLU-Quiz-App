@@ -157,6 +157,9 @@ def inject_styles() -> None:
           font-size: 0.9rem;
           margin: 0.2rem 0;
         }
+        .hidden-submit {
+          display: none;
+        }
         .stButton > button {
           border-radius: 12px;
           border: 1px solid var(--line);
@@ -484,30 +487,55 @@ def render_home(dataset: list[MCQ]) -> None:
             st.rerun()
     st.markdown("</div>", unsafe_allow_html=True)
 
-@st.fragment(run_every=1)
-def render_timer_fragment() -> None:
-    session = st.session_state.active_session
-    if not session or st.session_state.app_mode != "quiz":
-        return
-    remaining_seconds = compute_remaining_seconds(session)
-    if remaining_seconds <= 0:
-        finish_session(session)
-        st.rerun()
-    question_count = len(session["questions"])
-    st.markdown(
+def render_quiz_timer(remaining_seconds: int, current_index: int, question_count: int, answered_total: int) -> None:
+    components.html(
         f"""
         <div class="timer-strip">
           <div>
             <div class="soft-note">Live session timer</div>
-            <div class="timer-big">{format_remaining(remaining_seconds)}</div>
+            <div class="timer-big" id="quiz-timer-value">{format_remaining(remaining_seconds)}</div>
           </div>
           <div class="soft-note">
-            Question {session['current_index'] + 1} of {question_count}<br/>
-            Answered: {sum(1 for answer in session['answers'].values() if answer.get('selected_option') in OPTION_LABELS)} / {question_count}
+            Question {current_index + 1} of {question_count}<br/>
+            Answered: {answered_total} / {question_count}
           </div>
         </div>
+        <script>
+        const parentWindow = window.parent;
+        const timerElement = document.getElementById("quiz-timer-value");
+        let remaining = {remaining_seconds};
+
+        function formatRemaining(totalSeconds) {{
+          const minutes = String(Math.floor(totalSeconds / 60)).padStart(2, "0");
+          const seconds = String(totalSeconds % 60).padStart(2, "0");
+          return `${{minutes}}:${{seconds}}`;
+        }}
+
+        function clickAutoSubmit() {{
+          const buttons = [...parentWindow.document.querySelectorAll("button")];
+          const button = buttons.find((item) => item.innerText.trim() === "Auto Submit Session" && !item.disabled);
+          if (button) {{
+            button.click();
+          }}
+        }}
+
+        timerElement.textContent = formatRemaining(remaining);
+        if (window.__quizTimerInterval) {{
+          clearInterval(window.__quizTimerInterval);
+        }}
+        window.__quizTimerInterval = setInterval(() => {{
+          remaining -= 1;
+          if (remaining <= 0) {{
+            timerElement.textContent = "00:00";
+            clearInterval(window.__quizTimerInterval);
+            clickAutoSubmit();
+            return;
+          }}
+          timerElement.textContent = formatRemaining(remaining);
+        }}, 1000);
+        </script>
         """,
-        unsafe_allow_html=True,
+        height=88,
     )
 
 
@@ -549,7 +577,12 @@ def render_quiz(session: dict) -> None:
     if selected is not None:
         answer["selected_option"] = options[selected]
 
-    render_timer_fragment()
+    render_quiz_timer(
+        remaining_seconds=remaining_seconds,
+        current_index=session["current_index"],
+        question_count=len(questions),
+        answered_total=answered_count(session, questions),
+    )
 
     nav_col1, nav_col2, nav_col3 = st.columns(3)
     if nav_col1.button("Previous", disabled=session["current_index"] == 0):
@@ -563,6 +596,11 @@ def render_quiz(session: dict) -> None:
     if nav_col3.button("Submit Session Now", type="primary"):
         finish_session(session)
         st.rerun()
+    st.markdown("<div class='hidden-submit'>", unsafe_allow_html=True)
+    if st.button("Auto Submit Session", key="auto_submit_session"):
+        finish_session(session)
+        st.rerun()
+    st.markdown("</div>", unsafe_allow_html=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 
