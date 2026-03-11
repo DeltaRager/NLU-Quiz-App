@@ -490,6 +490,36 @@ def render_home(dataset: list[MCQ]) -> None:
 def render_quiz_timer(remaining_seconds: int, current_index: int, question_count: int, answered_total: int) -> None:
     components.html(
         f"""
+        <style>
+        body {{
+          margin: 0;
+          font-family: "IBM Plex Sans", sans-serif;
+          background: transparent;
+          color: #e5e7eb;
+        }}
+        .timer-strip {{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 1rem;
+          background: linear-gradient(90deg, rgba(249,115,22,0.14), rgba(56,189,248,0.10));
+          border: 1px solid rgba(148, 163, 184, 0.18);
+          border-radius: 16px;
+          padding: 0.55rem 0.8rem;
+          margin: 0;
+        }}
+        .timer-big {{
+          font-size: 1.35rem;
+          font-weight: 700;
+          color: #f97316;
+          line-height: 1;
+        }}
+        .soft-note {{
+          color: #94a3b8;
+          font-size: 0.82rem;
+          line-height: 1.3;
+        }}
+        </style>
         <div class="timer-strip">
           <div>
             <div class="soft-note">Live session timer</div>
@@ -552,10 +582,9 @@ def render_quiz(session: dict) -> None:
     st.markdown("<div class='quiz-card'>", unsafe_allow_html=True)
     st.title("Active Quiz Session")
     st.caption("Explanations are disabled during the timed session.")
-    stats_col1, stats_col2, stats_col3 = st.columns(3)
+    stats_col1, stats_col2 = st.columns(2)
     stats_col1.metric("Question", f"{session['current_index'] + 1} / {len(questions)}")
     stats_col2.metric("Answered", answered_count(session, questions))
-    stats_col3.metric("Remaining", format_remaining(remaining_seconds))
     st.markdown(
         f"<div class='quiz-question'>{question.question}</div><div class='soft-note'>{source_label(question)}</div>",
         unsafe_allow_html=True,
