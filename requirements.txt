@@ -1,0 +1,7 @@
+streamlit>=1.44,<2
+PyMuPDF>=1.25,<2
+pytesseract>=0.3.10,<0.4
+Pillow>=10,<12
+pytest>=9,<10
+openai>=1.107.0,<2
+pydantic>=2.8,<3

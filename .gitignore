@@ -1,0 +1,31 @@
+*
+!/.gitignore
+!/README.md
+!/requirements.txt
+!/app.py
+!/quiz_builder/
+!/quiz_builder/*.py
+
+# Never commit local secrets or generated/runtime artifacts.
+.env
+__pycache__/
+*.py[cod]
+*.so
+
+# Local environments and tooling caches.
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+quiz/
+
+# Source PDFs, generated datasets, docs, and helper scripts stay local.
+documents/
+docs/
+scripts/
+tests/
+quiz_data/
+generated_draft.json
+*.Zone.Identifier
