@@ -8,6 +8,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import streamlit as st
+import streamlit.components.v1 as components
 
 from quiz_builder.env_utils import load_dotenv
 from quiz_builder.io_utils import load_mcqs, write_json
@@ -50,9 +51,22 @@ def inject_styles() -> None:
             linear-gradient(180deg, var(--bg-1), var(--bg-2));
           color: var(--text);
         }
-        [data-testid="stSidebar"] {
-          background: linear-gradient(180deg, #0b1220, #0f172a);
-          border-right: 1px solid var(--line);
+        header[data-testid="stHeader"] {
+          display: none;
+        }
+        [data-testid="stToolbar"] {
+          display: none;
+        }
+        #MainMenu, footer {
+          visibility: hidden;
+          height: 0;
+        }
+        .block-container {
+          max-width: 980px;
+          padding-top: 0.2rem;
+          padding-bottom: 0.75rem;
+          padding-left: 1rem;
+          padding-right: 1rem;
         }
         h1, h2, h3 {
           font-family: "IBM Plex Sans", sans-serif !important;
@@ -67,21 +81,31 @@ def inject_styles() -> None:
         .hero-card, .quiz-card, .review-card {
           background: linear-gradient(180deg, var(--card), var(--card-2));
           border: 1px solid var(--line);
-          border-radius: 24px;
-          padding: 1.25rem 1.35rem;
+          border-radius: 20px;
+          padding: 0.9rem 1rem;
           box-shadow: 0 24px 64px rgba(0, 0, 0, 0.35);
           backdrop-filter: blur(10px);
+        }
+        .hero-card h1, .quiz-card h1, .review-card h1 {
+          font-size: 1.7rem;
+          margin-bottom: 0.2rem;
+        }
+        .quiz-question, .review-question {
+          margin: 0.4rem 0 0.55rem 0;
+          font-size: 1.1rem;
+          line-height: 1.35;
+          font-weight: 600;
         }
         .meta-chip {
           display: inline-block;
           margin-right: 0.5rem;
-          margin-bottom: 0.4rem;
-          padding: 0.25rem 0.55rem;
+          margin-bottom: 0.3rem;
+          padding: 0.2rem 0.5rem;
           border-radius: 999px;
           border: 1px solid var(--line);
           background: rgba(30, 41, 59, 0.8);
           color: var(--muted);
-          font-size: 0.8rem;
+          font-size: 0.75rem;
         }
         .timer-strip {
           display: flex;
@@ -90,24 +114,57 @@ def inject_styles() -> None:
           gap: 1rem;
           background: linear-gradient(90deg, rgba(249,115,22,0.14), rgba(56,189,248,0.10));
           border: 1px solid var(--line);
-          border-radius: 18px;
-          padding: 0.8rem 1rem;
-          margin-bottom: 1rem;
+          border-radius: 16px;
+          padding: 0.55rem 0.8rem;
+          margin-bottom: 0.75rem;
+          margin-top: 0.45rem;
         }
         .timer-big {
-          font-size: 1.6rem;
+          font-size: 1.35rem;
           font-weight: 700;
           color: var(--accent);
         }
         .soft-note {
           color: var(--muted);
+          font-size: 0.82rem;
+        }
+        .summary-line {
+          color: var(--muted);
+          font-size: 0.85rem;
+          margin: 0.15rem 0 0.45rem 0;
+        }
+        .option-list {
+          margin-top: 0.35rem;
+        }
+        .option-row {
+          border: 1px solid var(--line);
+          border-radius: 12px;
+          background: rgba(15, 23, 42, 0.72);
+          padding: 0.45rem 0.65rem;
+          margin-bottom: 0.3rem;
+          line-height: 1.3;
+        }
+        .option-row.correct {
+          border-color: rgba(34, 197, 94, 0.45);
+          background: rgba(20, 83, 45, 0.32);
+        }
+        .option-row.selected {
+          border-color: rgba(239, 68, 68, 0.45);
+          background: rgba(127, 29, 29, 0.28);
+        }
+        .review-answer-line {
+          color: var(--text);
           font-size: 0.9rem;
+          margin: 0.2rem 0;
         }
         .stButton > button {
-          border-radius: 14px;
+          border-radius: 12px;
           border: 1px solid var(--line);
           background: rgba(30, 41, 59, 0.8);
           color: var(--text);
+          min-height: 2.4rem;
+          padding-top: 0.25rem;
+          padding-bottom: 0.25rem;
         }
         .stButton > button[kind="primary"] {
           background: linear-gradient(90deg, var(--accent), #ea580c);
@@ -120,8 +177,14 @@ def inject_styles() -> None:
         [data-testid="stMetric"] {
           background: rgba(15, 23, 42, 0.72);
           border: 1px solid var(--line);
-          padding: 0.7rem 0.85rem;
-          border-radius: 16px;
+          padding: 0.45rem 0.65rem;
+          border-radius: 14px;
+        }
+        [data-testid="stMetricLabel"] {
+          font-size: 0.78rem;
+        }
+        [data-testid="stMetricValue"] {
+          font-size: 1.15rem;
         }
         [data-baseweb="select"] > div {
           background: rgba(15, 23, 42, 0.88);
@@ -130,9 +193,9 @@ def inject_styles() -> None:
         div[role="radiogroup"] label {
           background: rgba(15, 23, 42, 0.72);
           border: 1px solid var(--line);
-          border-radius: 14px;
-          padding: 0.55rem 0.7rem;
-          margin-bottom: 0.4rem;
+          border-radius: 12px;
+          padding: 0.42rem 0.6rem;
+          margin-bottom: 0.3rem;
         }
         .stAlert {
           border-radius: 16px;
@@ -164,6 +227,23 @@ def load_dataset() -> list[MCQ]:
         + ", ".join(str(path) for path in ORIGINALS_DATASET_PATHS)
     )
     st.stop()
+
+
+@st.cache_data(show_spinner=False)
+def load_saved_session_results() -> list[dict]:
+    if not SESSION_RESULTS_DIR.exists():
+        return []
+
+    loaded: list[dict] = []
+    for path in sorted(SESSION_RESULTS_DIR.glob("*.json"), reverse=True):
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            continue
+        data["_result_path"] = str(path)
+        loaded.append(data)
+    loaded.sort(key=lambda item: item.get("completed_at_iso") or item.get("started_at_iso") or "", reverse=True)
+    return loaded
 
 
 def sanitize_option_text(text: str) -> str:
@@ -203,7 +283,20 @@ def option_display(label: str, text: str) -> str:
     return f"{label}. {text}"
 
 
+def review_option_class(label: str, row: dict) -> str:
+    if label == row["correct_option"]:
+        return "option-row correct"
+    if label == row["selected_option"]:
+        return "option-row selected"
+    return "option-row"
+
+
 def build_session_questions(dataset: list[MCQ], seed: int) -> list[MCQ]:
+    if len(dataset) < SESSION_QUESTION_COUNT:
+        st.error(
+            f"At least {SESSION_QUESTION_COUNT} original questions are required, found {len(dataset)}."
+        )
+        st.stop()
     rng = random.Random(seed)
     sampled = rng.sample(dataset, SESSION_QUESTION_COUNT)
     return [shuffle_question_options(question, seed) for question in sampled]
@@ -216,7 +309,6 @@ def new_session_payload(dataset: list[MCQ]) -> dict:
     questions = build_session_questions(dataset, seed)
     return {
         "session_id": f"session-{int(started_at)}-{seed}",
-        "seed": seed,
         "started_at": started_at,
         "started_at_iso": started_iso,
         "time_limit_seconds": SESSION_TIME_LIMIT_SECONDS,
@@ -224,10 +316,27 @@ def new_session_payload(dataset: list[MCQ]) -> dict:
         "questions": [question.to_dict() for question in questions],
         "answers": {},
         "completed": False,
-        "completed_at": None,
-        "completed_at_iso": None,
         "score": None,
         "result_path": None,
+        "review_result": None,
+        "review_explanations": {},
+        "review_errors": {},
+    }
+
+
+def review_session_from_result(result_data: dict) -> dict:
+    return {
+        "session_id": result_data["session_id"],
+        "started_at": 0.0,
+        "started_at_iso": result_data.get("started_at_iso"),
+        "time_limit_seconds": result_data.get("time_limit_seconds", SESSION_TIME_LIMIT_SECONDS),
+        "current_index": 0,
+        "questions": [],
+        "answers": {},
+        "completed": True,
+        "score": result_data.get("score"),
+        "result_path": result_data.get("_result_path"),
+        "review_result": result_data,
         "review_explanations": {},
         "review_errors": {},
     }
@@ -256,8 +365,16 @@ def answer_state(session: dict, question_id: str) -> dict:
     return session["answers"][question_id]
 
 
+def selected_answer(session: dict, question_id: str) -> str | None:
+    answer = session["answers"].get(question_id)
+    if not answer:
+        return None
+    selected_option = answer.get("selected_option")
+    return selected_option if selected_option in OPTION_LABELS else None
+
+
 def answered_count(session: dict, questions: list[MCQ]) -> int:
-    return sum(1 for question in questions if answer_state(session, question.id)["selected_option"] in OPTION_LABELS)
+    return sum(1 for question in questions if selected_answer(session, question.id))
 
 
 def format_remaining(seconds: int) -> str:
@@ -302,28 +419,30 @@ def finish_session(session: dict) -> None:
 
     completed_at = time.time()
     session["completed"] = True
-    session["completed_at"] = completed_at
-    session["completed_at_iso"] = datetime.now(timezone.utc).isoformat()
     session["score"] = score
 
     result_payload = {
         "session_id": session["session_id"],
         "started_at_iso": session["started_at_iso"],
-        "completed_at_iso": session["completed_at_iso"],
+        "completed_at_iso": datetime.now(timezone.utc).isoformat(),
         "time_limit_seconds": session["time_limit_seconds"],
         "duration_seconds": min(int(completed_at - session["started_at"]), session["time_limit_seconds"]),
         "score": score,
         "total_questions": len(questions),
         "answers": answer_rows,
     }
+    SESSION_RESULTS_DIR.mkdir(parents=True, exist_ok=True)
     result_path = SESSION_RESULTS_DIR / f"{session['session_id']}.json"
     write_json(result_path, result_payload)
+    load_saved_session_results.clear()
     session["result_path"] = str(result_path)
+    session["review_result"] = result_payload
     st.session_state.app_mode = "review"
     st.session_state.review_index = 0
 
 
 def render_home(dataset: list[MCQ]) -> None:
+    saved_sessions = load_saved_session_results()
     st.markdown("<div class='hero-card'>", unsafe_allow_html=True)
     st.title("NLU Quiz Sessions")
     st.caption("Timed 30-question runs pulled from the original quiz bank for exam practice.")
@@ -344,36 +463,26 @@ def render_home(dataset: list[MCQ]) -> None:
         st.session_state.app_mode = "quiz"
         st.rerun()
 
-    session = st.session_state.active_session
-    if session and session.get("completed"):
-        st.markdown("### Last completed session")
-        st.write(f"Score: {session['score']} / {SESSION_QUESTION_COUNT}")
-        if session.get("result_path"):
-            st.caption(f"Saved to {session['result_path']}")
-        if st.button("Review Last Session"):
+    st.markdown("### Saved Sessions")
+    if not saved_sessions:
+        st.caption("No saved sessions found yet.")
+    else:
+        labels = []
+        for result in saved_sessions:
+            completed = result.get("completed_at_iso", "unknown time")
+            labels.append(
+                f"{completed}  |  Score {result.get('score', 0)}/{result.get('total_questions', SESSION_QUESTION_COUNT)}  |  {result['session_id']}"
+            )
+        selected_label = st.selectbox("Open a previous session", labels, key="saved_session_select")
+        selected_index = labels.index(selected_label)
+        selected_result = saved_sessions[selected_index]
+        st.caption(selected_result.get("_result_path", ""))
+        if st.button("Review Selected Session"):
+            st.session_state.active_session = review_session_from_result(selected_result)
+            st.session_state.review_index = 0
             st.session_state.app_mode = "review"
             st.rerun()
     st.markdown("</div>", unsafe_allow_html=True)
-
-
-def render_quiz_sidebar(session: dict, questions: list[MCQ]) -> None:
-    st.sidebar.header("Session")
-    remaining_seconds = compute_remaining_seconds(session)
-    st.sidebar.metric("Time left", format_remaining(remaining_seconds))
-    st.sidebar.metric("Answered", answered_count(session, questions))
-    st.sidebar.metric("Total", len(questions))
-    st.sidebar.caption("Jump navigation is disabled during the live session for stability.")
-    st.sidebar.markdown("### Session questions")
-    for idx, question in enumerate(questions):
-        answer = answer_state(session, question.id)["selected_option"]
-        status = "answered" if answer in OPTION_LABELS else "pending"
-        prefix = "-> " if idx == session["current_index"] else ""
-        st.sidebar.write(f"{prefix}{idx + 1}. {status}")
-
-    if st.sidebar.button("Submit Session Now", use_container_width=True):
-        finish_session(session)
-        st.rerun()
-
 
 @st.fragment(run_every=1)
 def render_timer_fragment() -> None:
@@ -384,7 +493,7 @@ def render_timer_fragment() -> None:
     if remaining_seconds <= 0:
         finish_session(session)
         st.rerun()
-    questions = session_questions(session)
+    question_count = len(session["questions"])
     st.markdown(
         f"""
         <div class="timer-strip">
@@ -393,8 +502,8 @@ def render_timer_fragment() -> None:
             <div class="timer-big">{format_remaining(remaining_seconds)}</div>
           </div>
           <div class="soft-note">
-            Question {session['current_index'] + 1} of {len(questions)}<br/>
-            Answered: {answered_count(session, questions)} / {len(questions)}
+            Question {session['current_index'] + 1} of {question_count}<br/>
+            Answered: {sum(1 for answer in session['answers'].values() if answer.get('selected_option') in OPTION_LABELS)} / {question_count}
           </div>
         </div>
         """,
@@ -409,16 +518,18 @@ def render_quiz(session: dict) -> None:
         finish_session(session)
         st.rerun()
 
-    render_quiz_sidebar(session, questions)
-
     question = questions[session["current_index"]]
     answer = answer_state(session, question.id)
 
     st.markdown("<div class='quiz-card'>", unsafe_allow_html=True)
     st.title("Active Quiz Session")
     st.caption("Explanations are disabled during the timed session.")
+    stats_col1, stats_col2, stats_col3 = st.columns(3)
+    stats_col1.metric("Question", f"{session['current_index'] + 1} / {len(questions)}")
+    stats_col2.metric("Answered", answered_count(session, questions))
+    stats_col3.metric("Remaining", format_remaining(remaining_seconds))
     st.markdown(
-        f"### {question.question}<br/><span class='soft-note'>{source_label(question)}</span>",
+        f"<div class='quiz-question'>{question.question}</div><div class='soft-note'>{source_label(question)}</div>",
         unsafe_allow_html=True,
     )
 
@@ -449,15 +560,62 @@ def render_quiz(session: dict) -> None:
         session["current_index"] = min(len(questions) - 1, session["current_index"] + 1)
         st.rerun()
 
-    if nav_col3.button("Finish Session", type="primary"):
+    if nav_col3.button("Submit Session Now", type="primary"):
         finish_session(session)
         st.rerun()
     st.markdown("</div>", unsafe_allow_html=True)
 
 
-def review_question_label(index: int, answer_row: dict) -> str:
-    status = "correct" if answer_row["is_correct"] else "wrong"
-    return f"{index + 1}. [{status}] {answer_row['question'][:48]}{'...' if len(answer_row['question']) > 48 else ''}"
+def load_review_result(session: dict) -> dict:
+    cached = session.get("review_result")
+    if cached:
+        return cached
+
+    result_path = Path(session["result_path"]) if session.get("result_path") else None
+    if not result_path or not result_path.exists():
+        st.error("Saved result JSON was not found.")
+        st.stop()
+
+    loaded = json.loads(result_path.read_text(encoding="utf-8"))
+    session["review_result"] = loaded
+    return loaded
+
+
+def render_review_shortcuts() -> None:
+    components.html(
+        """
+        <script>
+        const parentWindow = window.parent;
+        if (!parentWindow.__nluReviewKeysBound) {
+          parentWindow.__nluReviewKeysBound = true;
+          parentWindow.addEventListener("keydown", (event) => {
+            const target = event.target;
+            const tagName = target && target.tagName ? target.tagName.toUpperCase() : "";
+            const isEditable = tagName === "INPUT" || tagName === "TEXTAREA" || target?.isContentEditable;
+            if (isEditable) return;
+
+            const buttons = [...parentWindow.document.querySelectorAll("button")];
+            if (event.key === "ArrowLeft") {
+              const button = buttons.find((item) => item.innerText.trim() === "Previous Review" && !item.disabled);
+              if (button) {
+                event.preventDefault();
+                button.click();
+              }
+            }
+            if (event.key === "ArrowRight") {
+              const button = buttons.find((item) => item.innerText.trim() === "Next Review" && !item.disabled);
+              if (button) {
+                event.preventDefault();
+                button.click();
+              }
+            }
+          });
+        }
+        </script>
+        """,
+        height=0,
+        width=0,
+    )
 
 
 def render_review(session: dict) -> None:
@@ -465,29 +623,21 @@ def render_review(session: dict) -> None:
         st.error("No completed session to review.")
         st.stop()
 
-    result_path = Path(session["result_path"]) if session.get("result_path") else None
-    if not result_path or not result_path.exists():
-        st.error("Saved result JSON was not found.")
-        st.stop()
-    result_data = json.loads(result_path.read_text(encoding="utf-8"))
+    result_data = load_review_result(session)
     answers = result_data["answers"]
+    current_index = min(st.session_state.review_index, len(answers) - 1)
+    st.session_state.review_index = current_index
 
     st.markdown("<div class='review-card'>", unsafe_allow_html=True)
     st.title("Session Review")
-    st.write(
-        f"Score: {result_data['score']} / {result_data['total_questions']}"
-        f"  |  Duration: {result_data['duration_seconds']} seconds"
+    st.markdown(
+        f"<div class='summary-line'>Score {result_data['score']} / {result_data['total_questions']}  |  "
+        f"Duration {result_data['duration_seconds']}s</div>",
+        unsafe_allow_html=True,
     )
-    st.caption(f"Saved result: {result_path}")
-    st.sidebar.header("Review")
-    st.sidebar.metric("Score", f"{result_data['score']} / {result_data['total_questions']}")
-    st.sidebar.metric("Current", f"{st.session_state.review_index + 1} / {len(answers)}")
-    st.sidebar.markdown("### Review questions")
-    for idx, answer_row in enumerate(answers):
-        prefix = "-> " if idx == st.session_state.review_index else ""
-        st.sidebar.write(f"{prefix}{review_question_label(idx, answer_row)}")
+    render_review_shortcuts()
 
-    row = answers[st.session_state.review_index]
+    row = answers[current_index]
     question = MCQ(
         id=row["id"],
         question=row["question"],
@@ -500,29 +650,31 @@ def render_review(session: dict) -> None:
     )
 
     st.markdown(
-        f"### {row['question']} "
-        f"<span style='color:#888888;font-size:0.8em;font-weight:normal;'>{source_label(question)}</span>",
+        f"<div class='meta-chip'>Question {current_index + 1} of {len(answers)}</div>",
         unsafe_allow_html=True,
     )
+    st.markdown(
+        f"<div class='review-question'>{row['question']}</div>"
+        f"<div class='soft-note'>{source_label(question)}</div>",
+        unsafe_allow_html=True,
+    )
+    option_rows = []
     for label, option_text in zip(OPTION_LABELS, row["options"]):
-        if label == row["correct_option"]:
-            st.success(f"{label}. {option_text}")
-        elif label == row["selected_option"]:
-            st.error(f"{label}. {option_text}")
-        else:
-            st.write(f"{label}. {option_text}")
+        option_rows.append(f"<div class='{review_option_class(label, row)}'>{label}. {option_text}</div>")
+    st.markdown(f"<div class='option-list'>{''.join(option_rows)}</div>", unsafe_allow_html=True)
 
-    if row["selected_option"]:
-        st.write(f"Your answer: {row['selected_option']}")
-    else:
-        st.write("Your answer: unanswered")
-    st.write(f"Correct answer: {row['correct_option']}")
+    selected_text = row["selected_option"] if row["selected_option"] else "unanswered"
+    st.markdown(f"<div class='review-answer-line'>Your answer: {selected_text}</div>", unsafe_allow_html=True)
+    st.markdown(
+        f"<div class='review-answer-line'>Correct answer: {row['correct_option']}</div>",
+        unsafe_allow_html=True,
+    )
 
     nav_col1, nav_col2, nav_col3 = st.columns(3)
-    if nav_col1.button("Previous", disabled=st.session_state.review_index == 0):
+    if nav_col1.button("Previous Review", disabled=current_index == 0):
         st.session_state.review_index = max(0, st.session_state.review_index - 1)
         st.rerun()
-    if nav_col2.button("Next", disabled=st.session_state.review_index >= len(answers) - 1):
+    if nav_col2.button("Next Review", disabled=current_index >= len(answers) - 1):
         st.session_state.review_index = min(len(answers) - 1, st.session_state.review_index + 1)
         st.rerun()
     if nav_col3.button("Back to Home"):
